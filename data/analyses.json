@@ -1,0 +1,2935 @@
+[
+  {
+    "id": "pubg-vs-apex-legends-battle-royale-design",
+    "title": "PUBG vs Apex Legends：大逃杀的两种生存美学",
+    "genre_tags": [
+      "大逃杀",
+      "战术射击",
+      "团队竞技"
+    ],
+    "subjects": [
+      "PUBG",
+      "Apex Legends"
+    ],
+    "scope": {
+      "system": "跳伞、搜刮、缩圈、交战、倒地救援与最终胜利",
+      "player_context": "单排与小队大逃杀玩家",
+      "evidence": "官方产品页与长期稳定核心规则",
+      "assumptions": "不比较限时模式、单赛季英雄或武器数值"
+    },
+    "summary": "PUBG 把大逃杀做成低容错的荒野生存：信息稀缺、枪械致命、路线和载具决定能否活到终局。Apex Legends 把同一骨架做成高速英雄协作：能力、机动、护盾与复活系统让队伍更频繁地重组战局。前者奖励克制与伏击，后者奖励主动获取信息和连续作战。",
+    "cover_image": "./assets/covers/pubg-vs-apex-legends.webp",
+    "cover_alt": "开阔战场中谨慎推进的生存者与高速协同的科幻小队形成对照",
+    "reading_guide": [
+      {
+        "point": "先看死亡意味着什么",
+        "text": "PUBG 的一次暴露常直接结束整局；Apex 给倒地、护盾恢复和重生留下更多反打窗口。"
+      },
+      {
+        "point": "再看队伍如何获得信息",
+        "text": "PUBG 主要依赖视野、枪声和地形；Apex 额外使用英雄能力、标记和移动工具。"
+      },
+      {
+        "point": "最后看终局如何收束",
+        "text": "PUBG 终局更像隐蔽与位置的考试，Apex 终局更像多队技能资源的爆发结算。"
+      }
+    ],
+    "argument_map": {
+      "core": "同样通过缩圈把玩家推向终局：PUBG 放大暴露成本，Apex 放大团队重组与战术表达。",
+      "routes": [
+        {
+          "title": "PUBG 路线",
+          "thesis": "用高致命性和低信息制造真实生存压力",
+          "chain_index": 0
+        },
+        {
+          "title": "Apex Legends 路线",
+          "thesis": "用英雄能力和恢复窗口制造主动协作",
+          "chain_index": 1
+        }
+      ]
+    },
+    "quantification": {
+      "scale": "1-5 表示设计倾向强度，不是品质、热度或竞技难度评分。",
+      "method": "按稳定核心机制对玩家行为的持续影响进行 MDA 判断。",
+      "dimensions": [
+        {
+          "dimension": "枪械致命与拟真感",
+          "mda_link": "A 脆弱生存 / M 弹道伤害",
+          "scores": [
+            {
+              "label": "PUBG",
+              "score": 5
+            },
+            {
+              "label": "Apex Legends",
+              "score": 3
+            }
+          ],
+          "reading": "PUBG 更容易让一次失位直接决定整局。"
+        },
+        {
+          "dimension": "机动与追击能力",
+          "mda_link": "A 英雄行动 / D 主动转点",
+          "scores": [
+            {
+              "label": "PUBG",
+              "score": 2
+            },
+            {
+              "label": "Apex Legends",
+              "score": 5
+            }
+          ],
+          "reading": "Apex 用滑铲、攀爬和角色能力持续制造追击与脱离窗口。"
+        },
+        {
+          "dimension": "角色分工清晰度",
+          "mda_link": "A 团队表达 / M 英雄能力",
+          "scores": [
+            {
+              "label": "PUBG",
+              "score": 1
+            },
+            {
+              "label": "Apex Legends",
+              "score": 5
+            }
+          ],
+          "reading": "PUBG 的职责由装备和临场约定形成，Apex 由英雄套件直接表达。"
+        },
+        {
+          "dimension": "失败恢复空间",
+          "mda_link": "A 反打希望 / M 倒地重生",
+          "scores": [
+            {
+              "label": "PUBG",
+              "score": 2
+            },
+            {
+              "label": "Apex Legends",
+              "score": 5
+            }
+          ],
+          "reading": "Apex 为队友救援、护盾重整和重生提供更多结构化机会。"
+        },
+        {
+          "dimension": "环境不确定性",
+          "mda_link": "A 荒野警觉 / D 路线猜测",
+          "scores": [
+            {
+              "label": "PUBG",
+              "score": 5
+            },
+            {
+              "label": "Apex Legends",
+              "score": 3
+            }
+          ],
+          "reading": "PUBG 的长视距、草木、载具和低能力信息让未知更持久。"
+        },
+        {
+          "dimension": "战斗可读性",
+          "mda_link": "A 可复盘竞技 / M 反馈标记",
+          "scores": [
+            {
+              "label": "PUBG",
+              "score": 3
+            },
+            {
+              "label": "Apex Legends",
+              "score": 5
+            }
+          ],
+          "reading": "Apex 更明确地表达伤害、护盾、队友意图与能力范围。"
+        }
+      ]
+    },
+    "comparison_systems": [
+      {
+        "system": "跳伞与开局路线",
+        "shared": "都让队伍在落地前决定资源密度、交战风险和后续转点。",
+        "mda": {
+          "aesthetic": "亲手押注开局命运",
+          "dynamic": "玩家观察航线、其他队伍和地形后选择热区或边缘发育。",
+          "mechanic": "航线、跳伞控制、资源分布、队长标记与落点视野。"
+        },
+        "games": [
+          {
+            "label": "PUBG",
+            "text": "落点决定早期枪械完整度、载具获取和首圈路线，搜刮时间更长。",
+            "example": "队伍落在偏远城镇，虽然避免首轮混战，却必须提前找车穿越开阔地；开局安全换来了转点暴露。"
+          },
+          {
+            "label": "Apex Legends",
+            "text": "跳伞队长、清晰标记和较快整备让队伍更快从落地转入交战。",
+            "example": "队长观察到目标区域已有两队后临时分离到相邻建筑，迅速拿到基础护盾与武器，再决定是否劝架。"
+          }
+        ],
+        "impact": "PUBG 的落点是整局生存规划，Apex 的落点更像第一场团队节奏选择。"
+      },
+      {
+        "system": "搜刮与构筑",
+        "shared": "都要求玩家在有限时间内完成武器、护甲、弹药和恢复品配置。",
+        "mda": {
+          "aesthetic": "从空手到可战斗的成长",
+          "dynamic": "玩家按当前装备缺口分配搜索区域并交换资源。",
+          "mechanic": "随机战利品、背包容量、武器配件、护甲和队友共享。"
+        },
+        "games": [
+          {
+            "label": "PUBG",
+            "text": "配件、弹药、倍镜和背包空间形成细颗粒搜刮，装备完整度影响交战距离。",
+            "example": "玩家找到狙击枪却没有高倍镜，只能继续搜索或把战术改为中距离步枪作战。"
+          },
+          {
+            "label": "Apex Legends",
+            "text": "颜色等级、智能拾取和队友需求提示降低管理成本，把时间还给移动与交战。",
+            "example": "系统提示队友需要某类弹药，玩家顺手标记后继续推进，不必停下来口头解释物品位置。"
+          }
+        ],
+        "impact": "PUBG 让搜刮本身成为生存劳动，Apex 让搜刮服务连续战斗。"
+      },
+      {
+        "system": "倒地与队伍恢复",
+        "shared": "都允许队友在完全淘汰前救援倒地成员。",
+        "mda": {
+          "aesthetic": "队友仍有被救回的希望",
+          "dynamic": "队伍用火力、掩体和时间换取救援窗口。",
+          "mechanic": "倒地状态、救援时间、淘汰确认、恢复资源与重生规则。"
+        },
+        "games": [
+          {
+            "label": "PUBG",
+            "text": "救援依赖实体掩体和压制，队员完全淘汰后通常难以回归。",
+            "example": "队友倒在麦田边缘，剩余玩家必须先用烟雾弹造出临时掩体，否则救援动作会被远点架枪惩罚。"
+          },
+          {
+            "label": "Apex Legends",
+            "text": "击倒护盾、英雄支援能力与重生信标让队伍拥有多阶段恢复链。",
+            "example": "队伍先拖走倒地队友完成拉起；若横遭团灭前仍拿到旗帜，还能冒险前往信标重建阵容。"
+          }
+        ],
+        "impact": "PUBG 强化失误不可逆，Apex 强化逆境重组与团队叙事。"
+      },
+      {
+        "system": "缩圈与终局",
+        "shared": "安全区持续压缩可用空间，迫使存活队伍相遇。",
+        "mda": {
+          "aesthetic": "不断升级的生存决战",
+          "dynamic": "玩家提前占点、贴圈推进或利用交战声判断第三方时机。",
+          "mechanic": "阶段缩圈、圈外伤害、地形终点、剩余人数和时间提示。"
+        },
+        "games": [
+          {
+            "label": "PUBG",
+            "text": "长距离转移、载具和开阔地让圈位显著影响存活，终局更重隐蔽和先占位置。",
+            "example": "队伍若晚进平原终圈，只能用车辆、烟墙和地形凹陷强行过线，早期路线选择会在最后几分钟集中结算。"
+          },
+          {
+            "label": "Apex Legends",
+            "text": "高机动与能力控场让队伍仍能主动突破，但终局会集中结算技能资源。",
+            "example": "多个队伍在最后建筑群同时落下烟幕、扫描和位移技能，谁先浪费关键冷却就可能失去下一次进圈窗口。"
+          }
+        ],
+        "impact": "PUBG 终局更像位置债务清算，Apex 终局更像技能与枪法的高密度团战。"
+      },
+      {
+        "system": "战斗信息",
+        "shared": "都需要把声音、视野、击倒信息和枪线转化为进攻或撤退判断。",
+        "mda": {
+          "aesthetic": "读懂混乱并抢到先手",
+          "dynamic": "玩家侦察、报点、拉枪线并判断是否介入第三方战斗。",
+          "mechanic": "脚步枪声、标记、击倒播报、地图地形与侦察手段。"
+        },
+        "games": [
+          {
+            "label": "PUBG",
+            "text": "信息主要来自自然视听和经验，获得信息通常需要暴露身体或位置。",
+            "example": "玩家听见远处两种枪声交替停止，只能结合击杀信息和地形推测是否已有一队获胜。"
+          },
+          {
+            "label": "Apex Legends",
+            "text": "高可用标记与侦察类能力让信息快速共享，同时也形成反侦察博弈。",
+            "example": "侦察角色确认建筑内敌人后，全队立即通过标记分配入口，而守方则利用假动作和移动拖过扫描窗口。"
+          }
+        ],
+        "impact": "PUBG 奖励耐心推断，Apex 奖励快速共享和围绕能力窗口执行。"
+      }
+    ],
+    "system_gaps": [
+      {
+        "system": "英雄能力与阵容组合",
+        "games": [
+          {
+            "label": "PUBG",
+            "text": "没有固定英雄能力，所有玩家共享基本规则。"
+          },
+          {
+            "label": "Apex Legends",
+            "text": "核心系统，阵容决定侦察、进入、控场和恢复方式。"
+          }
+        ]
+      },
+      {
+        "system": "载具与长距离路线",
+        "games": [
+          {
+            "label": "PUBG",
+            "text": "载具是转圈、掩体、噪声和风险管理的重要系统。"
+          },
+          {
+            "label": "Apex Legends",
+            "text": "更依赖角色机动、地图设施和步行转点。"
+          }
+        ]
+      },
+      {
+        "system": "淘汰后重生",
+        "games": [
+          {
+            "label": "PUBG",
+            "text": "经典核心体验中回归空间较弱。"
+          },
+          {
+            "label": "Apex Legends",
+            "text": "队友旗帜与重生信标构成明确的第二机会。"
+          }
+        ]
+      }
+    ],
+    "chains": [
+      {
+        "aesthetic": "低容错荒野生存",
+        "dynamic": "玩家避免无必要暴露，提前规划圈路并把一次枪声当成重大信息。",
+        "mechanic": "高致命枪械、低能力信息、长视距地形、载具、随机资源与缩圈。",
+        "evidence": "PUBG 长期稳定核心规则。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "高速英雄协作",
+        "dynamic": "队伍主动扫描、追击、拉扯和恢复，用角色组合重塑不利局面。",
+        "mechanic": "英雄能力、高机动、护盾、标记、倒地救援与重生信标。",
+        "evidence": "Apex Legends 长期稳定核心规则。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "终局压力释放",
+        "dynamic": "存活者随着空间缩小不断放弃资源和隐蔽，最终把整局积累押在一次决策上。",
+        "mechanic": "阶段缩圈、剩余队伍、最终安全区和单局淘汰。",
+        "evidence": "两款游戏共同大逃杀骨架。",
+        "confidence": "High"
+      }
+    ],
+    "judgments": [
+      {
+        "issue": "恢复机制决定玩家敢不敢主动制造战斗",
+        "why": "失误不可逆时，最优动态更容易趋向隐蔽；恢复窗口充足时，主动获取信息和追击更有价值。",
+        "impact": "PUBG 的紧张来自不敢犯错，Apex 的兴奋来自有能力修正错误。"
+      },
+      {
+        "issue": "英雄能力改变的首先是信息和空间，而不只是伤害",
+        "why": "扫描、位移、烟墙和防护让队伍能主动创造更有利的对枪条件。",
+        "impact": "Apex 的团队差距更容易在交火前由阵容理解和技能顺序拉开。"
+      }
+    ],
+    "recommendations": [
+      {
+        "goal": "设计偏生存的大逃杀",
+        "change": "控制恢复次数并让信息获取承担真实暴露成本。",
+        "impact": "每次移动和侦察都会保留风险重量。",
+        "risk": "过低容错会鼓励消极避战。"
+      },
+      {
+        "goal": "设计偏主动竞技的大逃杀",
+        "change": "提供结构化恢复与信息工具，但让关键能力有明确预警和反制。",
+        "impact": "队伍敢于制造战斗，同时失败仍可归因。",
+        "risk": "能力叠加过多会降低观战可读性。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PUBG 官网",
+        "url": "https://pubg.com/"
+      },
+      {
+        "label": "Apex Legends 官网",
+        "url": "https://www.ea.com/games/apex-legends"
+      }
+    ],
+    "created_at": "2026-06-22T09:16:14+00:00",
+    "updated_at": "2026-06-22T09:16:14+00:00",
+    "markdown": ""
+  },
+  {
+    "id": "marathon-vs-gray-zone-warfare-extraction-design",
+    "title": "Marathon vs 灰区战争：撤离射击的科幻与拟真分叉",
+    "genre_tags": [
+      "搜打撤",
+      "科幻射击",
+      "拟真射击",
+      "PvPvE"
+    ],
+    "subjects": [
+      "Marathon",
+      "灰区战争"
+    ],
+    "scope": {
+      "system": "带装进入、PvPvE 任务、战利品、撤离、角色构筑与长期战区",
+      "player_context": "偏团队竞技或持续战区体验的撤离射击玩家",
+      "evidence": "官方公开产品信息与灰区战争稳定核心规则",
+      "assumptions": "Marathon 的赛季、数值和细节可能变化，相关判断标为中可信；不把未确认细节当事实"
+    },
+    "summary": "Marathon 把撤离压力包装成高辨识度的科幻竞技：角色身份、机动、能力与赛季化目标让玩家追求主动交锋和构筑表达。灰区战争把撤离放进持续开放战区：拟真弹道、身体状态、任务路线和直升机运输让玩家体验有前因后果的军事行动。前者强调可读对抗，后者强调行动可信度。",
+    "cover_image": "./assets/covers/marathon-vs-gray-zone-warfare.webp",
+    "cover_alt": "热带工业区中敏捷的科幻夺取小队与执行持续军事行动的地面部队形成对照",
+    "reading_guide": [
+      {
+        "point": "先看战区是否持续",
+        "text": "Marathon 更强调一局内竞争和长期赛季身份；灰区战争强调玩家反复进入同一持续开放区域。"
+      },
+      {
+        "point": "再看角色差异来源",
+        "text": "Marathon 通过未来跑者构筑表达身份，灰区战争更多通过装备、弹药、任务准备和队伍职责形成差异。"
+      },
+      {
+        "point": "最后看撤离如何发生",
+        "text": "一边追求竞技窗口与风险兑现，另一边把运输、伤情和路线纳入行动全过程。"
+      }
+    ],
+    "argument_map": {
+      "core": "同样让玩家带着成果离开危险区：Marathon 用可读竞技制造抢夺欲，灰区战争用持续战区制造行动可信度。",
+      "routes": [
+        {
+          "title": "Marathon 路线",
+          "thesis": "用科幻身份、机动和构筑强化主动竞争",
+          "chain_index": 0
+        },
+        {
+          "title": "灰区战争路线",
+          "thesis": "用持续地图、拟真伤情和运输强化军事行动感",
+          "chain_index": 1
+        }
+      ]
+    },
+    "quantification": {
+      "scale": "1-5 表示设计倾向强度；Marathon 基于官方公开设计，不代表最终版本遥测。",
+      "method": "用 MDA 反推稳定体验方向，对未完全公开的机制降低置信度。",
+      "dimensions": [
+        {
+          "dimension": "战斗可读与竞技感",
+          "mda_link": "A 公平竞争 / M 反馈能力",
+          "scores": [
+            {
+              "label": "Marathon",
+              "score": 5
+            },
+            {
+              "label": "灰区战争",
+              "score": 2
+            }
+          ],
+          "reading": "Marathon 的公开方向更强调辨识度、角色构筑和主动对抗。"
+        },
+        {
+          "dimension": "弹道伤情拟真",
+          "mda_link": "A 身体脆弱 / M 弹道医疗",
+          "scores": [
+            {
+              "label": "Marathon",
+              "score": 2
+            },
+            {
+              "label": "灰区战争",
+              "score": 5
+            }
+          ],
+          "reading": "灰区战争把弹道、器官伤害和治疗作为行动压力核心。"
+        },
+        {
+          "dimension": "角色身份表达",
+          "mda_link": "A 自我表达 / M Runner 构筑",
+          "scores": [
+            {
+              "label": "Marathon",
+              "score": 5
+            },
+            {
+              "label": "灰区战争",
+              "score": 2
+            }
+          ],
+          "reading": "Marathon 更明确地让构筑和角色身份成为对局语言。"
+        },
+        {
+          "dimension": "持续开放战区",
+          "mda_link": "A 战区存在感 / D 重返现场",
+          "scores": [
+            {
+              "label": "Marathon",
+              "score": 2
+            },
+            {
+              "label": "灰区战争",
+              "score": 5
+            }
+          ],
+          "reading": "灰区战争的任务、交通和玩家流动发生在持续大地图中。"
+        },
+        {
+          "dimension": "后勤与移动摩擦",
+          "mda_link": "A 行动重量 / M 运输路线",
+          "scores": [
+            {
+              "label": "Marathon",
+              "score": 2
+            },
+            {
+              "label": "灰区战争",
+              "score": 5
+            }
+          ],
+          "reading": "灰区战争让进入和离开战区本身成为需要等待与规划的机制。"
+        },
+        {
+          "dimension": "赛季叙事与更新身份",
+          "mda_link": "A 世界发现 / D 赛季追逐",
+          "scores": [
+            {
+              "label": "Marathon",
+              "score": 5
+            },
+            {
+              "label": "灰区战争",
+              "score": 2
+            }
+          ],
+          "reading": "Marathon 的公开定位更强调持续世界变化和竞争身份。"
+        }
+      ]
+    },
+    "comparison_systems": [
+      {
+        "system": "带装进入与风险兑现",
+        "shared": "都要求玩家把装备带入危险区，并通过撤离把任务与战利品转化为长期收益。",
+        "mda": {
+          "aesthetic": "携带成果活着离开的压力",
+          "dynamic": "玩家根据当前收益和资源状态决定继续竞争还是退出。",
+          "mechanic": "配装、战利品、死亡损失、撤离窗口和局外仓储。"
+        },
+        "games": [
+          {
+            "label": "Marathon",
+            "text": "公开方向强调围绕构筑、战利品和其他队伍进行高辨识度竞争。",
+            "example": "小队完成主要目标后仍发现高价值机会，需要判断剩余能力资源是否足以再抢一次，而不是只按固定路线撤离。"
+          },
+          {
+            "label": "灰区战争",
+            "text": "风险与持续战区、任务地点、伤情和运输路线绑定。",
+            "example": "队伍完成村庄任务后成员出现严重伤情，必须在继续搜索与呼叫直升机撤回基地之间权衡。"
+          }
+        ],
+        "impact": "Marathon 的风险更偏竞技加注，灰区战争的风险更像行动后果累积。"
+      },
+      {
+        "system": "PvPvE 战区",
+        "shared": "AI、玩家和任务目标共同制造不可完全预测的遭遇。",
+        "mda": {
+          "aesthetic": "计划不断被现场打断",
+          "dynamic": "玩家根据枪声、敌人和第三方风险改变接战顺序。",
+          "mechanic": "AI 阵营、玩家小队、任务热点、声音传播和资源点。"
+        },
+        "games": [
+          {
+            "label": "Marathon",
+            "text": "公开设计更强调多队竞争和科幻战场中的目标抢夺。",
+            "example": "两支队伍围绕同一目标交火时，环境敌人或另一支队伍可能迫使双方临时转移火力和位置。"
+          },
+          {
+            "label": "灰区战争",
+            "text": "AI 与玩家更像持续战区中的军事力量和交通风险。",
+            "example": "小队清理任务区时枪声吸引附近 AI 和其他玩家，原本的撤退路线因此变成新的接触面。"
+          }
+        ],
+        "impact": "Marathon 倾向制造竞技三方冲突，灰区战争倾向制造战场因果链。"
+      },
+      {
+        "system": "信息与侦察",
+        "shared": "都要求玩家在进入目标区前建立对威胁、路线和资源的判断。",
+        "mda": {
+          "aesthetic": "理解战场后获得主动权",
+          "dynamic": "玩家侦察、沟通、标记并决定接近方式。",
+          "mechanic": "地图、声音、视野、角色工具、任务情报和队伍通信。"
+        },
+        "games": [
+          {
+            "label": "Marathon",
+            "text": "未来工具与角色能力倾向把信息变成可读、可争夺的竞技资源。",
+            "example": "小队用侦察构筑确认目标区活动，再用机动能力抢占更有利入口；信息直接转换为进攻时机。"
+          },
+          {
+            "label": "灰区战争",
+            "text": "信息更多来自地形、远距离观察、任务描述和队伍语音。",
+            "example": "队员先在高地用光学瞄具确认巡逻路线，再由另一组沿树林接近，避免在开阔道路触发交火。"
+          }
+        ],
+        "impact": "Marathon 加快信息到行动的转化，灰区战争强调观察过程本身。"
+      },
+      {
+        "system": "长期构筑与成长",
+        "shared": "都让成功行动改变下一次进入战区的能力边界。",
+        "mda": {
+          "aesthetic": "投入塑造身份与行动选择",
+          "dynamic": "玩家按未来目标保留装备、升级构筑并形成专长。",
+          "mechanic": "装备、角色构筑、任务奖励、阵营关系和资源消耗。"
+        },
+        "games": [
+          {
+            "label": "Marathon",
+            "text": "构筑更可能成为清晰的竞技身份和队伍组合语言。",
+            "example": "一名玩家围绕侦察和机动准备构筑，队友则承担正面火力，让小队在进入前就形成打法分工。"
+          },
+          {
+            "label": "灰区战争",
+            "text": "成长更偏装备可得性、任务进度和对战区路线的长期熟悉。",
+            "example": "完成阵营任务后获得更稳定的装备来源，同时玩家也逐步掌握各着陆区、巡逻点和医疗准备需求。"
+          }
+        ],
+        "impact": "Marathon 让成长表达打法，灰区战争让成长表达行动经验。"
+      },
+      {
+        "system": "撤离路线",
+        "shared": "都把离开危险区设计成独立决策，而不是自动结算。",
+        "mda": {
+          "aesthetic": "最后一段路仍然危险",
+          "dynamic": "玩家保留资源、选择时机并防范埋伏或追击。",
+          "mechanic": "撤离点、激活条件、等待时间、运输和暴露反馈。"
+        },
+        "games": [
+          {
+            "label": "Marathon",
+            "text": "更适合以竞技窗口和对手干扰制造最后争夺。",
+            "example": "小队抵达撤离区域后仍需防范追踪者，必须决定先控场还是立即启动流程。"
+          },
+          {
+            "label": "灰区战争",
+            "text": "直升机运输与持续地图让撤离成为后勤和暴露问题。",
+            "example": "呼叫直升机后队伍需要守住着陆区，旋翼声和等待时间会向周围玩家暴露撤离意图。"
+          }
+        ],
+        "impact": "Marathon 的撤离更像比赛终盘，灰区战争的撤离更像军事接送。"
+      }
+    ],
+    "system_gaps": [
+      {
+        "system": "高辨识角色构筑",
+        "games": [
+          {
+            "label": "Marathon",
+            "text": "公开核心方向，角色身份和构筑直接进入竞技表达。"
+          },
+          {
+            "label": "灰区战争",
+            "text": "角色差异更多来自装备和玩家职责，而非鲜明英雄套件。"
+          }
+        ]
+      },
+      {
+        "system": "持续开放大地图与直升机后勤",
+        "games": [
+          {
+            "label": "Marathon",
+            "text": "不是当前公开表达的核心。"
+          },
+          {
+            "label": "灰区战争",
+            "text": "核心系统，任务流和撤离都嵌入持续战区。"
+          }
+        ]
+      },
+      {
+        "system": "器官伤害与深度医疗",
+        "games": [
+          {
+            "label": "Marathon",
+            "text": "公开设计不以深度人体模拟为核心卖点。"
+          },
+          {
+            "label": "灰区战争",
+            "text": "核心拟真支柱，伤情会改变行动与撤退。"
+          }
+        ]
+      }
+    ],
+    "chains": [
+      {
+        "aesthetic": "科幻竞技身份",
+        "dynamic": "玩家围绕构筑主动争夺目标，并用角色能力形成队伍组合。",
+        "mechanic": "未来跑者身份、构筑、机动、PvPvE 目标和撤离收益。",
+        "evidence": "Marathon 官方公开设计方向。",
+        "confidence": "Medium"
+      },
+      {
+        "aesthetic": "可信军事行动",
+        "dynamic": "玩家在持续战区中侦察、接敌、治疗、呼叫运输并承担行动后果。",
+        "mechanic": "开放地图、拟真弹道与器官伤害、阵营任务、直升机和持续 PvEvP。",
+        "evidence": "灰区战争稳定核心规则。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "带着成果撤离的释放",
+        "dynamic": "玩家在收益增长后逐步把资源从进攻转为保全。",
+        "mechanic": "带装进入、死亡风险、战利品、撤离流程与局外成长。",
+        "evidence": "两款游戏共同撤离骨架。",
+        "confidence": "High"
+      }
+    ],
+    "judgments": [
+      {
+        "issue": "科幻与拟真不是美术差异，而是因果表达差异",
+        "why": "Marathon 倾向让能力和构筑清晰解释优势；灰区战争让地形、弹道、伤情和后勤解释优势。",
+        "impact": "前者更利于快速竞技复盘，后者更利于形成行动记忆。"
+      },
+      {
+        "issue": "持续地图会把等待也变成机制",
+        "why": "交通、距离和其他队伍的流动让进入与撤出都产生时机成本。",
+        "impact": "灰区战争更沉浸，但也更容易产生空窗和后勤疲劳。"
+      }
+    ],
+    "recommendations": [
+      {
+        "goal": "设计科幻竞技撤离",
+        "change": "让能力主要改变信息和路线，不直接抹掉战利品风险。",
+        "impact": "构筑表达清晰，同时撤离仍有重量。",
+        "risk": "能力过强会把装备经济降为次要系统。"
+      },
+      {
+        "goal": "设计持续拟真战区",
+        "change": "保留交通和伤情摩擦，但为无效等待提供可预测反馈与替代任务。",
+        "impact": "行动保持可信，玩家又不会因纯等待脱离体验。",
+        "risk": "便利过多会削弱战区尺度感。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Marathon 官网",
+        "url": "https://www.marathonthegame.com/"
+      },
+      {
+        "label": "灰区战争官网",
+        "url": "https://grayzonewarfare.com/"
+      }
+    ],
+    "created_at": "2026-06-22T09:16:14+00:00",
+    "updated_at": "2026-06-22T09:16:14+00:00",
+    "markdown": ""
+  },
+  {
+    "id": "cod-modern-warfare-vs-squad-military-design",
+    "title": "COD Modern Warfare vs Squad：军事射击的即时与组织拟真",
+    "genre_tags": [
+      "拟真射击",
+      "战术射击",
+      "联合作战",
+      "团队竞技"
+    ],
+    "subjects": [
+      "COD Modern Warfare",
+      "Squad"
+    ],
+    "scope": {
+      "system": "现代军事多人战斗中的枪械、信息、重生、目标、通信与后勤",
+      "player_context": "从快速匹配到重度团队协同的军事射击玩家",
+      "evidence": "系列长期稳定多人设计与官方产品定位",
+      "assumptions": "CODMW 指 Modern Warfare 系列多人设计方向，不比较单一作品或赛季数值"
+    },
+    "summary": "Modern Warfare 用写实视听包装高密度个人战斗：快速重生、武器构筑、连续反馈与奖励循环让玩家迅速获得现代士兵的能力感。Squad 则把拟真放在组织关系上：队长、语音频道、集结点、FOB、后勤和载具乘员让个人必须嵌入团队网络。前者拟真的是感官，后者拟真的是协作成本。",
+    "cover_image": "./assets/covers/cod-modern-warfare-vs-squad.webp",
+    "cover_alt": "城市近距离交火与依靠通讯、载具和后勤推进的有组织小队形成对照",
+    "reading_guide": [
+      {
+        "point": "先分清两种拟真",
+        "text": "MW 强调枪声、动画和武器质感；Squad 强调命令、信息、后勤与载具组织。"
+      },
+      {
+        "point": "再看个人能否独立完成目标",
+        "text": "MW 允许高水平玩家连续制造击杀，Squad 的补给、出生和情报都依赖团队结构。"
+      },
+      {
+        "point": "最后看死亡如何影响战局",
+        "text": "MW 用快速重生维持密度，Squad 用票券、救援和长距离回场制造行动重量。"
+      }
+    ],
+    "argument_map": {
+      "core": "两者都追求现代战争可信感：MW 用视听和即时反馈制造个人能力幻想，Squad 用组织依赖制造联合作战可信度。",
+      "routes": [
+        {
+          "title": "Modern Warfare 路线",
+          "thesis": "让每次开火、击杀和奖励都迅速确认个人能力",
+          "chain_index": 0
+        },
+        {
+          "title": "Squad 路线",
+          "thesis": "让通信、出生和补给迫使玩家成为组织成员",
+          "chain_index": 1
+        }
+      ]
+    },
+    "quantification": {
+      "scale": "1-5 表示设计倾向强度，不是画质或真实程度总评分。",
+      "method": "区分感官拟真、规则拟真和组织拟真进行 MDA 对比。",
+      "dimensions": [
+        {
+          "dimension": "感官军事拟真",
+          "mda_link": "A 武器触感 / M 视听动画",
+          "scores": [
+            {
+              "label": "COD Modern Warfare",
+              "score": 5
+            },
+            {
+              "label": "Squad",
+              "score": 4
+            }
+          ],
+          "reading": "MW 更集中地用动画、音效和反馈塑造武器质感。"
+        },
+        {
+          "dimension": "组织协同依赖",
+          "mda_link": "A 战友关系 / M 指挥通信",
+          "scores": [
+            {
+              "label": "COD Modern Warfare",
+              "score": 2
+            },
+            {
+              "label": "Squad",
+              "score": 5
+            }
+          ],
+          "reading": "Squad 的出生、补给、情报和载具都依赖团队结构。"
+        },
+        {
+          "dimension": "个人行动密度",
+          "mda_link": "A 即时能力 / D 连续交战",
+          "scores": [
+            {
+              "label": "COD Modern Warfare",
+              "score": 5
+            },
+            {
+              "label": "Squad",
+              "score": 2
+            }
+          ],
+          "reading": "MW 尽量缩短玩家从失败回到有效交战的时间。"
+        },
+        {
+          "dimension": "后勤战略权重",
+          "mda_link": "A 战役感 / M FOB 补给",
+          "scores": [
+            {
+              "label": "COD Modern Warfare",
+              "score": 1
+            },
+            {
+              "label": "Squad",
+              "score": 5
+            }
+          ],
+          "reading": "Squad 把弹药、建造、运输和出生网络做成胜负条件。"
+        },
+        {
+          "dimension": "角色职责刚性",
+          "mda_link": "A 专业分工 / M 兵种限制",
+          "scores": [
+            {
+              "label": "COD Modern Warfare",
+              "score": 2
+            },
+            {
+              "label": "Squad",
+              "score": 5
+            }
+          ],
+          "reading": "MW 配装强调个人偏好，Squad 兵种强调小队配置责任。"
+        },
+        {
+          "dimension": "失败后回场成本",
+          "mda_link": "A 行动重量 / D 谨慎推进",
+          "scores": [
+            {
+              "label": "COD Modern Warfare",
+              "score": 1
+            },
+            {
+              "label": "Squad",
+              "score": 5
+            }
+          ],
+          "reading": "Squad 的票券、出生点和距离让死亡影响整队行动。"
+        }
+      ]
+    },
+    "comparison_systems": [
+      {
+        "system": "枪械与配装",
+        "shared": "都用现代枪械、瞄具、配件和装备选择塑造交战风格。",
+        "mda": {
+          "aesthetic": "武器掌握与专业士兵身份",
+          "dynamic": "玩家按距离、角色和任务调整武器配置。",
+          "mechanic": "武器属性、配件、弹药、瞄具、后坐力和装备栏。"
+        },
+        "games": [
+          {
+            "label": "COD Modern Warfare",
+            "text": "Gunsmith 式构筑提供高频、直观的个人武器表达，配装能迅速在下一局验证。",
+            "example": "玩家为近距离据点模式配置短枪管、快速开镜和高机动配件，几分钟内就能感知构筑是否适合连续突入。"
+          },
+          {
+            "label": "Squad",
+            "text": "武器与兵种绑定，选择代表对小队职责的承诺，而非纯个人最优。",
+            "example": "玩家占用反载具兵名额后，就必须保留弹药和位置处理敌方装甲；他不能随意把角色理解为另一把枪。"
+          }
+        ],
+        "impact": "MW 的配装表达个人节奏，Squad 的配装表达团队责任。"
+      },
+      {
+        "system": "战斗信息",
+        "shared": "都需要把枪声、地图、队友位置和目标状态转化为行动。",
+        "mda": {
+          "aesthetic": "掌握混乱战场",
+          "dynamic": "玩家根据提示、报点和敌情选择进攻或转点。",
+          "mechanic": "小地图、UAV 或侦察、语音、标记、目标 UI 与声音传播。"
+        },
+        "games": [
+          {
+            "label": "COD Modern Warfare",
+            "text": "信息高度界面化并服务个人决策，连杀奖励还能放大优势。",
+            "example": "玩家通过小地图、击杀提示和 UAV 快速判断敌方出生方向，立即转向下一段连续击杀。"
+          },
+          {
+            "label": "Squad",
+            "text": "信息来自分层语音、队长地图标记和现场观察，真假与时效需要组织过滤。",
+            "example": "班组成员发现装甲后先向队长报方位，队长再在指挥频道共享；标记本身不是自动真相，需要持续更新。"
+          }
+        ],
+        "impact": "MW 缩短信息到反馈的距离，Squad 让通信质量成为战斗力。"
+      },
+      {
+        "system": "目标与占领",
+        "shared": "都用据点或区域目标把玩家从纯击杀拉向空间争夺。",
+        "mda": {
+          "aesthetic": "为共同目标推进",
+          "dynamic": "玩家压制入口、争夺掩体并围绕占领时间换位。",
+          "mechanic": "占领区、计分、阶段目标、出生点和地图路线。"
+        },
+        "games": [
+          {
+            "label": "COD Modern Warfare",
+            "text": "目标规模紧凑、反馈即时，个人击杀与占点能快速转化为分数。",
+            "example": "玩家清掉据点两名敌人后立即获得占领和连杀反馈，失败也能在数秒后从附近重新投入。"
+          },
+          {
+            "label": "Squad",
+            "text": "目标嵌入更大兵力与后勤网络，占点前需要建立出生、补给和火力条件。",
+            "example": "小队进攻旗点前先建立隐蔽集结点，另一队运输补给，迫击炮压制后步兵才开始进入区域。"
+          }
+        ],
+        "impact": "MW 的目标制造连续高潮，Squad 的目标制造多单位协同过程。"
+      },
+      {
+        "system": "死亡、救援与重生",
+        "shared": "都用死亡和重生控制战斗节奏，但惩罚尺度不同。",
+        "mda": {
+          "aesthetic": "失败后重新投入战斗",
+          "dynamic": "玩家判断是否等待救援、换出生点或改变路线。",
+          "mechanic": "倒地、救援、重生时间、出生点、票券与回场距离。"
+        },
+        "games": [
+          {
+            "label": "COD Modern Warfare",
+            "text": "快速重生减少停顿，让死亡成为连续试错的一部分。",
+            "example": "玩家突入失败后迅速重生，从另一侧路线再次挑战同一据点，重点是保持操作节奏。"
+          },
+          {
+            "label": "Squad",
+            "text": "医疗救援、票券和有限出生网络让放弃生命影响整个队伍。",
+            "example": "倒地玩家若立刻放弃会消耗票券并失去前线位置；队友往往先投烟、压制再组织救援。"
+          }
+        ],
+        "impact": "MW 鼓励快速再试，Squad 鼓励活着完成行动。"
+      },
+      {
+        "system": "奖励反馈",
+        "shared": "都通过清晰反馈告诉玩家行为是否有效。",
+        "mda": {
+          "aesthetic": "贡献被确认",
+          "dynamic": "玩家重复能获得即时或战略回报的行为。",
+          "mechanic": "得分、音效、勋章、战果、票券变化和目标状态。"
+        },
+        "games": [
+          {
+            "label": "COD Modern Warfare",
+            "text": "击杀、连杀和解锁反馈密集，个人成长持续可见。",
+            "example": "连续击杀触发明显音效、分数和连杀奖励，让玩家立即感到节奏正在向自己倾斜。"
+          },
+          {
+            "label": "Squad",
+            "text": "大量关键贡献延迟显现，胜负和队长评价比个人提示更重要。",
+            "example": "后勤玩家运输两车补给时几乎没有刺激反馈，但这批资源可能十分钟后决定前线能否维持出生点。"
+          }
+        ],
+        "impact": "MW 让个人贡献即时可见，Squad 让玩家学习相信组织结果。"
+      }
+    ],
+    "system_gaps": [
+      {
+        "system": "连杀奖励与个人正反馈链",
+        "games": [
+          {
+            "label": "COD Modern Warfare",
+            "text": "核心节奏强化器，个人连续表现可获得额外战场能力。"
+          },
+          {
+            "label": "Squad",
+            "text": "没有等价系统，避免个人表现绕过组织结构。"
+          }
+        ]
+      },
+      {
+        "system": "FOB、集结点与物流建造",
+        "games": [
+          {
+            "label": "COD Modern Warfare",
+            "text": "不是核心，多数出生与补给由模式规则提供。"
+          },
+          {
+            "label": "Squad",
+            "text": "核心战略网络，决定前线能否持续。"
+          }
+        ]
+      },
+      {
+        "system": "分层指挥语音",
+        "games": [
+          {
+            "label": "COD Modern Warfare",
+            "text": "语音有用但通常不是胜负必要条件。"
+          },
+          {
+            "label": "Squad",
+            "text": "小队、队长与指挥频道构成正式信息结构。"
+          }
+        ]
+      }
+    ],
+    "chains": [
+      {
+        "aesthetic": "现代士兵即时能力幻想",
+        "dynamic": "玩家快速进入交战、获得击杀反馈并用奖励延续个人节奏。",
+        "mechanic": "高质感枪械动画、快速重生、紧凑目标、Gunsmith、得分与连杀奖励。",
+        "evidence": "Modern Warfare 系列稳定多人设计。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "组织化联合作战",
+        "dynamic": "玩家服从角色分工、维护出生补给网络并通过语音协调跨小队行动。",
+        "mechanic": "兵种限制、分层语音、队长、FOB、集结点、物流、票券和载具乘员。",
+        "evidence": "Squad 官方核心玩法。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "军事战场的可信压力",
+        "dynamic": "玩家利用掩体、声音和火力方向判断何时推进。",
+        "mechanic": "致命枪械、压制、地图目标、队友位置和空间路线。",
+        "evidence": "两款游戏共有军事射击骨架。",
+        "confidence": "High"
+      }
+    ],
+    "judgments": [
+      {
+        "issue": "画面写实不等于系统拟真",
+        "why": "MW 的视听服务快速个人反馈，Squad 的规则让组织摩擦和后勤因果成为体验。",
+        "impact": "前者让玩家感觉自己像士兵，后者让玩家必须像班组成员一样行动。"
+      },
+      {
+        "issue": "低反馈贡献是 Squad 的力量也是门槛",
+        "why": "后勤和指挥的价值常在几分钟后才显现。",
+        "impact": "团队胜利更有组织成就感，但新手难以确认自己是否有效。"
+      }
+    ],
+    "recommendations": [
+      {
+        "goal": "做易进入的拟真射击",
+        "change": "保留真实视听，但逐步引入通信和目标依赖，而不是一开始要求完整指挥链。",
+        "impact": "玩家先获得能力感，再学习组织责任。",
+        "risk": "便利过强会让协同退化为可选项。"
+      },
+      {
+        "goal": "改善组织型拟真反馈",
+        "change": "把后勤、标记和救援对战局的贡献以延迟但明确的方式回显。",
+        "impact": "非击杀角色更容易理解自身价值。",
+        "risk": "过度量化会诱发刷分行为。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Call of Duty 官网",
+        "url": "https://www.callofduty.com/"
+      },
+      {
+        "label": "Squad 官网",
+        "url": "https://joinsquad.com/"
+      }
+    ],
+    "created_at": "2026-06-22T09:16:14+00:00",
+    "updated_at": "2026-06-22T09:16:14+00:00",
+    "markdown": ""
+  },
+  {
+    "id": "squad-vs-hell-let-loose-war-simulation-design",
+    "title": "Squad vs Hell Let Loose：大规模战争模拟的机制分叉",
+    "genre_tags": [
+      "拟真射击",
+      "战争模拟",
+      "联合作战",
+      "团队竞技"
+    ],
+    "subjects": [
+      "Squad",
+      "Hell Let Loose"
+    ],
+    "scope": {
+      "system": "大规模步兵、兵种、指挥、出生网络、后勤、载具、票券与战线推进",
+      "player_context": "重度团队协作与战争模拟玩家",
+      "evidence": "官方产品页与长期稳定核心规则",
+      "assumptions": "不比较单张地图、阵营平衡或版本数值"
+    },
+    "summary": "Squad 把战争模拟建立在玩家自建的通信与后勤网络上：FOB、集结点、物流和现代载具让战线由组织能力涌现。Hell Let Loose 则用二战扇区、驻军点、资源节点和指挥能力把复杂战争压缩成更可读的前线推进。前者强调如何建立战斗条件，后者强调如何维持整条战线。",
+    "cover_image": "./assets/covers/squad-vs-hell-let-loose.webp",
+    "cover_alt": "现代合成化小队网络与二战堑壕前线的消耗战场形成对照",
+    "reading_guide": [
+      {
+        "point": "先看战线如何出现",
+        "text": "Squad 的前线更多由玩家出生点和火力组织涌现；HLL 用扇区明确表达前线。"
+      },
+      {
+        "point": "再看后勤服务什么",
+        "text": "Squad 后勤支持建造、弹药和出生网络；HLL 资源节点与补给更直接连接指挥能力和驻军点。"
+      },
+      {
+        "point": "最后看死亡如何消耗团队",
+        "text": "两者都惩罚无意义死亡，但票券、波次出生和战线距离产生不同节奏。"
+      }
+    ],
+    "argument_map": {
+      "core": "两者都要求个人服从大战局：Squad 让组织建立战场，Hell Let Loose 让扇区和资源持续推动前线。",
+      "routes": [
+        {
+          "title": "Squad 路线",
+          "thesis": "用玩家自建网络和现代联合作战制造涌现战线",
+          "chain_index": 0
+        },
+        {
+          "title": "Hell Let Loose 路线",
+          "thesis": "用扇区、驻军和资源把大战场压缩成可读前线",
+          "chain_index": 1
+        }
+      ]
+    },
+    "quantification": {
+      "scale": "1-5 表示设计倾向强度，不评价历史题材或社区水平。",
+      "method": "按通信、后勤、战线与个人行为的因果强度进行 MDA 对比。",
+      "dimensions": [
+        {
+          "dimension": "通信依赖",
+          "mda_link": "A 战友关系 / M 分层语音",
+          "scores": [
+            {
+              "label": "Squad",
+              "score": 5
+            },
+            {
+              "label": "Hell Let Loose",
+              "score": 5
+            }
+          ],
+          "reading": "两者都需要正式指挥链，但信息颗粒和战线表达不同。"
+        },
+        {
+          "dimension": "玩家自建战场",
+          "mda_link": "A 组织创造 / M FOB 建造",
+          "scores": [
+            {
+              "label": "Squad",
+              "score": 5
+            },
+            {
+              "label": "Hell Let Loose",
+              "score": 3
+            }
+          ],
+          "reading": "Squad 更依赖玩家选择位置并搭建前线网络。"
+        },
+        {
+          "dimension": "前线可读性",
+          "mda_link": "A 战役方向 / M 扇区",
+          "scores": [
+            {
+              "label": "Squad",
+              "score": 3
+            },
+            {
+              "label": "Hell Let Loose",
+              "score": 5
+            }
+          ],
+          "reading": "HLL 用扇区和明确攻防方向降低大战场理解成本。"
+        },
+        {
+          "dimension": "现代载具协同",
+          "mda_link": "A 联合作战 / M 专职乘员",
+          "scores": [
+            {
+              "label": "Squad",
+              "score": 5
+            },
+            {
+              "label": "Hell Let Loose",
+              "score": 4
+            }
+          ],
+          "reading": "Squad 的现代装甲、反载具和后勤链关系更复杂。"
+        },
+        {
+          "dimension": "资源战略显性度",
+          "mda_link": "A 指挥经营 / M 节点资源",
+          "scores": [
+            {
+              "label": "Squad",
+              "score": 3
+            },
+            {
+              "label": "Hell Let Loose",
+              "score": 5
+            }
+          ],
+          "reading": "HLL 更明确地让资源节点连接指挥能力和战线续航。"
+        },
+        {
+          "dimension": "战术涌现度",
+          "mda_link": "A 临场指挥 / D 自发战线",
+          "scores": [
+            {
+              "label": "Squad",
+              "score": 5
+            },
+            {
+              "label": "Hell Let Loose",
+              "score": 4
+            }
+          ],
+          "reading": "Squad 的出生与建造自由度更容易形成非预设战术结构。"
+        }
+      ]
+    },
+    "comparison_systems": [
+      {
+        "system": "小队与指挥链",
+        "shared": "都把普通士兵、小队长与总指挥组织成分层通信结构。",
+        "mda": {
+          "aesthetic": "成为大战局中的可靠一环",
+          "dynamic": "成员向队长汇报，队长协调其他单位并把命令转成局部任务。",
+          "mechanic": "小队编制、角色限制、局部语音、队长频道和指挥官。"
+        },
+        "games": [
+          {
+            "label": "Squad",
+            "text": "通信围绕精确情报、跨兵种协同和玩家自建网络展开。",
+            "example": "侦察到敌方 FOB 后，步兵队长在指挥频道呼叫迫击炮和装甲支援，再带队切断敌方增援路线。"
+          },
+          {
+            "label": "Hell Let Loose",
+            "text": "通信围绕扇区攻防、驻军点和整条前线的兵力调配展开。",
+            "example": "防守扇区失压时，指挥官要求两队回防，一队保留前进压力，避免所有玩家继续挤在进攻方向。"
+          }
+        ],
+        "impact": "Squad 强调任务级协同，HLL 强调战线级调度。"
+      },
+      {
+        "system": "出生网络",
+        "shared": "都让玩家部署前线出生点，决定队伍能否持续施压。",
+        "mda": {
+          "aesthetic": "组织准备转化为战场存在",
+          "dynamic": "玩家隐藏、保护和摧毁出生网络，而不只追逐击杀。",
+          "mechanic": "集结点、FOB 或驻军点、个人前哨、部署限制和失效条件。"
+        },
+        "games": [
+          {
+            "label": "Squad",
+            "text": "集结点与 FOB 依赖小队长、无线电、建造资源和后勤位置。",
+            "example": "进攻队先把后勤车藏在地形后建立无线电与 HAB；位置过近会被敌军通过补给路线反向追踪。"
+          },
+          {
+            "label": "Hell Let Loose",
+            "text": "驻军点与前哨更直接连接扇区推进和波次回场。",
+            "example": "队长在侧翼补给箱附近建立驻军点，整队下一波从新方向出现，迫使守军重新分配前线。"
+          }
+        ],
+        "impact": "Squad 的出生点是一套建设工程，HLL 的出生点是一种战线杠杆。"
+      },
+      {
+        "system": "后勤与资源",
+        "shared": "都需要非前线玩家运输或生产资源，支撑出生、弹药和指挥能力。",
+        "mda": {
+          "aesthetic": "战争机器需要被维持",
+          "dynamic": "玩家把时间投入运输、建造和资源保护，以换取前线持续性。",
+          "mechanic": "补给车、建造物、弹药、资源节点和指挥技能消耗。"
+        },
+        "games": [
+          {
+            "label": "Squad",
+            "text": "后勤更物理化，车辆运输的弹药与建造点直接决定 FOB 能做什么。",
+            "example": "前线反坦克兵耗尽弹药后，后勤车若未补给，整片区域会暂时失去对装甲的反制能力。"
+          },
+          {
+            "label": "Hell Let Loose",
+            "text": "补给与人力、弹药、燃油资源更显性地进入团队战略。",
+            "example": "工程兵建立资源节点后，指挥官获得更稳定的能力与载具调度空间，后勤收益在全局界面中更清晰。"
+          }
+        ],
+        "impact": "Squad 强调物理供应链，HLL 强调全局资源经营。"
+      },
+      {
+        "system": "扇区与战线",
+        "shared": "都通过连续目标把大战场组织成推进与防守方向。",
+        "mda": {
+          "aesthetic": "亲历一条会移动的前线",
+          "dynamic": "队伍在进攻、固守、侧翼和切断增援之间分配兵力。",
+          "mechanic": "占领区域、有效目标、锁定规则、票券或资源和地图路线。"
+        },
+        "games": [
+          {
+            "label": "Squad",
+            "text": "目标提供方向，但实际战线高度受 FOB、地形和载具影响。",
+            "example": "即使旗点仍未易手，敌方若摧毁关键 FOB，己方前线可能立刻后退数百米。"
+          },
+          {
+            "label": "Hell Let Loose",
+            "text": "地图扇区和攻防顺序更明确，玩家更容易理解大战役当前阶段。",
+            "example": "进攻扇区失守后，整队必须迅速转入下一条防线，战场叙事由地图边界明确推进。"
+          }
+        ],
+        "impact": "Squad 的战线由网络涌现，HLL 的战线由规则清晰编排。"
+      },
+      {
+        "system": "死亡与兵力消耗",
+        "shared": "都让死亡影响团队资源、回场时间和前线人数。",
+        "mda": {
+          "aesthetic": "个人生命属于集体行动",
+          "dynamic": "玩家等待救援、保护医疗兵并避免无意义冲锋。",
+          "mechanic": "倒地、救援、波次出生、票券、回场距离和驻军点。"
+        },
+        "games": [
+          {
+            "label": "Squad",
+            "text": "救援、票券和长回场路线让小队尽量维持现场战斗力。",
+            "example": "一轮炮击后医疗兵先稳定多人，再逐个拉起；若全队直接放弃，重建进攻需要重新集结和运输。"
+          },
+          {
+            "label": "Hell Let Loose",
+            "text": "波次出生与前线驻军让死亡更像持续兵力消耗。",
+            "example": "守军在驻军点按波次回到扇区，若出生点被拆，整条防线会因下一波无法及时补充而崩溃。"
+          }
+        ],
+        "impact": "Squad 强调保存行动组织，HLL 强调维持前线补员。"
+      }
+    ],
+    "system_gaps": [
+      {
+        "system": "自由 FOB 建造与部署网络",
+        "games": [
+          {
+            "label": "Squad",
+            "text": "核心系统，玩家能较自由地设计前线节点。"
+          },
+          {
+            "label": "Hell Let Loose",
+            "text": "有驻军与工事，但战线更受扇区规则组织。"
+          }
+        ]
+      },
+      {
+        "system": "三类全局资源节点",
+        "games": [
+          {
+            "label": "Squad",
+            "text": "资源更集中于物理补给和票券。"
+          },
+          {
+            "label": "Hell Let Loose",
+            "text": "人力、弹药与燃油明确支撑指挥与载具战略。"
+          }
+        ]
+      },
+      {
+        "system": "现代反载具与信息体系",
+        "games": [
+          {
+            "label": "Squad",
+            "text": "现代装甲、反坦克、直升机与通信关系更复杂。"
+          },
+          {
+            "label": "Hell Let Loose",
+            "text": "二战装备限制让交战更围绕历史兵种和前线火力。"
+          }
+        ]
+      }
+    ],
+    "chains": [
+      {
+        "aesthetic": "玩家自建的现代联合作战",
+        "dynamic": "队伍建立出生与补给网络，再协调步兵、装甲和火力完成局部任务。",
+        "mechanic": "FOB、集结点、物流、分层语音、现代载具、票券和兵种限制。",
+        "evidence": "Squad 官方核心规则。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "可读的二战前线消耗",
+        "dynamic": "玩家围绕扇区、驻军和资源节点维持整条进攻或防守线。",
+        "mechanic": "扇区、驻军点、前哨、资源节点、指挥能力、波次出生和二战兵种。",
+        "evidence": "Hell Let Loose 官方核心规则。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "个人属于更大的战争机器",
+        "dynamic": "玩家接受低个人反馈的角色任务，为团队空间和资源优势服务。",
+        "mechanic": "角色限制、语音指挥、后勤、救援、战略目标和团队胜负。",
+        "evidence": "两款游戏共同战争模拟骨架。",
+        "confidence": "High"
+      }
+    ],
+    "judgments": [
+      {
+        "issue": "战线可读性与战术自由存在真实取舍",
+        "why": "规则越明确地规定前线，玩家越容易理解目标；出生和建造越自由，战术越涌现但也越依赖老玩家。",
+        "impact": "HLL 更快给出大战役方向，Squad 更容易产生独特行动方案。"
+      },
+      {
+        "issue": "后勤不是附属玩法，而是战斗节奏控制器",
+        "why": "补给与出生点决定前线单位能否持续出现和使用专业装备。",
+        "impact": "忽视后勤的队伍即使枪法占优，也会逐步失去战场存在。"
+      }
+    ],
+    "recommendations": [
+      {
+        "goal": "降低战争模拟入门门槛",
+        "change": "用战线和后勤状态提示解释当前最缺的组织行为，而不是只标目标点。",
+        "impact": "新手能看到运输、建造和回防为何重要。",
+        "risk": "提示过强会削弱指挥官判断空间。"
+      },
+      {
+        "goal": "保持涌现战术",
+        "change": "给出生网络足够布局自由，但用侦察线索和维护成本防止隐蔽点成为纯知识陷阱。",
+        "impact": "战术仍由玩家创造，失败又更可解释。",
+        "risk": "维护成本过高会增加后勤疲劳。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Squad 官网",
+        "url": "https://joinsquad.com/"
+      },
+      {
+        "label": "Hell Let Loose 官网",
+        "url": "https://www.hellletloose.com/"
+      }
+    ],
+    "created_at": "2026-06-22T09:16:14+00:00",
+    "updated_at": "2026-06-22T09:16:14+00:00",
+    "markdown": ""
+  },
+  {
+    "id": "delta-force-vs-arena-breakout-extraction-design",
+    "title": "三角洲行动 vs 暗区突围：大众化搜打撤的两条路线",
+    "genre_tags": [
+      "搜打撤",
+      "撤离射击",
+      "战术射击",
+      "移动游戏"
+    ],
+    "subjects": [
+      "三角洲行动",
+      "暗区突围"
+    ],
+    "scope": {
+      "system": "烽火地带与暗区撤离循环、装备经济、信息工具和移动端适配",
+      "player_context": "偏大众化、可持续游玩的搜打撤用户",
+      "evidence": "官方产品页、公开玩法说明与稳定核心规则",
+      "assumptions": "以暗区突围主产品体验为主，不比较具体赛季活动和商业化数值"
+    },
+    "summary": "两者都在降低传统硬核搜打撤的进入成本，但路线不同：三角洲行动用干员能力、强反馈和小队职责，把撤离玩法变成高节奏战术行动；暗区突围用物资价值、身体状态和移动端信息辅助，在保留拟真生存感的同时提高操作可达性。",
+    "reading_guide": [
+      {
+        "point": "先区分战术爽感与生存经营",
+        "text": "三角洲更强调队伍如何拿下当前交战；暗区更强调物资是否值得带走、装备是否值得投入。"
+      },
+      {
+        "point": "再看辅助系统服务谁",
+        "text": "三角洲的辅助服务团队行动，暗区的辅助更多服务移动端判断和物资管理。"
+      },
+      {
+        "point": "最后看失败后的回流",
+        "text": "比较两者如何让玩家重新获得装备、再次进入有效对局。"
+      }
+    ],
+    "visual_heading": "战术行动与生存经营的两条大众化路线",
+    "visual_routes": [
+      {
+        "title": "搜打撤共同骨架",
+        "image": "./assets/visuals/extraction-duel.svg",
+        "alt": "从装备投入到撤离兑现的搜打撤路线",
+        "caption": "两者都降低理解成本，但强化的中段体验不同。",
+        "takeaway": "三角洲强化交战协同，暗区强化物资与生存判断。"
+      }
+    ],
+    "argument_map": {
+      "core": "同样面向更广用户：三角洲把复杂度做成战术工具，暗区把复杂度做成可管理的生存经济。",
+      "routes": [
+        {
+          "title": "三角洲行动路线",
+          "thesis": "用角色职责和强反馈加速团队决策",
+          "chain_index": 0
+        },
+        {
+          "title": "暗区突围路线",
+          "thesis": "用物资价值和身体状态保留生存重量",
+          "chain_index": 1
+        }
+      ]
+    },
+    "quantification": {
+      "scale": "1-5 表示设计倾向相对强度，不是品质或商业成绩评分。",
+      "method": "按机制对稳定玩家动态的影响进行 MDA 策划判断。",
+      "dimensions": [
+        {
+          "dimension": "小队角色清晰度",
+          "mda_link": "A 协同掌控 / M 干员",
+          "scores": [
+            {
+              "label": "三角洲行动",
+              "score": 5
+            },
+            {
+              "label": "暗区突围",
+              "score": 3
+            }
+          ],
+          "reading": "三角洲用明确能力职责快速形成队伍分工。"
+        },
+        {
+          "dimension": "物资经营重量",
+          "mda_link": "A 所有权 / D 价值判断",
+          "scores": [
+            {
+              "label": "三角洲行动",
+              "score": 3
+            },
+            {
+              "label": "暗区突围",
+              "score": 5
+            }
+          ],
+          "reading": "暗区更持续地让单格物品、容器和装备成本影响行动。"
+        },
+        {
+          "dimension": "战场信息可读性",
+          "mda_link": "A 即时掌控 / M 反馈",
+          "scores": [
+            {
+              "label": "三角洲行动",
+              "score": 5
+            },
+            {
+              "label": "暗区突围",
+              "score": 4
+            }
+          ],
+          "reading": "两者都重视可读性，三角洲更偏团队战术反馈。"
+        },
+        {
+          "dimension": "身体状态压力",
+          "mda_link": "A 脆弱生存 / M 伤病医疗",
+          "scores": [
+            {
+              "label": "三角洲行动",
+              "score": 3
+            },
+            {
+              "label": "暗区突围",
+              "score": 5
+            }
+          ],
+          "reading": "暗区用更突出的伤病与治疗管理保持拟真压力。"
+        },
+        {
+          "dimension": "交战节奏",
+          "mda_link": "A 战术爽感 / D 快速转点",
+          "scores": [
+            {
+              "label": "三角洲行动",
+              "score": 5
+            },
+            {
+              "label": "暗区突围",
+              "score": 3
+            }
+          ],
+          "reading": "三角洲更频繁地把玩家推向任务、技能协同和连续交战。"
+        },
+        {
+          "dimension": "移动端适配深度",
+          "mda_link": "A 可达性 / M 操作辅助",
+          "scores": [
+            {
+              "label": "三角洲行动",
+              "score": 4
+            },
+            {
+              "label": "暗区突围",
+              "score": 5
+            }
+          ],
+          "reading": "暗区的核心系统更长期围绕移动端输入与信息密度组织。"
+        }
+      ]
+    },
+    "comparison_systems": [
+      {
+        "system": "撤离与损失",
+        "shared": "都用带装入局、死亡掉落和撤离兑现制造风险。",
+        "mda": {
+          "aesthetic": "带着收益活着离开",
+          "dynamic": "背包价值升高后，玩家逐步从搜索转向保全。",
+          "mechanic": "装备价值、死亡掉落、撤离点、安全保护。"
+        },
+        "games": [
+          {
+            "label": "三角洲行动",
+            "text": "用较快回流和清晰价值提示保持连续参战。"
+          },
+          {
+            "label": "暗区突围",
+            "text": "更强调物资单价、装备成本和身体状态对撤离决策的牵制。"
+          }
+        ],
+        "impact": "三角洲更像战术行动的结算，暗区更像生存经营的兑现。",
+        "examples": {
+          "三角洲行动": "例如小队完成区域任务并拿到高价值战利品后，可以放弃继续追击，改走较安全路线撤离；风险主要表现为是否继续扩大单局收益。",
+          "暗区突围": "例如玩家背包里已有昂贵金色物资，但腿部受伤、药品不足，还要计算撤离点距离与沿途声纹；是否多搜一个保险箱会成为典型的贪婪抉择。"
+        }
+      },
+      {
+        "system": "信息获取",
+        "shared": "都提供比传统硬核撤离射击更强的可读辅助。",
+        "mda": {
+          "aesthetic": "可理解的战场压力",
+          "dynamic": "玩家根据提示快速定位威胁并调整路线。",
+          "mechanic": "声音可视化、标记、地图反馈、侦察能力与 UI。"
+        },
+        "games": [
+          {
+            "label": "三角洲行动",
+            "text": "信息工具更多与干员职责和团队共享绑定。"
+          },
+          {
+            "label": "暗区突围",
+            "text": "辅助更关注移动端听声、物资识别和个人生存判断。"
+          }
+        ],
+        "impact": "前者促进协同，后者降低输入设备带来的感知门槛。",
+        "examples": {
+          "三角洲行动": "例如侦察工具先获得敌人大致方向，突击队员据此选择突破口，支援队员则准备烟幕或治疗；信息直接推动角色分工。",
+          "暗区突围": "例如移动端界面的声纹提示帮助玩家识别脚步方向，但不会替代楼层、距离和材质判断；玩家仍需结合地图结构判断敌人是否正在靠近。"
+        }
+      },
+      {
+        "system": "枪械与装备",
+        "shared": "都保留改枪、弹药、护甲和预算取舍。",
+        "mda": {
+          "aesthetic": "准备能够转化为优势",
+          "dynamic": "玩家在成本、操控和穿透能力之间配置方案。",
+          "mechanic": "枪械改装、弹药等级、护甲、防护部位和市场价格。"
+        },
+        "games": [
+          {
+            "label": "三角洲行动",
+            "text": "参数表达更直接，服务快速构筑和进入战斗。"
+          },
+          {
+            "label": "暗区突围",
+            "text": "装备价值和弹药选择更紧密地嵌入单局盈利判断。"
+          }
+        ],
+        "impact": "三角洲突出构筑效率，暗区突出投资回报。",
+        "examples": {
+          "三角洲行动": "例如玩家为高机动突入配置短枪管、快速开镜和近距离弹药，参数变化会清晰显示；配装目标是让武器适应团队战术位置。",
+          "暗区突围": "例如玩家可能使用普通枪体搭配更高等级弹药，把预算集中在真正决定穿透的部分；若预计只跑边缘资源点，则会反向压低护甲投入。"
+        }
+      },
+      {
+        "system": "任务与热点",
+        "shared": "任务和高价值区域主动制造玩家相遇。",
+        "mda": {
+          "aesthetic": "目标明确的危险探索",
+          "dynamic": "玩家预测热点流量并选择正面争夺或边缘搜刮。",
+          "mechanic": "任务、首领、保险箱、钥匙区和撤离条件。"
+        },
+        "games": [
+          {
+            "label": "三角洲行动",
+            "text": "任务更强地组织小队推进节奏。"
+          },
+          {
+            "label": "暗区突围",
+            "text": "热点更强地服务物资等级和盈利路线。"
+          }
+        ],
+        "impact": "同一地图会分别被读成战术路线图和收益地图。",
+        "examples": {
+          "三角洲行动": "例如小队围绕地图任务推进时，目标提示、枪声和干员情报会连续制造转点窗口，让一局更像有阶段目标的战术行动。",
+          "暗区突围": "例如农场汽车旅馆因保险箱和高级物资成为稳定热点，玩家可以选择抢先占点、外围截击，或避开高装队去低风险区域搜刮。"
+        }
+      },
+      {
+        "system": "失败回流",
+        "shared": "都需要避免连续破产把玩家挡在有效对局之外。",
+        "mda": {
+          "aesthetic": "失败后仍愿意再来一局",
+          "dynamic": "玩家通过低成本方案、奖励或替代身份恢复资产。",
+          "mechanic": "基础补给、低成本配装、活动奖励和安全保护。"
+        },
+        "games": [
+          {
+            "label": "三角洲行动",
+            "text": "回流更强调尽快恢复战斗能力。"
+          },
+          {
+            "label": "暗区突围",
+            "text": "回流仍保留经营过程，让低成本翻盘本身成为乐趣。"
+          }
+        ],
+        "impact": "三角洲减少等待，暗区保留从穷装到盈利的故事性。",
+        "examples": {
+          "三角洲行动": "例如连续失败后，玩家用基础补给和任务奖励迅速拼出一套可用装备，下一局仍能参与正面战斗，而不是长时间停留在仓库。",
+          "暗区突围": "例如玩家资产见底时可使用低成本装备或伪装潜入路线重新积累；从便宜配装带回高价值装备，本身就是一条可复述的翻身故事。"
+        }
+      }
+    ],
+    "system_gaps": [
+      {
+        "system": "明确干员职业技能",
+        "games": [
+          {
+            "label": "三角洲行动",
+            "text": "核心差异化来源，直接组织侦察、突击与支援。"
+          },
+          {
+            "label": "暗区突围",
+            "text": "不是主要表达，角色职责更多由装备和队伍约定形成。"
+          }
+        ]
+      },
+      {
+        "system": "高权重物资鉴价",
+        "games": [
+          {
+            "label": "三角洲行动",
+            "text": "存在但更服务快速取舍。"
+          },
+          {
+            "label": "暗区突围",
+            "text": "是核心掌握内容，物资知识持续改变搜索路线。"
+          }
+        ]
+      },
+      {
+        "system": "移动端生存信息辅助",
+        "games": [
+          {
+            "label": "三角洲行动",
+            "text": "兼顾多平台，辅助服务整体战斗节奏。"
+          },
+          {
+            "label": "暗区突围",
+            "text": "更深地围绕移动端感知、拾取和管理成本设计。"
+          }
+        ]
+      }
+    ],
+    "chains": [
+      {
+        "aesthetic": "高节奏小队战术",
+        "dynamic": "玩家围绕角色工具快速共享情报、推进和转点。",
+        "mechanic": "干员能力、标记、任务引导、明确反馈与救援协同。",
+        "evidence": "三角洲行动公开玩法说明。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "可管理的拟真生存",
+        "dynamic": "玩家持续衡量物资价值、身体状态和撤离风险。",
+        "mechanic": "装备经济、伤病医疗、物资鉴价、声音辅助和撤离损失。",
+        "evidence": "暗区突围公开核心玩法。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "低门槛但有后果的冒险",
+        "dynamic": "新手能识别目标和威胁，同时仍会因贪婪或误判失去收益。",
+        "mechanic": "清晰 UI、价值提示、死亡掉落、热点和撤离窗口。",
+        "evidence": "两款游戏稳定共有系统。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "局外积累的所有权",
+        "dynamic": "玩家为下一局保留、出售和重新配置战利品。",
+        "mechanic": "仓库、市场或交易、装备构筑与任务需求。",
+        "evidence": "两款游戏稳定共有系统。",
+        "confidence": "High"
+      }
+    ],
+    "judgments": [
+      {
+        "issue": "大众化不等于去掉损失",
+        "why": "两者都保留死亡代价，只是用更好的反馈和回流降低无法理解或无法继续的挫败。",
+        "impact": "玩家仍有撤离兴奋感，但更少因一次失败退出整个玩法。"
+      },
+      {
+        "issue": "两者的团队性来源不同",
+        "why": "三角洲用职业工具显式分工，暗区更多通过装备、信息和资产风险形成隐式协作。",
+        "impact": "三角洲更容易随机组队，暗区更奖励固定队默契。"
+      }
+    ],
+    "recommendations": [
+      {
+        "goal": "兼顾战术和经营",
+        "change": "让角色工具影响获取信息的方式，不直接决定物资价值或抹掉埋伏风险。",
+        "impact": "小队职责清晰，同时搜索和撤离判断仍有重量。",
+        "risk": "工具过强会让经济构筑失去意义。"
+      },
+      {
+        "goal": "降低移动端管理疲劳",
+        "change": "自动聚合低价值物资并突出任务、制作和高收益用途。",
+        "impact": "减少格子操作，但保留鉴价与背包取舍。",
+        "risk": "自动化过度会压缩资深玩家的知识优势。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "三角洲行动官网",
+        "url": "https://www.playdeltaforce.com/"
+      },
+      {
+        "label": "暗区突围官网",
+        "url": "https://arenabreakout.com/"
+      }
+    ],
+    "created_at": "2026-06-22T03:53:03+00:00",
+    "updated_at": "2026-06-22T03:53:03+00:00",
+    "markdown": "",
+    "cover_image": "./assets/covers/delta-vs-arena.webp",
+    "cover_alt": "黄昏物流区中，战术小队推进与拾荒者整理高价值物资的对照"
+  },
+  {
+    "id": "tarkov-vs-delta-force-extraction-design",
+    "title": "逃离塔科夫 vs 三角洲行动：搜打撤设计取舍",
+    "genre_tags": [
+      "搜打撤",
+      "撤离射击",
+      "战术射击",
+      "系统经济"
+    ],
+    "subjects": [
+      "逃离塔科夫",
+      "三角洲行动"
+    ],
+    "scope": {
+      "system": "烽火地带与塔科夫 PMC 撤离循环、战斗信息、装备损失和局外成长",
+      "player_context": "单人及小队搜打撤玩家",
+      "evidence": "官方产品页、公开玩法说明与稳定核心规则",
+      "assumptions": "不比较具体赛季数值和短期活动；量化为策划判断而非玩家评分"
+    },
+    "summary": "两者共享带装入局、搜刮、交战、撤离和死亡损失，但美学承诺不同：塔科夫追求知识驱动的硬核生存，三角洲行动追求可读、流畅、能快速组队进入的战术冒险。前者把深度压在弹药、伤病、地图知识和经济摩擦上，后者把深度转向干员能力、任务引导、信息工具和更清晰的战场反馈。",
+    "reading_guide": [
+      {
+        "point": "先看风险来自哪里",
+        "text": "塔科夫让玩家害怕失去投入与犯下知识错误；三角洲让玩家害怕错过窗口、站位失控和团队脱节。"
+      },
+      {
+        "point": "再看信息如何获得",
+        "text": "塔科夫依靠记忆、听觉和经验；三角洲更多借助 UI、标记、干员工具和任务提示。"
+      },
+      {
+        "point": "最后看复杂度放在哪里",
+        "text": "塔科夫把复杂度放进模拟和经济；三角洲把复杂度放进小队协同与战术能力组合。"
+      }
+    ],
+    "visual_heading": "硬核生存与可读战术的两条撤离路线",
+    "visual_routes": [
+      {
+        "title": "搜打撤共同骨架",
+        "image": "./assets/visuals/extraction-duel.svg",
+        "alt": "从装备投入、搜索交战到撤离兑现的搜打撤路线图",
+        "caption": "共同流程相同，差异在每个节点施加何种压力。",
+        "takeaway": "塔科夫放大损失与未知，三角洲放大节奏与协同。"
+      }
+    ],
+    "argument_map": {
+      "core": "同样是带装入局和撤离兑现：塔科夫用摩擦制造可信生存，三角洲用可读工具制造战术爽感。",
+      "routes": [
+        {
+          "title": "逃离塔科夫路线",
+          "thesis": "先让投入变得沉重，再让知识成为生存优势",
+          "chain_index": 0
+        },
+        {
+          "title": "三角洲行动路线",
+          "thesis": "先让战场可读，再让小队工具制造战术变化",
+          "chain_index": 1
+        }
+      ]
+    },
+    "quantification": {
+      "scale": "1-5 表示该设计倾向的相对强度；不是品质评分或真实遥测。",
+      "method": "按核心规则对玩家行为的持续影响进行 MDA 反推。",
+      "dimensions": [
+        {
+          "dimension": "死亡损失压力",
+          "mda_link": "A 生存痛感 / D 资产保全",
+          "scores": [
+            {
+              "label": "逃离塔科夫",
+              "score": 5
+            },
+            {
+              "label": "三角洲行动",
+              "score": 3
+            }
+          ],
+          "reading": "塔科夫更依赖自带装备价值和长期经济摩擦放大死亡。"
+        },
+        {
+          "dimension": "信息可读性",
+          "mda_link": "A 战术掌控 / M UI 与工具",
+          "scores": [
+            {
+              "label": "逃离塔科夫",
+              "score": 2
+            },
+            {
+              "label": "三角洲行动",
+              "score": 5
+            }
+          ],
+          "reading": "三角洲通过更明确的反馈、标记和能力工具降低解释成本。"
+        },
+        {
+          "dimension": "战斗模拟深度",
+          "mda_link": "M 弹药、护甲、伤病",
+          "scores": [
+            {
+              "label": "逃离塔科夫",
+              "score": 5
+            },
+            {
+              "label": "三角洲行动",
+              "score": 3
+            }
+          ],
+          "reading": "塔科夫把更多胜负因果藏在细颗粒规则中。"
+        },
+        {
+          "dimension": "小队角色清晰度",
+          "mda_link": "A 协同 / M 干员能力",
+          "scores": [
+            {
+              "label": "逃离塔科夫",
+              "score": 2
+            },
+            {
+              "label": "三角洲行动",
+              "score": 5
+            }
+          ],
+          "reading": "三角洲的干员职责让队伍分工更快形成。"
+        },
+        {
+          "dimension": "局外经济摩擦",
+          "mda_link": "D 囤积与机会成本",
+          "scores": [
+            {
+              "label": "逃离塔科夫",
+              "score": 5
+            },
+            {
+              "label": "三角洲行动",
+              "score": 3
+            }
+          ],
+          "reading": "塔科夫更强调商人、任务、市场与藏身处之间的长期牵制。"
+        },
+        {
+          "dimension": "入门可达性",
+          "mda_link": "A 可进入战术冒险",
+          "scores": [
+            {
+              "label": "逃离塔科夫",
+              "score": 1
+            },
+            {
+              "label": "三角洲行动",
+              "score": 5
+            }
+          ],
+          "reading": "三角洲更容易让新手理解目标、威胁和失败原因。"
+        }
+      ]
+    },
+    "comparison_systems": [
+      {
+        "system": "带装入局与死亡损失",
+        "shared": "都把局外资产带入对局，并让死亡影响未来资源。",
+        "mda": {
+          "aesthetic": "投入有重量的生存紧张",
+          "dynamic": "玩家按装备价值决定路线、交战意愿和撤离时机。",
+          "mechanic": "装备栏、保险或安全容器、死亡掉落、撤离兑现。"
+        },
+        "games": [
+          {
+            "label": "逃离塔科夫",
+            "text": "装备、弹药、改枪和任务物品彼此绑定，损失会传导到后续多局。"
+          },
+          {
+            "label": "三角洲行动",
+            "text": "保留损失压力，但通过更清晰的价值表达和补给路径控制挫败峰值。"
+          }
+        ],
+        "impact": "塔科夫让玩家先考虑能否承受失败；三角洲更鼓励先进入对局再处理风险。",
+        "examples": {
+          "逃离塔科夫": "例如玩家带着高改武器、顶级弹药和任务钥匙进入海关，交战失利会同时损失战斗力与后续任务机会；安全箱只能保住少量关键物品，保险也不保证装备归还。",
+          "三角洲行动": "例如玩家可以按预算选择不同档位的配装进入烽火地带，拾到高价值物后提前转向撤离；死亡仍会丢失主要携带物，但补给、任务奖励和清晰估价让下一局更快恢复。"
+        }
+      },
+      {
+        "system": "战斗信息",
+        "shared": "都要求玩家用声音、地形和敌情判断是否接战。",
+        "mda": {
+          "aesthetic": "从未知到掌控",
+          "dynamic": "玩家侦察、报点、绕行并争夺先手。",
+          "mechanic": "声音传播、地图结构、UI 提示、侦察与标记工具。"
+        },
+        "games": [
+          {
+            "label": "逃离塔科夫",
+            "text": "低 HUD 与地图知识门槛让经验本身成为稀缺资源。"
+          },
+          {
+            "label": "三角洲行动",
+            "text": "标记、任务提示和干员工具让信息更快转化为团队行动。"
+          }
+        ],
+        "impact": "塔科夫奖励记忆和警觉；三角洲奖励沟通速度与工具使用。",
+        "examples": {
+          "逃离塔科夫": "例如玩家听见楼上金属踏板声，需要凭地图记忆判断楼梯、出口和可能的埋伏角；界面不会直接告诉他敌人位置，报点依赖队伍共同语言。",
+          "三角洲行动": "例如侦察类干员先用探测工具确认建筑内可能有人，队友再用标记同步入口与集火方向；信息更快进入团队决策，但工具使用也会暴露意图或受到反制。"
+        }
+      },
+      {
+        "system": "枪械与护甲",
+        "shared": "都用枪械配置、弹药和护甲差异塑造交战预期。",
+        "mda": {
+          "aesthetic": "准备与执行共同决定胜负",
+          "dynamic": "玩家在预算、穿透能力、操控性和机动性之间取舍。",
+          "mechanic": "枪械改装、弹药层级、护甲、防护部位、后坐力。"
+        },
+        "games": [
+          {
+            "label": "逃离塔科夫",
+            "text": "弹种、穿深、部位伤害和武器人体工学形成高知识密度。"
+          },
+          {
+            "label": "三角洲行动",
+            "text": "保留配置深度，但反馈和参数更便于快速比较与复盘。"
+          }
+        ],
+        "impact": "塔科夫的胜负更容易在开枪前由知识差拉开；三角洲更强调局内执行。",
+        "examples": {
+          "逃离塔科夫": "例如同一把步枪换用不同穿深的弹药，对高等级护甲的结果可能完全不同；玩家还要考虑护甲覆盖部位、弹匣装填和武器人体工学。",
+          "三角洲行动": "例如玩家在配装界面直接比较后坐控制、操控速度和弹药等级，再围绕近战突入或中距离架枪调整配件；复杂度仍在，但反馈更容易转化为局内打法。"
+        }
+      },
+      {
+        "system": "任务与地图热点",
+        "shared": "任务把玩家引向资源点和冲突走廊。",
+        "mda": {
+          "aesthetic": "危险区域中的目标感",
+          "dynamic": "玩家预测他人路线并在目标收益与暴露风险间取舍。",
+          "mechanic": "任务点、钥匙区、稀有物资、首领与撤离条件。"
+        },
+        "games": [
+          {
+            "label": "逃离塔科夫",
+            "text": "任务链常要求玩家积累地图知识并承受重复尝试。"
+          },
+          {
+            "label": "三角洲行动",
+            "text": "目标表达更直接，强调单局内快速形成行动计划。"
+          }
+        ],
+        "impact": "塔科夫产生长期攻克感；三角洲产生短局目标推进感。",
+        "examples": {
+          "逃离塔科夫": "例如多个任务同时要求进入宿舍楼、取任务物或击杀特定目标，玩家会预判其他 PMC 的必经路线，并提前准备钥匙、药品和撤离方案。",
+          "三角洲行动": "例如小队接取高价值区域目标后，地图提示会快速形成推进方向；途中若听见连续交火，可以临时改成侧翼介入、抢夺战利品后撤离。"
+        }
+      },
+      {
+        "system": "局外成长",
+        "shared": "都把成功撤离转化为装备、货币和账号进度。",
+        "mda": {
+          "aesthetic": "积累带来掌控与身份",
+          "dynamic": "玩家围绕未来需求选择带走、出售或投入物品。",
+          "mechanic": "仓库、交易、任务、制作、解锁与赛季进度。"
+        },
+        "games": [
+          {
+            "label": "逃离塔科夫",
+            "text": "成长系统彼此牵制，时间投入会形成明显结构优势。"
+          },
+          {
+            "label": "三角洲行动",
+            "text": "成长路径更直接，降低回到有效战斗状态的成本。"
+          }
+        ],
+        "impact": "塔科夫强化长期所有权；三角洲强化持续参战。",
+        "examples": {
+          "逃离塔科夫": "例如玩家为了升级藏身处，需要保留看似普通的建材，同时提升商人忠诚度才能稳定购买特定弹药；一件物品可能横跨任务、制造和市场三种用途。",
+          "三角洲行动": "例如撤离后将高价值物出售，再用所得快速补齐护甲、弹药和战术道具；成长主要帮助玩家更顺畅地形成下一套可执行配装。"
+        }
+      }
+    ],
+    "system_gaps": [
+      {
+        "system": "深度伤病与身体状态",
+        "games": [
+          {
+            "label": "逃离塔科夫",
+            "text": "部位生命、骨折、流血、水分等共同制造身体脆弱感。"
+          },
+          {
+            "label": "三角洲行动",
+            "text": "相对收束，避免医疗操作压过战场节奏。"
+          }
+        ]
+      },
+      {
+        "system": "干员主动能力",
+        "games": [
+          {
+            "label": "逃离塔科夫",
+            "text": "没有等价的明确职业技能体系。"
+          },
+          {
+            "label": "三角洲行动",
+            "text": "侦察、支援、突击等能力直接塑造小队职责。"
+          }
+        ]
+      },
+      {
+        "system": "高摩擦商人关系",
+        "games": [
+          {
+            "label": "逃离塔科夫",
+            "text": "商人等级、任务与市场共同决定装备可得性。"
+          },
+          {
+            "label": "三角洲行动",
+            "text": "经济存在，但对参战资格的长期摩擦相对较弱。"
+          }
+        ]
+      }
+    ],
+    "chains": [
+      {
+        "aesthetic": "知识驱动的硬核生存",
+        "dynamic": "玩家因未知和损失而谨慎移动、反复学习地图并控制资产暴露。",
+        "mechanic": "低信息 UI、复杂弹药护甲、部位伤病、死亡掉落、商人与任务门槛。",
+        "evidence": "塔科夫公开核心规则与官方产品定位。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "可读而流畅的战术冒险",
+        "dynamic": "玩家快速形成角色分工，用工具获取信息并在明确目标间推进。",
+        "mechanic": "干员能力、标记与任务反馈、较清晰的物资价值、队伍协同工具。",
+        "evidence": "三角洲行动烽火地带公开玩法说明。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "昂贵胜利带来的释放",
+        "dynamic": "玩家在背包价值升高后逐渐回避风险，撤离成功形成强烈释压。",
+        "mechanic": "带装入局、死亡损失、稀有任务物品、有限安全保护。",
+        "evidence": "两款游戏共有撤离循环。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "小队执行的即时成就",
+        "dynamic": "队员共享情报、互补技能并围绕短时窗口集火或脱离。",
+        "mechanic": "语音与标记、干员技能、救援和更明确的战场反馈。",
+        "evidence": "三角洲行动公开玩法与游戏内稳定系统。",
+        "confidence": "Medium"
+      }
+    ],
+    "judgments": [
+      {
+        "issue": "两者不是同一硬核度标尺上的高低档",
+        "why": "复杂度被放在不同位置：塔科夫放在模拟与长期经济，三角洲放在协同工具与战场节奏。",
+        "impact": "偏爱学习和资产经营的玩家更容易留在塔科夫；偏爱快速组队和清晰反馈的玩家更容易进入三角洲。"
+      },
+      {
+        "issue": "可读性会改变玩家归因",
+        "why": "反馈越明确，失败越容易被理解为执行错误；信息越隐晦，失败越容易被理解为知识不足。",
+        "impact": "三角洲更利于短周期复盘，塔科夫则提供更长的学习曲线与掌握感。"
+      }
+    ],
+    "recommendations": [
+      {
+        "goal": "设计介于两者之间的搜打撤",
+        "change": "保留高价值装备损失，但将地图目标、死亡原因和弹药作用做分层解释。",
+        "impact": "新手能理解失败，高手仍可通过知识形成优势。",
+        "risk": "解释过度会削弱未知感和社区知识价值。"
+      },
+      {
+        "goal": "保护小队战术感",
+        "change": "让侦察与支援工具提供方向而非精确答案，并设置可反制窗口。",
+        "impact": "团队分工清晰但不会取代听觉、站位和判断。",
+        "risk": "工具强度不足时角色差异会退化为外观差异。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "逃离塔科夫官网",
+        "url": "https://www.escapefromtarkov.com/"
+      },
+      {
+        "label": "三角洲行动官网",
+        "url": "https://www.playdeltaforce.com/"
+      }
+    ],
+    "created_at": "2026-06-22T03:53:03+00:00",
+    "updated_at": "2026-06-22T03:53:03+00:00",
+    "markdown": "",
+    "cover_image": "./assets/covers/tarkov-vs-delta.webp",
+    "cover_alt": "雨天工业检查站中，谨慎的独行者与协同推进的小队形成对照"
+  },
+  {
+    "id": "cs2-vs-valorant-bomb-design",
+    "title": "CS2 vs VALORANT：竞技爆破的机制分叉",
+    "genre_tags": [
+      "竞技爆破",
+      "战术射击",
+      "团队竞技",
+      "电竞"
+    ],
+    "subjects": [
+      "CS2",
+      "VALORANT"
+    ],
+    "scope": {
+      "system": "5v5 攻防、经济回合、信息、地图控制与角色能力",
+      "player_context": "排位、组队与观赛用户",
+      "evidence": "官方产品页、公开比赛规则和稳定核心机制",
+      "assumptions": "比较核心竞技结构，不按单次版本平衡评价具体武器或英雄强度"
+    },
+    "summary": "两者共享 5v5、单命回合、攻防、经济购买和爆破目标，但 MDA 重心不同：CS2追求规则纯度下的枪法、投掷物与空间控制；VALORANT追求枪法约束下的角色协同、信息组合与技能时序。前者让同一工具集产生更深的通用掌握，后者让阵容与能力创造更多预设战术。",
+    "reading_guide": [
+      {
+        "point": "先看胜负归因",
+        "text": "CS2更容易归因到枪法、投掷物和站位；VALORANT还会归因到阵容、技能资源和时序配合。"
+      },
+      {
+        "point": "再看信息成本",
+        "text": "CS2主要用视野、声音和投掷物换信息；VALORANT增加侦察、封锁与反侦察能力。"
+      },
+      {
+        "point": "最后看掌握对象",
+        "text": "CS2掌握通用规则深度，VALORANT同时掌握地图、枪械和不断扩展的角色关系。"
+      }
+    ],
+    "visual_heading": "规则纯度与角色协同的两条爆破路线",
+    "visual_routes": [
+      {
+        "title": "竞技爆破共同骨架",
+        "image": "./assets/visuals/bomb-duel.svg",
+        "alt": "攻守双方围绕信息空间和时间争夺包点的路线图",
+        "caption": "共同目标是把信息转化为空间，再把空间转化为下包或拆包时间。",
+        "takeaway": "CS2深化通用工具，VALORANT扩展角色工具。"
+      }
+    ],
+    "argument_map": {
+      "core": "同样围绕信息、空间和时间：CS2限制工具种类以放大基本功，VALORANT扩展能力组合以放大阵容协同。",
+      "routes": [
+        {
+          "title": "CS2 路线",
+          "thesis": "用稳定通用规则让执行质量决定差异",
+          "chain_index": 0
+        },
+        {
+          "title": "VALORANT 路线",
+          "thesis": "用角色能力让信息与空间争夺产生组合变化",
+          "chain_index": 1
+        }
+      ]
+    },
+    "quantification": {
+      "scale": "1-5 表示设计倾向的相对强度，不代表竞技水平或游戏品质。",
+      "method": "按核心机制对回合动态的持续影响进行 MDA 判断。",
+      "dimensions": [
+        {
+          "dimension": "枪法权重",
+          "mda_link": "A 基本功证明 / D 对枪",
+          "scores": [
+            {
+              "label": "CS2",
+              "score": 5
+            },
+            {
+              "label": "VALORANT",
+              "score": 4
+            }
+          ],
+          "reading": "两者都高，但 CS2 的可用解决方案更集中在通用枪械与投掷物。"
+        },
+        {
+          "dimension": "角色协同权重",
+          "mda_link": "A 团队编排 / M 技能",
+          "scores": [
+            {
+              "label": "CS2",
+              "score": 2
+            },
+            {
+              "label": "VALORANT",
+              "score": 5
+            }
+          ],
+          "reading": "VALORANT 的阵容和技能时序直接决定可执行战术。"
+        },
+        {
+          "dimension": "规则稳定性",
+          "mda_link": "A 公平掌握 / D 长期训练",
+          "scores": [
+            {
+              "label": "CS2",
+              "score": 5
+            },
+            {
+              "label": "VALORANT",
+              "score": 3
+            }
+          ],
+          "reading": "CS2 的核心工具集更稳定，知识折旧更慢。"
+        },
+        {
+          "dimension": "信息技能密度",
+          "mda_link": "D 侦察与反侦察",
+          "scores": [
+            {
+              "label": "CS2",
+              "score": 3
+            },
+            {
+              "label": "VALORANT",
+              "score": 5
+            }
+          ],
+          "reading": "VALORANT 有更多主动获取、阻断和欺骗信息的能力。"
+        },
+        {
+          "dimension": "经济翻盘弹性",
+          "mda_link": "A 逆转 / D 半起与强起",
+          "scores": [
+            {
+              "label": "CS2",
+              "score": 5
+            },
+            {
+              "label": "VALORANT",
+              "score": 4
+            }
+          ],
+          "reading": "两者都有经济局，但 CS2 的武器与投掷物购买组合更直接地形成多档策略。"
+        },
+        {
+          "dimension": "阵容知识负担",
+          "mda_link": "M 角色关系 / D 版本适应",
+          "scores": [
+            {
+              "label": "CS2",
+              "score": 2
+            },
+            {
+              "label": "VALORANT",
+              "score": 5
+            }
+          ],
+          "reading": "VALORANT 需要持续学习角色能力、组合和版本环境。"
+        }
+      ]
+    },
+    "comparison_systems": [
+      {
+        "system": "单命爆破回合",
+        "shared": "都用攻守、炸弹目标、单命和短回合制造高后果决策。",
+        "mda": {
+          "aesthetic": "每个选择都可被复盘的竞技紧张",
+          "dynamic": "玩家围绕人数、时间和包点状态决定推进、保枪或回防。",
+          "mechanic": "5v5、单命、下包拆包、回合计时、攻守交换。"
+        },
+        "games": [
+          {
+            "label": "CS2",
+            "text": "目标规则与工具边界稳定，局面更多由通用基本功演化。"
+          },
+          {
+            "label": "VALORANT",
+            "text": "相同目标骨架叠加角色技能资源和终极技能周期。"
+          }
+        ],
+        "impact": "CS2强调局面读取，VALORANT还强调能力账本。",
+        "examples": {
+          "CS2": "例如进攻方在 2v3 残局完成下包后，一人守包、一人卡回防路线；防守方必须同时处理时间、拆包声和可能的交叉火力。",
+          "VALORANT": "例如相同 2v3 下包局还要计算剩余烟幕、侦察技能和终极技能；守包方可能不必露头，而是用延时技能拖过拆包窗口。"
+        }
+      },
+      {
+        "system": "经济购买",
+        "shared": "都让前一回合结果改变下一回合的武器与工具。",
+        "mda": {
+          "aesthetic": "长期决策与短期执行相连",
+          "dynamic": "队伍选择全起、半起、强起或保枪，并同步购买。",
+          "mechanic": "回合奖励、武器价格、护甲、工具费用和掉枪继承。"
+        },
+        "games": [
+          {
+            "label": "CS2",
+            "text": "投掷物与武器购买高度通用，个人保存装备的价值突出。"
+          },
+          {
+            "label": "VALORANT",
+            "text": "经济还包含角色技能购买，队伍需要同步枪械和能力资源。"
+          }
+        ],
+        "impact": "VALORANT 多一层角色资源规划，CS2 的经济局型更直观。",
+        "examples": {
+          "CS2": "例如队伍判断下回合才能全枪全弹，于是本回合只买手枪与少量闪光，目标是制造经济伤害；幸存玩家还可以保住步枪交给下一回合。",
+          "VALORANT": "例如队伍不仅要同步步枪与护甲，还要决定是否补满关键技能；一名控场角色少一个烟幕，可能直接改变整队下一回合的执行方案。"
+        }
+      },
+      {
+        "system": "空间封锁",
+        "shared": "都用烟、闪、燃烧或控制手段切割视线和阻止推进。",
+        "mda": {
+          "aesthetic": "用准备赢得空间",
+          "dynamic": "队伍消耗工具制造安全路径、逼退守军或拖延时间。",
+          "mechanic": "投掷物、烟幕、致盲、持续伤害和区域控制。"
+        },
+        "games": [
+          {
+            "label": "CS2",
+            "text": "工具人人可买，强度来自固定点位、轨迹和时机掌握。"
+          },
+          {
+            "label": "VALORANT",
+            "text": "工具与角色绑定，可远程、穿墙或持续控制，阵容决定覆盖方式。"
+          }
+        ],
+        "impact": "CS2奖励通用投掷物训练，VALORANT奖励阵容设计和技能串联。",
+        "examples": {
+          "CS2": "例如进攻方用固定落点烟封住狙击视线，再用闪光和燃烧弹逼退近点防守；任何队员只要买了道具都能复现这套执行。",
+          "VALORANT": "例如控场角色远程落烟切断视线，先锋用致盲或侦察清角，决斗角色再利用位移进入包点；空间获取依赖技能顺序与角色职责。"
+        }
+      },
+      {
+        "system": "信息争夺",
+        "shared": "都要求控制声音、视野、假动作和轮转信息。",
+        "mda": {
+          "aesthetic": "读懂对手的智力优势",
+          "dynamic": "玩家侦察、骗技能、制造假打并根据空白信息补位。",
+          "mechanic": "脚步、视野、雷达、侦察技能、诱饵与可破坏信息源。"
+        },
+        "games": [
+          {
+            "label": "CS2",
+            "text": "信息主要来自肉身探点、道具逼位、声音和队友交换。"
+          },
+          {
+            "label": "VALORANT",
+            "text": "主动侦察和反侦察技能让信息本身成为可购买、可冷却的资源。"
+          }
+        ],
+        "impact": "CS2 的信息更稀缺，VALORANT 的信息更系统化但也更易被技能噪声淹没。",
+        "examples": {
+          "CS2": "例如进攻方先用脚步和一颗烟制造假打，迫使防守方轮转；潜伏队员根据另一侧人数变化判断真正的空点，而不是依赖直接扫描。",
+          "VALORANT": "例如侦察箭或无人机迫使守方开枪暴露位置，守方也可以击毁信息源或用烟墙遮断后续视野；双方在交换信息技能，而不只是交换人命。"
+        }
+      },
+      {
+        "system": "枪械执行",
+        "shared": "都要求停枪、压枪、预瞄、急停和交叉火力。",
+        "mda": {
+          "aesthetic": "可证明的机械掌握",
+          "dynamic": "玩家通过准星纪律和移动控制争取首发命中。",
+          "mechanic": "后坐力、移动误差、射速、穿透、爆头倍率与武器定位。"
+        },
+        "games": [
+          {
+            "label": "CS2",
+            "text": "喷射控制、穿点和移动模型构成长期稳定的基本功。"
+          },
+          {
+            "label": "VALORANT",
+            "text": "枪法仍是核心，但技能可改变对枪条件、角度和可见性。"
+          }
+        ],
+        "impact": "CS2 更纯粹地暴露执行差距，VALORANT 更强调先创造有利对枪。",
+        "examples": {
+          "CS2": "例如玩家急停后用 AK 首发爆头，失手则进入可训练的压枪轨迹；烟雾和薄墙还允许基于声音与经验进行穿射。",
+          "VALORANT": "例如队伍先用技能把敌人逼出掩体或限制移动，再由步枪完成击杀；枪法仍负责兑现，但对枪发生在被能力重新塑造的条件中。"
+        }
+      }
+    ],
+    "system_gaps": [
+      {
+        "system": "角色阵容与终极技能",
+        "games": [
+          {
+            "label": "CS2",
+            "text": "没有角色差异，所有玩家共享同一工具购买权限。"
+          },
+          {
+            "label": "VALORANT",
+            "text": "核心系统，阵容决定信息、进入、控场与续航能力。"
+          }
+        ]
+      },
+      {
+        "system": "通用投掷物知识",
+        "games": [
+          {
+            "label": "CS2",
+            "text": "所有位置都可学习并执行同一套烟闪火体系。"
+          },
+          {
+            "label": "VALORANT",
+            "text": "通用性被角色绑定削弱，知识更多按英雄和阵容分片。"
+          }
+        ]
+      },
+      {
+        "system": "持续版本角色扩展",
+        "games": [
+          {
+            "label": "CS2",
+            "text": "核心规则与工具集变化频率相对低。"
+          },
+          {
+            "label": "VALORANT",
+            "text": "新角色和技能改动持续重排地图打法与阵容价值。"
+          }
+        ]
+      }
+    ],
+    "chains": [
+      {
+        "aesthetic": "规则纯度下的技术证明",
+        "dynamic": "玩家用重复训练的枪法、投掷物和站位在稳定规则中压缩失误。",
+        "mechanic": "共享武器工具、移动射击误差、固定投掷物物理、经济购买与单命回合。",
+        "evidence": "CS2 官方核心玩法与长期稳定规则。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "角色协同下的战术创造",
+        "dynamic": "队伍用侦察、封锁、进入和终极技能按顺序拆解防区。",
+        "mechanic": "英雄职责、可购买技能、终极点数、独特烟墙与信息能力。",
+        "evidence": "VALORANT 官方游戏介绍与稳定核心规则。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "高压残局",
+        "dynamic": "剩余玩家根据人数、时间、声音和资源推断最优行动。",
+        "mechanic": "单命、炸弹计时、脚步、假拆、保枪和观战。",
+        "evidence": "两款游戏共同爆破骨架。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "团队经济的共同命运",
+        "dynamic": "队员同步购买、互相掉枪，并为未来回合接受当前劣势。",
+        "mechanic": "金钱奖励、装备继承、购买阶段、掉枪与失败补偿。",
+        "evidence": "两款游戏公开竞技规则。",
+        "confidence": "High"
+      }
+    ],
+    "judgments": [
+      {
+        "issue": "VALORANT 不是用技能替代枪法",
+        "why": "技能主要改变信息和空间条件，终局仍常由枪械执行兑现。",
+        "impact": "玩家需要同时掌握创造优势和把优势转化为击杀。"
+      },
+      {
+        "issue": "CS2 的内容少不等于策略少",
+        "why": "工具通用且规则稳定，使地图、时机、投掷物和对手适应产生组合深度。",
+        "impact": "学习对象更少，但每个对象的掌握深度更高、折旧更慢。"
+      }
+    ],
+    "recommendations": [
+      {
+        "goal": "设计强调基本功的爆破",
+        "change": "限制不可反制的信息技能，让所有角色共享关键空间工具。",
+        "impact": "失败更容易归因于执行和站位，训练价值稳定。",
+        "risk": "阵容表达和内容更新空间会缩小。"
+      },
+      {
+        "goal": "设计强调阵容协同的爆破",
+        "change": "让技能创造对枪条件而非直接完成击杀，并明确反制与资源提示。",
+        "impact": "队伍能编排战术，同时保留枪法兑现。",
+        "risk": "技能数量增长会提高观战和新手理解负担。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Counter-Strike 2 官网",
+        "url": "https://www.counter-strike.net/cs2"
+      },
+      {
+        "label": "VALORANT 官网",
+        "url": "https://playvalorant.com/"
+      }
+    ],
+    "created_at": "2026-06-22T03:53:02+00:00",
+    "updated_at": "2026-06-22T03:53:02+00:00",
+    "markdown": "",
+    "cover_image": "./assets/covers/cs2-vs-valorant.webp",
+    "cover_alt": "现代爆破场地中，经典烟雾战术与角色能力控场形成对照"
+  },
+  {
+    "id": "arc-raiders-vs-tarkov-mechanic-differences",
+    "title": "ARC Raiders vs 逃离塔科夫：机制差异拆解",
+    "genre_tags": [
+      "撤离射击",
+      "战术射击",
+      "动作冒险",
+      "RPG 成长",
+      "系统经济"
+    ],
+    "subjects": [
+      "ARC Raiders",
+      "逃离塔科夫"
+    ],
+    "scope": {
+      "system": "撤离循环、战斗压力、PvPvE、经济系统、角色成长",
+      "player_context": "正在比较撤离射击设计方向的独狼与小队玩家",
+      "evidence": "官方站点、ARC Raiders Steam 页面、逃离塔科夫公开机制资料",
+      "assumptions": "不评价具体版本数值强弱，只做系统层面的 MDA 对比。"
+    },
+    "summary": "两者都有撤离、战利品、PvPvE、成长和经济系统，但 MDA 链条不同：ARC Raiders 先服务“可进入的高风险冒险”，再用机器、地图条件和工坊制造探索动态；逃离塔科夫先服务“硬核生存疼痛”，再用信息不透明、装备损失和深度模拟制造谨慎动态。",
+    "reading_guide": [
+      {
+        "point": "先判断美学目标",
+        "text": "ARC Raiders 追求“敢进去、能看懂、会遇到故事”的冒险；塔科夫追求“每一步都可能亏本”的生存疼痛。"
+      },
+      {
+        "point": "再看玩家动态",
+        "text": "ARC 鼓励探索、绕路、临时合作和工具解法；塔科夫鼓励准备、侦听、保守移动和资产管理。"
+      },
+      {
+        "point": "最后看机制取舍",
+        "text": "ARC 把系统复杂度放在机器、地图条件、工坊和可读工具上；塔科夫把复杂度放在装备损失、信息不透明、弹药护甲和市场价值上。"
+      }
+    ],
+    "visual_routes": [
+      {
+        "title": "ARC Raiders：冒险路线",
+        "image": "./assets/visuals/arc-adventure-route.svg",
+        "alt": "一名拾荒者面对巨大机器和废墟路线的概念图",
+        "caption": "视觉关键词：机器奇观、可读威胁、临场工具、可复盘冒险。",
+        "takeaway": "同样是撤离，ARC 更像一次带风险的探索行程。"
+      },
+      {
+        "title": "逃离塔科夫：生存路线",
+        "image": "./assets/visuals/tarkov-survival-route.svg",
+        "alt": "昏暗房间中整理背包、弹药和地图的战术生存概念图",
+        "caption": "视觉关键词：低信息、装备投入、物品价值、谨慎行动。",
+        "takeaway": "同样是撤离，塔科夫更像一次高压资产保全。"
+      }
+    ],
+    "quantification": {
+      "scale": "1-5 表示该维度在系统设计中的相对强度，5 为强核心；不是商业表现、玩家口碑或真实遥测数据。",
+      "method": "基于公开机制信息和本页 MDA 拆解进行策划判断，用来快速定位两款游戏的体验取舍。",
+      "dimensions": [
+        {
+          "dimension": "入门可读性",
+          "mda_link": "A：可进入冒险 / D：失败可解释",
+          "arc": 4,
+          "tarkov": 2,
+          "reading": "ARC 更强调威胁反馈和工具理解；塔科夫保留更高知识门槛。"
+        },
+        {
+          "dimension": "死亡损失压力",
+          "mda_link": "A：硬核生存疼痛 / D：资产保全",
+          "arc": 3,
+          "tarkov": 5,
+          "reading": "塔科夫把装备投入和死亡损失绑定得更重，撤离失败更像资产失败。"
+        },
+        {
+          "dimension": "战斗模拟深度",
+          "mda_link": "M：弹药、护甲、部位、医疗细节",
+          "arc": 2,
+          "tarkov": 5,
+          "reading": "塔科夫胜负更依赖细粒度规则理解；ARC 更依赖可读压力和临场工具组合。"
+        },
+        {
+          "dimension": "PvE 奇观与共同敌人",
+          "mda_link": "D：临时合作 / M：强 ARC 机器生态",
+          "arc": 5,
+          "tarkov": 3,
+          "reading": "ARC 机器承担舞台压力和社交催化；塔科夫 AI 更偏战区生态与资源阻力。"
+        },
+        {
+          "dimension": "经济金融化",
+          "mda_link": "D：每格物品都有市场语义",
+          "arc": 2,
+          "tarkov": 5,
+          "reading": "塔科夫的市场、商人和任务需求让物品价值更精细；ARC 更偏制造材料和装备循环。"
+        },
+        {
+          "dimension": "构筑身份清晰度",
+          "mda_link": "A：投入改变身份边界",
+          "arc": 4,
+          "tarkov": 3,
+          "reading": "ARC 用技能树和工坊更直接表达角色方向；塔科夫更多通过时间、任务和装备隐性塑形。"
+        },
+        {
+          "dimension": "信息不透明度",
+          "mda_link": "D：警觉、怀疑、经验判断",
+          "arc": 2,
+          "tarkov": 5,
+          "reading": "塔科夫刻意弱化 HUD 和导航提示；ARC 更倾向让威胁与解法可读。"
+        },
+        {
+          "dimension": "社交不确定性",
+          "mda_link": "D：结盟、偷袭、见机撤退",
+          "arc": 4,
+          "tarkov": 4,
+          "reading": "两者都有高不确定性，但 ARC 更容易被共同敌人推向临时合作，塔科夫更偏怀疑和敌意预设。"
+        }
+      ]
+    },
+    "comparison_systems": [
+      {
+        "system": "撤离循环",
+        "shared": "都要求玩家进入危险区域、收集价值、判断撤离时机，并承担失败损失。",
+        "mda": {
+          "aesthetic": "高风险但目标明确的生还压力",
+          "dynamic": "玩家在贪婪、保命、路线选择和战斗暴露之间反复权衡。",
+          "mechanic": "限时对局、撤离点、死亡损失、背包价值、地图威胁和撤离路线。"
+        },
+        "arc": "更强调冒险节奏：机器威胁、地图条件和探索目标推动玩家在局内做风险选择。",
+        "tarkov": "更强调生存压力：自带装备入局、死亡丢失物品、撤离点知识和时间压力放大损失感。",
+        "impact": "ARC 的撤离更像一次可复盘的冒险行程；塔科夫的撤离更像一次高压资产保全。",
+        "examples": {
+          "ARC Raiders": "例如玩家在地表已收集足够制造材料，却发现撤离路线附近有大型 ARC 机器巡逻；可以绕路、用环境工具牵制，或与陌生玩家临时合作后再撤离。",
+          "逃离塔科夫": "例如玩家带着任务物进入海关，背包价值越高越不愿经过高交火区域；时间接近结束时，还必须凭地图知识选择满足条件的撤离点。"
+        }
+      },
+      {
+        "system": "PvPvE 威胁",
+        "shared": "都让 AI 与真人玩家共同制造不确定性，并让战斗声音带来第三方介入风险。",
+        "mda": {
+          "aesthetic": "不可完全预测的战场紧张感",
+          "dynamic": "玩家会根据 AI、枪声、尸体和环境变化判断是否靠近、绕开、结盟或偷袭。",
+          "mechanic": "AI 阵营、真人匹配、声音传播、仇恨目标、地图热点和掉落价值。"
+        },
+        "arc": "ARC 机器是核心舞台压力，既制造奇观，也给玩家临时合作或趁火打劫的理由。",
+        "tarkov": "Scav、Boss 和其他 AI 更像战区生态的一部分，主要承担暴露、消耗、资源和节奏压力。",
+        "impact": "ARC 更容易出现临时结盟和共同应对危机；塔科夫更容易导向怀疑、埋伏和见人就打。",
+        "examples": {
+          "ARC Raiders": "例如巨型机器的攻击会同时压迫多个小队，原本互相戒备的玩家可能先共同处理机器，也可能趁对方吸引火力时抢夺收益。",
+          "逃离塔科夫": "例如 Scav 的枪声会暴露某处有人交战，第三方 PMC 据此判断是否切入；AI 更像警报器、资源守卫和消耗来源。"
+        }
+      },
+      {
+        "system": "战斗系统",
+        "shared": "都用枪械、装备、声音和位置判断构成战斗胜负。",
+        "mda": {
+          "aesthetic": "胜负应来自准备、判断和执行",
+          "dynamic": "玩家会在交火前评估装备差距、信息优势、撤退路径和是否值得开战。",
+          "mechanic": "武器属性、伤害模型、声音反馈、移动能力、掩体、治疗和战术道具。"
+        },
+        "arc": "更偏动作冒险读法：弱点、部署物、滑索、陷阱、技能与机动性支撑临场解法。",
+        "tarkov": "更偏军事模拟读法：弹药穿深、护甲、后坐力、人机工效、部位伤害和医疗细节决定胜负。",
+        "impact": "ARC 的战斗更重视可读压力和工具组合；塔科夫的战斗更重视战前知识、装备理解和细节执行。",
+        "examples": {
+          "ARC Raiders": "例如玩家利用滑索调整高度、部署装置封锁路线，再攻击机器可读的弱点；胜负更多来自移动、工具和环境解法的组合。",
+          "逃离塔科夫": "例如玩家面对高护甲敌人时，需要判断弹药穿深、瞄准部位和自身伤势；一次流血或骨折会进一步改变追击与撤退选择。"
+        }
+      },
+      {
+        "system": "成长与构筑",
+        "shared": "都通过长期成长让玩家在局外形成下一局目标。",
+        "mda": {
+          "aesthetic": "投入会改变身份和能力边界",
+          "dynamic": "玩家把每局收益转化为下一局更清晰的打法计划或更强的生存信心。",
+          "mechanic": "等级、技能、工坊/藏身处、任务、蓝图、商人解锁、装备制作和资源消耗。"
+        },
+        "arc": "技能树、工坊、制造、强化件和任务更明确地塑造 Raider 身份与打法方向。",
+        "tarkov": "等级、商人忠诚度、技能熟练度、藏身处和任务共同构成长期积累。",
+        "impact": "ARC 更容易让玩家理解“我要成为什么类型的角色”；塔科夫更强调时间投入和知识积累带来的结构性优势。",
+        "examples": {
+          "ARC Raiders": "例如玩家升级工坊并解锁制作能力后，可以围绕机动、搜刮或生存方向准备下一局工具，成长直接表达想采用的冒险风格。",
+          "逃离塔科夫": "例如提升商人忠诚度、角色技能和藏身处设施后，玩家才逐步获得稳定弹药、制作和恢复能力；优势来自多个长期系统叠加。"
+        }
+      },
+      {
+        "system": "经济与物品价值",
+        "shared": "都让战利品服务局外成长，并让背包空间变成选择压力。",
+        "mda": {
+          "aesthetic": "每个物品都可能改变风险收益判断",
+          "dynamic": "玩家会按当前背包价值、任务需求和未来用途决定继续搜、换物品或撤离。",
+          "mechanic": "物品稀有度、格子背包、商人/市场、制造材料、任务物、价格和资源消耗。"
+        },
+        "arc": "更强调材料、制造、修理和工坊升级，物品价值服务探索和装备循环。",
+        "tarkov": "更强调市场价格、交易商、跳蚤市场、任务物和藏身处需求，每个格子都有经济语义。",
+        "impact": "ARC 的物品更像冒险资源；塔科夫的物品更像风险资产。",
+        "examples": {
+          "ARC Raiders": "例如普通零件可能是升级工坊或制作装备所需材料，玩家会在背包空间不足时按近期制造目标取舍，而不是只看即时售价。",
+          "逃离塔科夫": "例如一枚看似普通的螺栓可能同时影响藏身处升级、任务提交和跳蚤市场价格；每格价值会随玩家进度与市场变化重新计算。"
+        }
+      },
+      {
+        "system": "信息与可读性",
+        "shared": "都通过不确定信息制造紧张感。",
+        "mda": {
+          "aesthetic": "未知带来警觉，理解带来掌控",
+          "dynamic": "玩家会依赖声音、地标、敌人行为和经验判断局势，而不是只看 UI 指令。",
+          "mechanic": "HUD 信息量、地图知识、声音定位、威胁提示、弱点反馈、弹药/状态显示。"
+        },
+        "arc": "倾向让威胁更可读，方便玩家理解机器、地图条件和工具选择。",
+        "tarkov": "刻意保留低 HUD、地图记忆、弹匣余量估算、声音定位和撤离知识门槛。",
+        "impact": "ARC 的失败更容易被玩家理解为选择错误；塔科夫的失败更常来自知识差，但掌握后成就感更强。",
+        "examples": {
+          "ARC Raiders": "例如机器蓄力、移动轨迹和弱点反馈让玩家在第一次遭遇时也能形成初步解法，并把失败归因到站位或工具选择。",
+          "逃离塔科夫": "例如玩家必须根据不同地面材质的脚步声、有限 HUD 和弹匣记忆估算敌情与剩余弹量；掌握后信息优势很强，但新手难以解释失败。"
+        }
+      }
+    ],
+    "system_gaps": [
+      {
+        "system": "强奇观机器生态",
+        "arc": "核心系统。ARC 机器是地图压力、战斗奇观和玩家关系变化的发动机。",
+        "tarkov": "没有等价核心。AI 更偏写实战区生态，不承担同等的奇观和共同敌人功能。"
+      },
+      {
+        "system": "深度弹药/护甲/部位伤害模拟",
+        "arc": "相对弱化。更服务动作可读性和工具解法。",
+        "tarkov": "核心系统。弹种、护甲、身体部位、医疗与状态惩罚共同构成硬核门槛。"
+      },
+      {
+        "system": "玩家市场与物品金融化",
+        "arc": "不作为核心表达，重点更偏制造、工坊和探索回收。",
+        "tarkov": "高度强调。跳蚤市场、商人和任务需求让物品拥有明确市场价值。"
+      },
+      {
+        "system": "清晰打法身份分支",
+        "arc": "更明确。Survival、Mobility、Conditioning 等分支帮助玩家理解角色方向。",
+        "tarkov": "更隐性。通过等级、技能熟练度、装备和任务进度慢慢塑造优势。"
+      }
+    ],
+    "chains": [
+      {
+        "aesthetic": "可进入的高风险冒险",
+        "dynamic": "玩家不断判断是继续搜刮、打机器、避开其他玩家，还是在压力升高前撤离。",
+        "mechanic": "PvPvE 对局、致命 ARC 机器、动态地图条件、可转化为制造和工坊升级的战利品。",
+        "evidence": "ARC Raiders 官网和 Steam 页面强调撤离冒险、机器威胁、地图条件、工坊、任务与技能树。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "硬核生存疼痛",
+        "dynamic": "玩家因为死亡会把装备投入转化为永久或近似永久损失，所以行动更谨慎。",
+        "mechanic": "PMC 自带装备入局、死亡或未撤离损失物品、有限安全箱与保险机制提供少量缓冲。",
+        "evidence": "逃离塔科夫公开机制资料强调死亡会失去携带物，只有有限保护或保险物品例外。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "探索与突发遭遇",
+        "dynamic": "玩家进入对局不只是为了刷货币，也会被变化的世界条件和 AI 压力驱动。",
+        "mechanic": "多张地图、动态地图条件、天气/敌人/机制变化、ARC 弱点、滑索、陷阱与部署物。",
+        "evidence": "ARC Raiders Steam 页面描述了地图、变化条件、ARC 敌人、滑索、陷阱和部署物。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "军事模拟掌控感",
+        "dynamic": "玩家通过理解隐藏规则和细粒度系统，在入局前和对局中建立优势。",
+        "mechanic": "弹药穿深、护甲、后坐力、人机工效、身体部位生命、流血、骨折、水分、负重、低 HUD 信息。",
+        "evidence": "逃离塔科夫机制资料描述了复杂弹道、部位生命、医疗、负重和低信息 UI。",
+        "confidence": "High"
+      }
+    ],
+    "judgments": [
+      {
+        "issue": "共同系统相似，但 MDA 链条不同。",
+        "why": "同样是撤离、战利品、PvPvE 和成长，ARC 的美学目标是可进入冒险，塔科夫的美学目标是硬核生存疼痛。",
+        "impact": "玩家会把 ARC 理解为可反复进入的冒险，把塔科夫理解为必须认真准备的生存投资。"
+      },
+      {
+        "issue": "PvE 在两个游戏里的系统职责不同。",
+        "why": "ARC 机器服务奇观、共同敌人和社交催化；塔科夫 AI 服务战区生态、资源点和暴露风险。",
+        "impact": "ARC 更容易产生临时合作，塔科夫更容易产生信息焦虑和敌意预设。"
+      }
+    ],
+    "recommendations": [
+      {
+        "goal": "如果要做 ARC Raiders 路线",
+        "change": "优先设计动态地图条件、可读的精英 AI、失败后可恢复的成长，以及支持创造性逃脱的工具。",
+        "impact": "玩家不需要几百小时系统知识，也能获得冒险变化和社交故事。",
+        "risk": "如果损失太轻，撤离张力会退化成普通合作刷宝。"
+      },
+      {
+        "goal": "如果要做逃离塔科夫路线",
+        "change": "优先设计装备损失、低信息导航、深度弹药和伤病系统，以及具备强机会成本的物品经济。",
+        "impact": "玩家每一步都会感到紧张，并把成功撤离记成真正赚来的胜利。",
+        "risk": "游戏会变得对新手不友好，并高度依赖外部攻略和知识工具。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "ARC Raiders 官网",
+        "url": "https://arcraiders.com/"
+      },
+      {
+        "label": "ARC Raiders Steam 页面",
+        "url": "https://store.steampowered.com/app/1808500/ARC_Raiders/"
+      },
+      {
+        "label": "逃离塔科夫官网",
+        "url": "https://www.escapefromtarkov.com/"
+      },
+      {
+        "label": "逃离塔科夫机制概览",
+        "url": "https://en.wikipedia.org/wiki/Escape_from_Tarkov"
+      }
+    ],
+    "created_at": "2026-06-18T09:17:36+00:00",
+    "updated_at": "2026-06-18T09:17:36+00:00",
+    "cover_image": "./assets/covers/arc-vs-tarkov.webp",
+    "cover_alt": "废墟中的大型机器奇观与谨慎生存者形成对照"
+  }
+]

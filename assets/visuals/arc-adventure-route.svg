@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">ARC Raiders route concept</title>
+  <desc id="desc">A stylized sci-fi extraction adventure scene with a scavenger, large machine silhouette, loot, zipline, and ruins.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3c978"/>
+      <stop offset="0.42" stop-color="#6fb5a8"/>
+      <stop offset="1" stop-color="#173b3f"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#243c3d"/>
+      <stop offset="1" stop-color="#10191d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="25%" cy="26%" r="52%">
+      <stop offset="0" stop-color="#fff0ba" stop-opacity=".72"/>
+      <stop offset=".48" stop-color="#f1a83d" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#f1a83d" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="720" fill="url(#sky)"/>
+  <rect width="1200" height="720" fill="url(#glow)"/>
+  <path d="M0 520 C160 458 245 496 382 442 C520 388 690 412 824 356 C1000 282 1110 330 1200 274 L1200 720 L0 720 Z" fill="#15333a" opacity=".76"/>
+  <path d="M0 582 C196 532 340 610 510 552 C686 490 844 560 1014 508 C1112 478 1170 492 1200 502 L1200 720 L0 720 Z" fill="url(#ground)"/>
+  <path d="M54 468 L210 336 L356 468 Z" fill="#203c41" opacity=".7"/>
+  <path d="M860 450 L1015 302 L1186 450 Z" fill="#173038" opacity=".68"/>
+  <g opacity=".48" stroke="#d8f6ea" stroke-width="4">
+    <path d="M130 284 L1028 198"/>
+    <path d="M160 296 L1050 220"/>
+  </g>
+  <g transform="translate(735 214)" fill="#10191d">
+    <ellipse cx="132" cy="112" rx="112" ry="58"/>
+    <rect x="50" y="66" width="162" height="92" rx="34"/>
+    <circle cx="86" cy="104" r="18" fill="#f4b23f"/>
+    <circle cx="178" cy="100" r="13" fill="#f4b23f"/>
+    <path d="M60 148 L24 302 L58 302 L98 160 Z"/>
+    <path d="M132 160 L120 326 L154 326 L166 158 Z"/>
+    <path d="M206 146 L274 302 L240 302 L172 158 Z"/>
+    <path d="M54 70 L20 28 L66 48 Z"/>
+    <path d="M210 72 L270 40 L230 92 Z"/>
+  </g>
+  <g transform="translate(238 476)">
+    <rect x="0" y="36" width="78" height="54" rx="7" fill="#c39238"/>
+    <rect x="12" y="18" width="62" height="42" rx="6" fill="#e1b454"/>
+    <path d="M0 58 H78" stroke="#6b4d21" stroke-width="5"/>
+  </g>
+  <g transform="translate(384 498)" fill="#0f171a">
+    <circle cx="28" cy="14" r="12"/>
+    <path d="M18 28 L42 28 L54 104 L8 104 Z"/>
+    <path d="M18 46 L-16 80" stroke="#0f171a" stroke-width="12" stroke-linecap="round"/>
+    <path d="M42 46 L82 80" stroke="#0f171a" stroke-width="12" stroke-linecap="round"/>
+    <path d="M18 102 L4 160" stroke="#0f171a" stroke-width="13" stroke-linecap="round"/>
+    <path d="M44 102 L68 160" stroke="#0f171a" stroke-width="13" stroke-linecap="round"/>
+  </g>
+  <g fill="none" stroke="#f4b23f" stroke-width="3" opacity=".62">
+    <circle cx="860" cy="318" r="156"/>
+    <circle cx="860" cy="318" r="214"/>
+  </g>
+  <rect y="0" width="1200" height="720" fill="#061114" opacity=".18"/>
+</svg>

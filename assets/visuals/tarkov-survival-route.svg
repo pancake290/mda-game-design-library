@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Hardcore extraction survival route concept</title>
+  <desc id="desc">A stylized tactical survival room with gear, map, ammunition, backpack, medical supplies, and a cautious operator silhouette.</desc>
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#49504c"/>
+      <stop offset=".52" stop-color="#202829"/>
+      <stop offset="1" stop-color="#111719"/>
+    </linearGradient>
+    <radialGradient id="lamp" cx="44%" cy="26%" r="48%">
+      <stop offset="0" stop-color="#f0d084" stop-opacity=".88"/>
+      <stop offset=".38" stop-color="#c88a3c" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#c88a3c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="table" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#392d25"/>
+      <stop offset="1" stop-color="#171312"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#room)"/>
+  <rect width="1200" height="720" fill="url(#lamp)"/>
+  <path d="M80 108 H1120 V536 H80 Z" fill="#1a2223" opacity=".5"/>
+  <path d="M812 126 H1044 V330 H812 Z" fill="#6f837e" opacity=".22"/>
+  <path d="M832 146 H1024 V310 H832 Z" fill="#0c1113" opacity=".56"/>
+  <g stroke="#8b9b92" stroke-width="6" opacity=".4">
+    <path d="M928 146 V310"/>
+    <path d="M832 228 H1024"/>
+  </g>
+  <path d="M0 494 H1200 V720 H0 Z" fill="url(#table)"/>
+  <path d="M396 82 L500 82 L464 138 L432 138 Z" fill="#14191a"/>
+  <path d="M444 136 L340 466 L570 466 Z" fill="#f0c46b" opacity=".16"/>
+  <g transform="translate(236 198)" fill="#0f1516">
+    <circle cx="78" cy="42" r="34"/>
+    <path d="M36 84 H124 C150 152 144 238 112 322 H44 C14 232 8 150 36 84 Z"/>
+    <path d="M18 126 L-34 240" stroke="#0f1516" stroke-width="25" stroke-linecap="round"/>
+    <path d="M126 132 L194 234" stroke="#0f1516" stroke-width="25" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(218 520)">
+    <rect x="0" y="0" width="190" height="86" rx="14" fill="#26312f"/>
+    <rect x="28" y="-26" width="118" height="62" rx="28" fill="#303b38"/>
+    <path d="M22 20 H168 M32 46 H156" stroke="#7b8b75" stroke-width="8" opacity=".55"/>
+  </g>
+  <g transform="translate(508 500)">
+    <path d="M0 14 L178 0 L242 88 L46 106 Z" fill="#c7b98b"/>
+    <path d="M36 28 L96 82 M78 18 L158 92 M136 12 L202 76" stroke="#6d674f" stroke-width="5" opacity=".6"/>
+    <path d="M42 70 C86 46 120 62 158 36" stroke="#8a4d37" stroke-width="6" fill="none"/>
+  </g>
+  <g transform="translate(820 506)">
+    <rect x="0" y="0" width="108" height="62" rx="8" fill="#8d3f31"/>
+    <rect x="14" y="-28" width="82" height="40" rx="5" fill="#d7d7c3"/>
+    <path d="M22 -10 H86" stroke="#8d3f31" stroke-width="5"/>
+  </g>
+  <g fill="#b79854" opacity=".9">
+    <rect x="742" y="574" width="18" height="54" rx="5"/>
+    <rect x="768" y="566" width="18" height="62" rx="5"/>
+    <rect x="794" y="584" width="18" height="44" rx="5"/>
+    <rect x="960" y="548" width="94" height="34" rx="5"/>
+    <rect x="972" y="588" width="68" height="24" rx="5"/>
+  </g>
+  <path d="M0 0 H1200 V720 H0 Z" fill="#020607" opacity=".22"/>
+</svg>

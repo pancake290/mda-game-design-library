@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>游戏 MDA 策划分析库</title>
+    <link rel="stylesheet" href="./styles.css?v=20260622-10" />
+  </head>
+  <body data-page="index">
+    <main class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="./index.html">MDA 策划分析库</a>
+        <div class="topbar-actions">
+          <nav class="primary-nav" aria-label="主导航">
+            <a class="nav-link active" href="./index.html" aria-current="page">分析目录</a>
+            <a class="nav-link" href="./methodology.html">方法论</a>
+          </nav>
+          <button id="refreshButton" type="button">刷新</button>
+        </div>
+      </header>
+
+      <section class="home-hero">
+        <div>
+          <p class="eyebrow">Game Design Method</p>
+          <h1>MDA策划分析库</h1>
+          <p>
+            从游戏希望塑造的玩家感受出发，观察行为与决策如何形成，再回溯支撑这些体验的系统机制。这里汇集方法框架与分析索引，完整论证请进入各专栏阅读。
+          </p>
+        </div>
+        <div class="method-strip" aria-label="MDA 方法论">
+          <article>
+            <span>A</span>
+            <strong>美学目标</strong>
+            <p>玩家应当感到什么。</p>
+          </article>
+          <article>
+            <span>D</span>
+            <strong>玩家动态</strong>
+            <p>玩家会如何反复选择。</p>
+          </article>
+          <article>
+            <span>M</span>
+            <strong>实现机制</strong>
+            <p>规则、数值和内容如何支撑。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="library-toolbar" aria-label="分析库工具">
+        <div class="stats-strip">
+          <div><span id="totalCount">0</span><small>分析记录</small></div>
+          <div><span id="chainCount">0</span><small>MDA 链条</small></div>
+          <div><span id="genreCount">0</span><small>类型板块</small></div>
+        </div>
+        <div class="search-row">
+          <input id="searchInput" type="search" placeholder="搜索游戏、类型、系统或体验目标" autocomplete="off" />
+        </div>
+        <div class="genre-chips" id="genreList" aria-label="类型筛选"></div>
+      </section>
+
+      <section class="section-heading">
+        <div>
+          <p class="eyebrow">Analysis Index</p>
+          <h2>分析目录</h2>
+        </div>
+        <p id="resultHint">按类型筛选或直接进入详情页。</p>
+      </section>
+
+      <section class="record-cards" id="recordCards" aria-label="分析记录"></section>
+      <nav class="pagination" id="pagination" aria-label="分页"></nav>
+    </main>
+
+    <template id="emptyTemplate">
+      <article class="empty-state">
+        <h2>暂无匹配记录</h2>
+        <p>换一个类型或搜索词；新分析同步后会自动进入这里。</p>
+      </article>
+    </template>
+
+    <script src="./app.js?v=20260622-7"></script>
+  </body>
+</html>

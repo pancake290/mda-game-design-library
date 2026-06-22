@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">竞技爆破回合路线对照</title>
+  <desc id="desc">攻守双方围绕信息、空间和时间争夺包点。</desc>
+  <rect width="1200" height="560" fill="#182128"/>
+  <path d="M80 80H520V220H680V80H1120V480H680V340H520V480H80Z" fill="#27363d" stroke="#d9e2df" stroke-width="5"/>
+  <rect x="115" y="115" width="145" height="100" fill="#b45345"/><rect x="940" y="345" width="145" height="100" fill="#2f8e82"/>
+  <g stroke="#d7a640" stroke-width="10" fill="none" stroke-linecap="round">
+    <path d="M190 300L430 280 590 210 760 280 1000 260"/>
+    <path d="M190 340L420 390 600 350 790 390 1000 320" stroke-dasharray="18 18"/>
+  </g>
+  <g fill="#f4f5f2" font-family="Arial, sans-serif" font-weight="700">
+    <text x="145" y="175" font-size="44">A</text><text x="985" y="410" font-size="44">B</text>
+    <text x="420" y="145" font-size="30">INFO</text><text x="555" y="315" font-size="30">SPACE</text><text x="770" y="145" font-size="30">TIMING</text>
+  </g>
+</svg>

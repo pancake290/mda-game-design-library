@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>方法论 - MDA策划分析库</title>
+    <link rel="stylesheet" href="./styles.css?v=20260622-10" />
+  </head>
+  <body data-page="methodology">
+    <main class="page-shell methodology-shell">
+      <header class="topbar">
+        <a class="brand" href="./index.html">MDA 策划分析库</a>
+        <nav class="primary-nav" aria-label="主导航">
+          <a class="nav-link" href="./index.html">分析目录</a>
+          <a class="nav-link active" href="./methodology.html" aria-current="page">方法论</a>
+        </nav>
+      </header>
+
+      <header class="methodology-hero">
+        <p class="eyebrow">Analysis Framework</p>
+        <h1>从体验承诺，追到机制选择</h1>
+        <p>这里的 MDA 不是给机制贴标签，而是建立一条可论证的设计因果链：游戏希望玩家获得什么体验，玩家因此形成什么行为，系统又如何持续促成这些行为。</p>
+        <nav class="methodology-jump" aria-label="本页目录">
+          <a href="#mda-framework">MDA 框架</a>
+          <a href="#comparison-method">比较方法</a>
+          <a href="#analysis-workflow">分析流程</a>
+          <a href="#quality-check">判断标准</a>
+        </nav>
+      </header>
+
+      <section id="mda-framework" class="methodology-section">
+        <div class="methodology-heading">
+          <p class="eyebrow">01 · MDA Framework</p>
+          <h2>先定义体验，再解释行为，最后定位机制</h2>
+          <p>设计者通常从机制出发制造体验；分析者则从玩家实际感受到的结果向下回溯。这样能避免把功能清单误当成设计结论。</p>
+        </div>
+
+        <div class="causal-route" aria-label="MDA 分析因果链">
+          <article class="stage-a">
+            <span>A · Aesthetics</span>
+            <h3>美学：体验承诺</h3>
+            <p>玩家持续感受到的情绪、身份与价值判断，例如压迫生存、英雄协作、战术掌控或战争归属。</p>
+            <strong>回答“为什么值得玩”</strong>
+          </article>
+          <div class="route-arrow" aria-hidden="true">→</div>
+          <article class="stage-d">
+            <span>D · Dynamics</span>
+            <h3>动态：行为模式</h3>
+            <p>规则运行后反复出现的选择、博弈和团队关系，例如避战搜刮、主动侦察、资源争夺或指挥服从。</p>
+            <strong>回答“玩家会怎样玩”</strong>
+          </article>
+          <div class="route-arrow" aria-hidden="true">→</div>
+          <article class="stage-m">
+            <span>M · Mechanics</span>
+            <h3>机制：实现条件</h3>
+            <p>促成动态的规则、数值、信息、空间和内容结构，例如死亡损失、缩圈、复活、职业能力或后勤节点。</p>
+            <strong>回答“系统如何让它发生”</strong>
+          </article>
+        </div>
+
+        <div class="evidence-grid">
+          <article>
+            <span>01</span>
+            <h3>识别美学</h3>
+            <p>不要写“刺激、好玩”这类通用词。应描述玩家处境与情绪来源，例如“携带高价值物资撤离时，对损失的持续焦虑”。</p>
+            <small>证据：高频玩家叙事、胜负意义、失败代价、节奏峰值</small>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>提炼动态</h3>
+            <p>寻找不同玩家都会重复做出的行为，而不是一次性的操作。动态必须能说明玩家之间如何互相影响。</p>
+            <small>证据：路线选择、交战时机、资源流向、信息交换、团队分工</small>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>定位机制</h3>
+            <p>一个动态通常由机制组合产生。除规则名称外，还要记录参数强度、信息可见度、执行成本与失败反馈。</p>
+            <small>证据：规则、数值、UI 信息、地图结构、匹配与成长系统</small>
+          </article>
+        </div>
+      </section>
+
+      <section id="comparison-method" class="methodology-section comparison-method">
+        <div class="methodology-heading">
+          <p class="eyebrow">02 · Comparison Method</p>
+          <h2>比较的不是“有没有”，而是“如何服务不同体验”</h2>
+          <p>两个游戏都有撤离、缩圈或职业系统，并不代表它们设计相同。有效比较必须沿着同一系统的 MDA 链，观察它在双方承担的功能与强度。</p>
+        </div>
+
+        <div class="comparison-lens">
+          <article>
+            <span class="lens-mark shared">共同</span>
+            <div>
+              <h3>共同系统：建立可比基准</h3>
+              <p>先确认双方都在解决的同一问题，再比较目标、动态、机制组合、关键参数和使用成本。</p>
+            </div>
+          </article>
+          <article>
+            <span class="lens-mark different">差异</span>
+            <div>
+              <h3>实现差异：解释体验分叉</h3>
+              <p>区分规则表面、参数力度、信息透明度、操作摩擦和系统耦合。真正改变体验的往往不是机制名称，而是这些条件。</p>
+            </div>
+          </article>
+          <article>
+            <span class="lens-mark unique">单边</span>
+            <div>
+              <h3>单边系统：识别设计重心</h3>
+              <p>记录一方独有或显著弱化的系统，并说明缺失带来的收益与代价。没有某项机制也可能是主动设计。</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="comparison-table-wrap" role="region" aria-label="系统差异分析维度" tabindex="0">
+          <table class="method-table">
+            <thead>
+              <tr><th>比较维度</th><th>需要回答的问题</th><th>容易出现的误判</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>体验目标</td><td>同一系统分别想让玩家感到什么？</td><td>只比较功能数量</td></tr>
+              <tr><td>玩家动态</td><td>它鼓励避战、强攻、协作还是资源保全？</td><td>把操作动作当成动态</td></tr>
+              <tr><td>机制组合</td><td>哪些规则共同促成该动态？</td><td>用单一机制解释复杂体验</td></tr>
+              <tr><td>参数强度</td><td>频率、代价、收益和容错有什么差异？</td><td>认为同名机制效果相同</td></tr>
+              <tr><td>信息与摩擦</td><td>玩家知道多少，执行要付出多少成本？</td><td>忽略 UI、沟通和学习成本</td></tr>
+              <tr><td>系统耦合</td><td>它与经济、地图、成长和组队如何联动？</td><td>孤立评价单个系统</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <aside class="worked-example">
+          <div>
+            <p class="eyebrow">Mini Example</p>
+            <h3>同样是“死亡”，设计含义可能完全不同</h3>
+          </div>
+          <div class="example-route">
+            <p><strong>游戏 A：</strong>装备永久损失 → 玩家延迟交战并评估撤离 → 形成高压的财产风险美学。</p>
+            <p><strong>游戏 B：</strong>可复活且恢复战力 → 队伍围绕救援窗口重组阵型 → 形成英雄协作与逆转美学。</p>
+          </div>
+        </aside>
+      </section>
+
+      <section id="analysis-workflow" class="methodology-section">
+        <div class="methodology-heading">
+          <p class="eyebrow">03 · Workflow</p>
+          <h2>一次完整分析的六个步骤</h2>
+        </div>
+        <ol class="workflow-list">
+          <li><span>1</span><div><h3>限定分析对象</h3><p>明确模式、版本、平台与玩家阶段，避免把整款游戏混成一个结论。</p></div></li>
+          <li><span>2</span><div><h3>写出核心体验命题</h3><p>分别用一句话描述游戏希望玩家处于什么情境、感到什么、重视什么。</p></div></li>
+          <li><span>3</span><div><h3>提取可观察动态</h3><p>列出反复发生的决策、博弈、协作关系与资源行为，并为每项动态寻找证据。</p></div></li>
+          <li><span>4</span><div><h3>建立机制组合</h3><p>把规则、参数、信息、空间和内容连接到动态，检查是否存在跨系统支撑。</p></div></li>
+          <li><span>5</span><div><h3>按共同系统逐项比较</h3><p>先建立同一坐标系，再分析双方的实现力度、摩擦成本和体验结果。</p></div></li>
+          <li><span>6</span><div><h3>形成判断与设计启示</h3><p>说明差异为何存在、换来了什么、牺牲了什么，以及什么条件下值得借鉴。</p></div></li>
+        </ol>
+      </section>
+
+      <section id="quality-check" class="methodology-section quality-section">
+        <div class="methodology-heading">
+          <p class="eyebrow">04 · Quality Check</p>
+          <h2>一个结论是否站得住，看这四点</h2>
+        </div>
+        <div class="quality-grid">
+          <article><strong>可观察</strong><p>动态能在真实对局中看到，不依赖对玩家心理的凭空猜测。</p></article>
+          <article><strong>可追溯</strong><p>每项体验判断都能回到具体机制、参数或空间条件。</p></article>
+          <article><strong>可比较</strong><p>双方使用同一分析尺度，没有为某一方临时更换评价标准。</p></article>
+          <article><strong>有边界</strong><p>结论标明模式、版本与证据强度，不把局部观察扩张为绝对事实。</p></article>
+        </div>
+        <a class="methodology-cta" href="./index.html">进入分析目录</a>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">搜打撤体验路线对照</title>
+  <desc id="desc">两条路线从备战经过搜索、交战，最终抵达撤离或损失。</desc>
+  <rect width="1200" height="560" fill="#101b1d"/>
+  <path d="M0 390L180 250 330 340 510 170 660 300 830 130 1040 270 1200 170V560H0Z" fill="#19383a"/>
+  <circle cx="910" cy="115" r="58" fill="#d6a33f" opacity=".8"/>
+  <g fill="none" stroke="#78c8b8" stroke-width="8" stroke-linecap="round">
+    <path d="M90 180H310L430 280H680L800 205H1090"/>
+  </g>
+  <g fill="#f7f6ef" font-family="Arial, sans-serif" font-weight="700">
+    <text x="70" y="90" font-size="34">LOADOUT</text><text x="315" y="90" font-size="34">LOOT</text>
+    <text x="555" y="90" font-size="34">CONTACT</text><text x="850" y="90" font-size="34">EXTRACT</text>
+  </g>
+  <g fill="#d6a33f">
+    <circle cx="90" cy="180" r="18"/><circle cx="310" cy="180" r="18"/><circle cx="430" cy="280" r="18"/><circle cx="680" cy="280" r="18"/><circle cx="800" cy="205" r="18"/><circle cx="1090" cy="205" r="18"/>
+  </g>
+  <g fill="#dce9e5" font-family="Arial, sans-serif" font-size="25">
+    <text x="70" y="445">装备投入</text><text x="300" y="445">价值判断</text><text x="555" y="445">信息博弈</text><text x="850" y="445">风险兑现</text>
+  </g>
+</svg>
