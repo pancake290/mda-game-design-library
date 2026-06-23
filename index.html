@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>游戏 MDA 策划分析库</title>
-    <link rel="stylesheet" href="./styles.css?v=20260622-10" />
+    <link rel="stylesheet" href="./styles.css?v=20260623-3" />
   </head>
   <body data-page="index">
     <main class="page-shell">
@@ -46,6 +46,23 @@
         </div>
       </section>
 
+      <section class="genre-cloud-section" aria-labelledby="genreCloudTitle">
+        <div class="genre-cloud-intro">
+          <p class="eyebrow">Genre Aesthetics Atlas</p>
+          <h2 id="genreCloudTitle">当我们谈论一个品类时，我们在谈论什么</h2>
+          <p>同一大类会沿着不同赛道分化出截然不同的体验承诺。词条越大，代表它在该赛道现有 MDA 论证中的命中次数越多。</p>
+          <div class="cloud-category-tabs" id="cloudCategoryTabs" aria-label="游戏大类"></div>
+        </div>
+        <div class="genre-cloud-view">
+          <div class="cloud-view-head">
+            <div class="cloud-track-tabs" id="cloudTrackTabs" aria-label="细分赛道"></div>
+            <p id="cloudSampleHint"></p>
+          </div>
+          <div class="aesthetic-cloud" id="aestheticCloud" aria-live="polite"></div>
+          <p class="cloud-method" id="cloudMethod"></p>
+        </div>
+      </section>
+
       <section class="library-toolbar" aria-label="分析库工具">
         <div class="stats-strip">
           <div><span id="totalCount">0</span><small>分析记录</small></div>
@@ -77,6 +94,6 @@
       </article>
     </template>
 
-    <script src="./app.js?v=20260623-1"></script>
+    <script src="./app.js?v=20260623-2"></script>
   </body>
 </html>

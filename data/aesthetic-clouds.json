@@ -1,0 +1,498 @@
+{
+  "generated_at": "2026-06-23T10:27:03+00:00",
+  "method": "命中数来自对应赛道分析记录的摘要、MDA 链、共同系统影响与关键判断；每个语义单元对同一词条最多计一次。",
+  "categories": [
+    {
+      "id": "shooting",
+      "label": "射击游戏",
+      "tracks": [
+        {
+          "id": "bomb",
+          "label": "爆破竞技",
+          "description": "低容错回合制目标攻防，核心在信息、执行与反制。",
+          "sample_count": 1,
+          "record_ids": [
+            "cs2-vs-valorant-bomb-design"
+          ],
+          "terms": [
+            {
+              "label": "战术可读",
+              "count": 5,
+              "weight": 5
+            },
+            {
+              "label": "竞技证明",
+              "count": 5,
+              "weight": 5
+            },
+            {
+              "label": "资源纪律",
+              "count": 5,
+              "weight": 5
+            },
+            {
+              "label": "团队协作",
+              "count": 3,
+              "weight": 3
+            },
+            {
+              "label": "空间控制",
+              "count": 3,
+              "weight": 3
+            },
+            {
+              "label": "公平反制",
+              "count": 1,
+              "weight": 1
+            },
+            {
+              "label": "压迫感",
+              "count": 1,
+              "weight": 1
+            },
+            {
+              "label": "逆转希望",
+              "count": 1,
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "id": "hero-shooter",
+          "label": "英雄射击",
+          "description": "枪法、职责与能力组合共同定义团队空间。",
+          "sample_count": 1,
+          "record_ids": [
+            "overwatch-2-vs-marvel-rivals-hero-shooter-design"
+          ],
+          "terms": [
+            {
+              "label": "空间控制",
+              "count": 10,
+              "weight": 5
+            },
+            {
+              "label": "身份表达",
+              "count": 9,
+              "weight": 5
+            },
+            {
+              "label": "责任感",
+              "count": 7,
+              "weight": 4
+            },
+            {
+              "label": "团队协作",
+              "count": 4,
+              "weight": 2
+            },
+            {
+              "label": "战术可读",
+              "count": 3,
+              "weight": 2
+            },
+            {
+              "label": "战场奇观",
+              "count": 2,
+              "weight": 1
+            },
+            {
+              "label": "节奏释放",
+              "count": 1,
+              "weight": 1
+            },
+            {
+              "label": "逆转希望",
+              "count": 1,
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "id": "large-scale",
+          "label": "大战场",
+          "description": "据点、载具、兵种和玩家密度共同生成动态前线。",
+          "sample_count": 3,
+          "record_ids": [
+            "battlefield-vs-cod-ground-war-large-scale-design",
+            "cod-modern-warfare-vs-squad-military-design",
+            "squad-vs-hell-let-loose-war-simulation-design"
+          ],
+          "terms": [
+            {
+              "label": "战争归属",
+              "count": 26,
+              "weight": 5
+            },
+            {
+              "label": "空间控制",
+              "count": 23,
+              "weight": 5
+            },
+            {
+              "label": "团队协作",
+              "count": 17,
+              "weight": 4
+            },
+            {
+              "label": "个人高光",
+              "count": 9,
+              "weight": 2
+            },
+            {
+              "label": "战术可读",
+              "count": 6,
+              "weight": 2
+            },
+            {
+              "label": "战场奇观",
+              "count": 4,
+              "weight": 1
+            },
+            {
+              "label": "责任感",
+              "count": 3,
+              "weight": 1
+            },
+            {
+              "label": "压迫感",
+              "count": 1,
+              "weight": 1
+            },
+            {
+              "label": "系统掌控",
+              "count": 1,
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "id": "extraction",
+          "label": "搜打撤",
+          "description": "带装入局把资源、死亡与撤离绑定为高风险决策。",
+          "sample_count": 4,
+          "record_ids": [
+            "tarkov-vs-delta-force-extraction-design",
+            "delta-force-vs-arena-breakout-extraction-design",
+            "arc-raiders-vs-tarkov-mechanic-differences",
+            "marathon-vs-gray-zone-warfare-extraction-design"
+          ],
+          "terms": [
+            {
+              "label": "生存焦虑",
+              "count": 34,
+              "weight": 5
+            },
+            {
+              "label": "战术可读",
+              "count": 19,
+              "weight": 3
+            },
+            {
+              "label": "风险权衡",
+              "count": 17,
+              "weight": 3
+            },
+            {
+              "label": "压迫感",
+              "count": 12,
+              "weight": 2
+            },
+            {
+              "label": "长期归属",
+              "count": 10,
+              "weight": 2
+            },
+            {
+              "label": "团队协作",
+              "count": 7,
+              "weight": 2
+            },
+            {
+              "label": "未知探索",
+              "count": 6,
+              "weight": 2
+            },
+            {
+              "label": "系统掌控",
+              "count": 4,
+              "weight": 1
+            },
+            {
+              "label": "逆转希望",
+              "count": 1,
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "competitive",
+      "label": "竞技游戏",
+      "tracks": [
+        {
+          "id": "moba",
+          "label": "MOBA",
+          "description": "经济、分路、目标与阵容把个人成长转化为团队战略。",
+          "sample_count": 1,
+          "record_ids": [
+            "league-of-legends-vs-dota-2-moba-design"
+          ],
+          "terms": [
+            {
+              "label": "资源纪律",
+              "count": 9,
+              "weight": 5
+            },
+            {
+              "label": "身份表达",
+              "count": 8,
+              "weight": 4
+            },
+            {
+              "label": "战术可读",
+              "count": 7,
+              "weight": 4
+            },
+            {
+              "label": "团队协作",
+              "count": 5,
+              "weight": 3
+            },
+            {
+              "label": "竞技证明",
+              "count": 3,
+              "weight": 2
+            },
+            {
+              "label": "逆转希望",
+              "count": 3,
+              "weight": 2
+            },
+            {
+              "label": "空间控制",
+              "count": 2,
+              "weight": 1
+            },
+            {
+              "label": "系统掌控",
+              "count": 2,
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "id": "fighting",
+          "label": "格斗",
+          "description": "距离、读招与资源押注把每次接触变成可复盘博弈。",
+          "sample_count": 1,
+          "record_ids": [
+            "street-fighter-6-vs-tekken-8-fighting-design"
+          ],
+          "terms": [
+            {
+              "label": "资源纪律",
+              "count": 8,
+              "weight": 5
+            },
+            {
+              "label": "公平反制",
+              "count": 4,
+              "weight": 3
+            },
+            {
+              "label": "空间控制",
+              "count": 4,
+              "weight": 3
+            },
+            {
+              "label": "压迫感",
+              "count": 3,
+              "weight": 2
+            },
+            {
+              "label": "战术可读",
+              "count": 3,
+              "weight": 2
+            },
+            {
+              "label": "竞技证明",
+              "count": 2,
+              "weight": 2
+            },
+            {
+              "label": "身份表达",
+              "count": 2,
+              "weight": 2
+            },
+            {
+              "label": "逆转希望",
+              "count": 1,
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "id": "battle-royale",
+          "label": "大逃杀",
+          "description": "随机资源、缩圈与单局淘汰让位置选择不断升值。",
+          "sample_count": 1,
+          "record_ids": [
+            "pubg-vs-apex-legends-battle-royale-design"
+          ],
+          "terms": [
+            {
+              "label": "团队协作",
+              "count": 5,
+              "weight": 5
+            },
+            {
+              "label": "战术可读",
+              "count": 5,
+              "weight": 5
+            },
+            {
+              "label": "生存焦虑",
+              "count": 5,
+              "weight": 5
+            },
+            {
+              "label": "空间控制",
+              "count": 4,
+              "weight": 4
+            },
+            {
+              "label": "逆转希望",
+              "count": 3,
+              "weight": 3
+            },
+            {
+              "label": "压迫感",
+              "count": 2,
+              "weight": 2
+            },
+            {
+              "label": "节奏释放",
+              "count": 2,
+              "weight": 2
+            },
+            {
+              "label": "风险权衡",
+              "count": 1,
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "world-building",
+      "label": "建造与经营",
+      "tracks": [
+        {
+          "id": "survival-crafting",
+          "label": "生存建造",
+          "description": "采集、基地与探索在自我表达和远征准备之间循环。",
+          "sample_count": 1,
+          "record_ids": [
+            "minecraft-vs-valheim-survival-crafting-design"
+          ],
+          "terms": [
+            {
+              "label": "未知探索",
+              "count": 7,
+              "weight": 5
+            },
+            {
+              "label": "成长成就",
+              "count": 6,
+              "weight": 4
+            },
+            {
+              "label": "长期归属",
+              "count": 5,
+              "weight": 4
+            },
+            {
+              "label": "创造自由",
+              "count": 4,
+              "weight": 3
+            },
+            {
+              "label": "团队协作",
+              "count": 3,
+              "weight": 2
+            },
+            {
+              "label": "生存焦虑",
+              "count": 2,
+              "weight": 2
+            },
+            {
+              "label": "系统掌控",
+              "count": 1,
+              "weight": 1
+            },
+            {
+              "label": "风险权衡",
+              "count": 1,
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "id": "city-builder",
+          "label": "城市经营",
+          "description": "基础设施、人口与政策把空间规划转化为长期后果。",
+          "sample_count": 1,
+          "record_ids": [
+            "cities-skylines-2-vs-frostpunk-2-city-builder-design"
+          ],
+          "terms": [
+            {
+              "label": "政治抉择",
+              "count": 5,
+              "weight": 5
+            },
+            {
+              "label": "系统掌控",
+              "count": 4,
+              "weight": 4
+            },
+            {
+              "label": "创造自由",
+              "count": 3,
+              "weight": 3
+            },
+            {
+              "label": "责任感",
+              "count": 3,
+              "weight": 3
+            },
+            {
+              "label": "风险权衡",
+              "count": 2,
+              "weight": 2
+            },
+            {
+              "label": "压迫感",
+              "count": 1,
+              "weight": 1
+            },
+            {
+              "label": "成长成就",
+              "count": 1,
+              "weight": 1
+            },
+            {
+              "label": "长期归属",
+              "count": 1,
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -4,10 +4,15 @@ const state = {
   records: [],
   filtered: [],
   selectedGenre: "全部类型",
+  clouds: { categories: [] },
+  selectedCloudCategory: "shooting",
+  selectedCloudTrack: "bomb",
   page: 1,
 };
 
 const genreMeta = {
+  "大战场": "载具、据点与动态前线",
+  "军事射击": "现代武器、战场与作战身份",
   "MOBA": "分路、经济、目标与团队团战",
   "策略竞技": "资源、信息与团队决策",
   "格斗": "距离、攻防、资源与对局知识",
@@ -39,10 +44,16 @@ const genreMeta = {
 const pageType = document.body.dataset.page || "index";
 
 async function loadRecords() {
-  const response = await fetch(`./data/analyses.json?ts=${Date.now()}`);
+  const timestamp = Date.now();
+  const [response, cloudResponse] = await Promise.all([
+    fetch(`./data/analyses.json?ts=${timestamp}`),
+    fetch(`./data/aesthetic-clouds.json?ts=${timestamp}`),
+  ]);
   if (!response.ok) throw new Error(`数据读取失败：${response.status}`);
   const records = await response.json();
+  const clouds = cloudResponse.ok ? await cloudResponse.json() : { categories: [] };
   state.records = Array.isArray(records) ? records : [];
+  state.clouds = clouds && Array.isArray(clouds.categories) ? clouds : { categories: [] };
   if (pageType === "detail") renderDetailPage();
   else renderIndexPage();
 }
@@ -59,6 +70,11 @@ function renderIndexPage() {
     pagination: document.querySelector("#pagination"),
     resultHint: document.querySelector("#resultHint"),
     emptyTemplate: document.querySelector("#emptyTemplate"),
+    cloudCategoryTabs: document.querySelector("#cloudCategoryTabs"),
+    cloudTrackTabs: document.querySelector("#cloudTrackTabs"),
+    aestheticCloud: document.querySelector("#aestheticCloud"),
+    cloudSampleHint: document.querySelector("#cloudSampleHint"),
+    cloudMethod: document.querySelector("#cloudMethod"),
   };
 
   nodes.search.addEventListener("input", () => {
@@ -66,7 +82,49 @@ function renderIndexPage() {
     applyFilter(nodes);
   });
   nodes.refresh.addEventListener("click", loadRecords);
+  renderAestheticCloud(nodes);
   applyFilter(nodes);
+}
+
+function renderAestheticCloud(nodes) {
+  const categories = state.clouds.categories || [];
+  if (!nodes.aestheticCloud || !categories.length) return;
+
+  const category = categories.find((item) => item.id === state.selectedCloudCategory) || categories[0];
+  state.selectedCloudCategory = category.id;
+  const track = (category.tracks || []).find((item) => item.id === state.selectedCloudTrack) || category.tracks?.[0];
+  if (!track) return;
+  state.selectedCloudTrack = track.id;
+
+  nodes.cloudCategoryTabs.innerHTML = categories
+    .map((item) => `<button type="button" class="cloud-tab${item.id === category.id ? " active" : ""}" data-cloud-category="${escapeAttribute(item.id)}">${escapeHtml(item.label)}</button>`)
+    .join("");
+  nodes.cloudTrackTabs.innerHTML = (category.tracks || [])
+    .map((item) => `<button type="button" class="cloud-track${item.id === track.id ? " active" : ""}" data-cloud-track="${escapeAttribute(item.id)}">${escapeHtml(item.label)}</button>`)
+    .join("");
+  nodes.aestheticCloud.innerHTML = (track.terms || [])
+    .map((item, index) => {
+      const size = 15 + Number(item.weight || 1) * 5;
+      return `<span class="cloud-word" data-tone="${index % 4}" style="--cloud-size:${size}px"><strong>${escapeHtml(item.label)}</strong><small>${Number(item.count || 0)}</small></span>`;
+    })
+    .join("");
+  nodes.cloudSampleHint.textContent = `${track.description} · ${track.sample_count || 0} 篇样本`;
+  nodes.cloudMethod.textContent = state.clouds.method || "";
+
+  for (const button of nodes.cloudCategoryTabs.querySelectorAll("[data-cloud-category]")) {
+    button.addEventListener("click", () => {
+      const nextCategory = categories.find((item) => item.id === button.dataset.cloudCategory);
+      state.selectedCloudCategory = nextCategory?.id || categories[0].id;
+      state.selectedCloudTrack = nextCategory?.tracks?.[0]?.id || "";
+      renderAestheticCloud(nodes);
+    });
+  }
+  for (const button of nodes.cloudTrackTabs.querySelectorAll("[data-cloud-track]")) {
+    button.addEventListener("click", () => {
+      state.selectedCloudTrack = button.dataset.cloudTrack;
+      renderAestheticCloud(nodes);
+    });
+  }
 }
 
 function applyFilter(nodes) {
