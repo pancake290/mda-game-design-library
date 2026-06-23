@@ -1,9 +1,11 @@
 const PAGE_SIZE = 6;
+const COLLAPSED_GENRE_LIMIT = 8;
 
 const state = {
   records: [],
   filtered: [],
   selectedGenre: "全部类型",
+  showAllGenres: false,
   clouds: { categories: [] },
   selectedCloudCategory: "shooting",
   selectedCloudTrack: "bomb",
@@ -147,7 +149,22 @@ function applyFilter(nodes) {
 }
 
 function renderGenres(nodes, genres) {
-  nodes.genreList.innerHTML = genres
+  const allGenre = genres.find(({ name }) => name === "全部类型");
+  const rankedGenres = genres
+    .filter(({ name }) => name !== "全部类型")
+    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, "zh-CN"));
+  let visibleGenres = state.showAllGenres
+    ? genres
+    : [allGenre, ...rankedGenres.slice(0, COLLAPSED_GENRE_LIMIT - 1)].filter(Boolean);
+
+  if (!state.showAllGenres && state.selectedGenre !== "全部类型" && !visibleGenres.some(({ name }) => name === state.selectedGenre)) {
+    const selected = genres.find(({ name }) => name === state.selectedGenre);
+    if (selected) visibleGenres = [...visibleGenres.slice(0, -1), selected];
+  }
+
+  const canToggle = genres.length > COLLAPSED_GENRE_LIMIT;
+  nodes.genreList.classList.toggle("expanded", state.showAllGenres);
+  nodes.genreList.innerHTML = visibleGenres
     .map(({ name, count }) => {
       const active = name === state.selectedGenre ? " active" : "";
       return `
@@ -158,7 +175,11 @@ function renderGenres(nodes, genres) {
         </button>
       `;
     })
-    .join("");
+    .join("") + (canToggle
+      ? `<button class="genre-toggle" type="button" aria-expanded="${state.showAllGenres}">
+          ${state.showAllGenres ? "收起类型" : `展开全部类型（${genres.length - 1}）`}
+        </button>`
+      : "");
 
   for (const button of nodes.genreList.querySelectorAll(".genre-chip")) {
     button.addEventListener("click", () => {
@@ -167,6 +188,11 @@ function renderGenres(nodes, genres) {
       applyFilter(nodes);
     });
   }
+
+  nodes.genreList.querySelector(".genre-toggle")?.addEventListener("click", () => {
+    state.showAllGenres = !state.showAllGenres;
+    renderGenres(nodes, genres);
+  });
 }
 
 function renderCards(nodes) {

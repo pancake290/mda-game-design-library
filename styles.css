@@ -1564,6 +1564,40 @@ body::before {
   background: var(--amber);
 }
 
+.genre-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  border: 1px dashed #8fa19a;
+  border-radius: var(--radius);
+  padding: 8px 14px;
+  color: var(--teal-dark);
+  font: inherit;
+  font-weight: 900;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.genre-toggle::after {
+  content: "↓";
+  color: var(--amber-dark);
+  font-size: 16px;
+}
+
+.genre-toggle[aria-expanded="true"]::after {
+  content: "↑";
+}
+
+.genre-toggle:hover,
+.genre-toggle:focus-visible {
+  border-color: var(--amber-dark);
+  color: var(--ink);
+  background: var(--amber-soft);
+  outline: none;
+}
+
 .section-heading {
   border-bottom: 2px solid var(--ink);
   padding: 4px 0 10px;
