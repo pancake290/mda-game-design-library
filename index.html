@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>游戏 MDA 策划分析库</title>
-    <link rel="stylesheet" href="./styles.css?v=20260623-4" />
+    <link rel="stylesheet" href="./styles.css?v=20260623-5" />
   </head>
   <body data-page="index">
     <main class="page-shell">
@@ -75,12 +75,15 @@
         <div class="genre-chips" id="genreList" aria-label="类型筛选"></div>
       </section>
 
-      <section class="section-heading">
+      <section class="section-heading" id="analysisIndex">
         <div>
           <p class="eyebrow">Analysis Index</p>
           <h2>分析目录</h2>
         </div>
-        <p id="resultHint">按类型筛选或直接进入详情页。</p>
+        <div class="result-meta">
+          <p id="resultHint">按类型筛选或直接进入详情页。</p>
+          <button id="clearCloudFilter" type="button" hidden>清除词条筛选</button>
+        </div>
       </section>
 
       <section class="record-cards" id="recordCards" aria-label="分析记录"></section>
@@ -94,6 +97,6 @@
       </article>
     </template>
 
-    <script src="./app.js?v=20260623-4"></script>
+    <script src="./app.js?v=20260623-5"></script>
   </body>
 </html>

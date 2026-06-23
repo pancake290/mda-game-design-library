@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T10:27:03+00:00",
+  "generated_at": "2026-06-23T14:35:18+00:00",
   "method": "命中数来自对应赛道分析记录的摘要、MDA 链、共同系统影响与关键判断；每个语义单元对同一词条最多计一次。",
   "categories": [
     {
@@ -18,41 +18,65 @@
             {
               "label": "战术可读",
               "count": 5,
+              "record_ids": [
+                "cs2-vs-valorant-bomb-design"
+              ],
               "weight": 5
             },
             {
               "label": "竞技证明",
               "count": 5,
+              "record_ids": [
+                "cs2-vs-valorant-bomb-design"
+              ],
               "weight": 5
             },
             {
               "label": "资源纪律",
               "count": 5,
+              "record_ids": [
+                "cs2-vs-valorant-bomb-design"
+              ],
               "weight": 5
             },
             {
               "label": "团队协作",
               "count": 3,
+              "record_ids": [
+                "cs2-vs-valorant-bomb-design"
+              ],
               "weight": 3
             },
             {
               "label": "空间控制",
               "count": 3,
+              "record_ids": [
+                "cs2-vs-valorant-bomb-design"
+              ],
               "weight": 3
             },
             {
               "label": "公平反制",
               "count": 1,
+              "record_ids": [
+                "cs2-vs-valorant-bomb-design"
+              ],
               "weight": 1
             },
             {
               "label": "压迫感",
               "count": 1,
+              "record_ids": [
+                "cs2-vs-valorant-bomb-design"
+              ],
               "weight": 1
             },
             {
               "label": "逆转希望",
               "count": 1,
+              "record_ids": [
+                "cs2-vs-valorant-bomb-design"
+              ],
               "weight": 1
             }
           ]
@@ -69,41 +93,65 @@
             {
               "label": "空间控制",
               "count": 10,
+              "record_ids": [
+                "overwatch-2-vs-marvel-rivals-hero-shooter-design"
+              ],
               "weight": 5
             },
             {
               "label": "身份表达",
               "count": 9,
+              "record_ids": [
+                "overwatch-2-vs-marvel-rivals-hero-shooter-design"
+              ],
               "weight": 5
             },
             {
               "label": "责任感",
               "count": 7,
+              "record_ids": [
+                "overwatch-2-vs-marvel-rivals-hero-shooter-design"
+              ],
               "weight": 4
             },
             {
               "label": "团队协作",
               "count": 4,
+              "record_ids": [
+                "overwatch-2-vs-marvel-rivals-hero-shooter-design"
+              ],
               "weight": 2
             },
             {
               "label": "战术可读",
               "count": 3,
+              "record_ids": [
+                "overwatch-2-vs-marvel-rivals-hero-shooter-design"
+              ],
               "weight": 2
             },
             {
               "label": "战场奇观",
               "count": 2,
+              "record_ids": [
+                "overwatch-2-vs-marvel-rivals-hero-shooter-design"
+              ],
               "weight": 1
             },
             {
               "label": "节奏释放",
               "count": 1,
+              "record_ids": [
+                "overwatch-2-vs-marvel-rivals-hero-shooter-design"
+              ],
               "weight": 1
             },
             {
               "label": "逆转希望",
               "count": 1,
+              "record_ids": [
+                "overwatch-2-vs-marvel-rivals-hero-shooter-design"
+              ],
               "weight": 1
             }
           ]
@@ -122,46 +170,86 @@
             {
               "label": "战争归属",
               "count": 26,
+              "record_ids": [
+                "battlefield-vs-cod-ground-war-large-scale-design",
+                "cod-modern-warfare-vs-squad-military-design",
+                "squad-vs-hell-let-loose-war-simulation-design"
+              ],
               "weight": 5
             },
             {
               "label": "空间控制",
               "count": 23,
+              "record_ids": [
+                "battlefield-vs-cod-ground-war-large-scale-design",
+                "cod-modern-warfare-vs-squad-military-design",
+                "squad-vs-hell-let-loose-war-simulation-design"
+              ],
               "weight": 5
             },
             {
               "label": "团队协作",
               "count": 17,
+              "record_ids": [
+                "battlefield-vs-cod-ground-war-large-scale-design",
+                "cod-modern-warfare-vs-squad-military-design",
+                "squad-vs-hell-let-loose-war-simulation-design"
+              ],
               "weight": 4
             },
             {
               "label": "个人高光",
               "count": 9,
+              "record_ids": [
+                "battlefield-vs-cod-ground-war-large-scale-design",
+                "cod-modern-warfare-vs-squad-military-design",
+                "squad-vs-hell-let-loose-war-simulation-design"
+              ],
               "weight": 2
             },
             {
               "label": "战术可读",
               "count": 6,
+              "record_ids": [
+                "cod-modern-warfare-vs-squad-military-design",
+                "squad-vs-hell-let-loose-war-simulation-design"
+              ],
               "weight": 2
             },
             {
               "label": "战场奇观",
               "count": 4,
+              "record_ids": [
+                "battlefield-vs-cod-ground-war-large-scale-design",
+                "squad-vs-hell-let-loose-war-simulation-design"
+              ],
               "weight": 1
             },
             {
               "label": "责任感",
               "count": 3,
+              "record_ids": [
+                "battlefield-vs-cod-ground-war-large-scale-design",
+                "cod-modern-warfare-vs-squad-military-design"
+              ],
               "weight": 1
             },
             {
               "label": "压迫感",
               "count": 1,
+              "record_ids": [
+                "cod-modern-warfare-vs-squad-military-design"
+              ],
               "weight": 1
             },
             {
               "label": "系统掌控",
               "count": 1,
+              "record_ids": [
+                "battlefield-vs-cod-ground-war-large-scale-design",
+                "cod-modern-warfare-vs-squad-military-design",
+                "squad-vs-hell-let-loose-war-simulation-design"
+              ],
               "weight": 1
             }
           ]
@@ -181,46 +269,91 @@
             {
               "label": "生存焦虑",
               "count": 34,
+              "record_ids": [
+                "tarkov-vs-delta-force-extraction-design",
+                "delta-force-vs-arena-breakout-extraction-design",
+                "arc-raiders-vs-tarkov-mechanic-differences",
+                "marathon-vs-gray-zone-warfare-extraction-design"
+              ],
               "weight": 5
             },
             {
               "label": "战术可读",
               "count": 19,
+              "record_ids": [
+                "tarkov-vs-delta-force-extraction-design",
+                "delta-force-vs-arena-breakout-extraction-design",
+                "arc-raiders-vs-tarkov-mechanic-differences",
+                "marathon-vs-gray-zone-warfare-extraction-design"
+              ],
               "weight": 3
             },
             {
               "label": "风险权衡",
               "count": 17,
+              "record_ids": [
+                "tarkov-vs-delta-force-extraction-design",
+                "delta-force-vs-arena-breakout-extraction-design",
+                "arc-raiders-vs-tarkov-mechanic-differences",
+                "marathon-vs-gray-zone-warfare-extraction-design"
+              ],
               "weight": 3
             },
             {
               "label": "压迫感",
               "count": 12,
+              "record_ids": [
+                "tarkov-vs-delta-force-extraction-design",
+                "delta-force-vs-arena-breakout-extraction-design",
+                "arc-raiders-vs-tarkov-mechanic-differences",
+                "marathon-vs-gray-zone-warfare-extraction-design"
+              ],
               "weight": 2
             },
             {
               "label": "长期归属",
               "count": 10,
+              "record_ids": [
+                "tarkov-vs-delta-force-extraction-design",
+                "arc-raiders-vs-tarkov-mechanic-differences",
+                "marathon-vs-gray-zone-warfare-extraction-design"
+              ],
               "weight": 2
             },
             {
               "label": "团队协作",
               "count": 7,
+              "record_ids": [
+                "tarkov-vs-delta-force-extraction-design",
+                "delta-force-vs-arena-breakout-extraction-design"
+              ],
               "weight": 2
             },
             {
               "label": "未知探索",
               "count": 6,
+              "record_ids": [
+                "tarkov-vs-delta-force-extraction-design",
+                "delta-force-vs-arena-breakout-extraction-design",
+                "arc-raiders-vs-tarkov-mechanic-differences"
+              ],
               "weight": 2
             },
             {
               "label": "系统掌控",
               "count": 4,
+              "record_ids": [
+                "tarkov-vs-delta-force-extraction-design",
+                "arc-raiders-vs-tarkov-mechanic-differences"
+              ],
               "weight": 1
             },
             {
               "label": "逆转希望",
               "count": 1,
+              "record_ids": [
+                "delta-force-vs-arena-breakout-extraction-design"
+              ],
               "weight": 1
             }
           ]
@@ -243,41 +376,65 @@
             {
               "label": "资源纪律",
               "count": 9,
+              "record_ids": [
+                "league-of-legends-vs-dota-2-moba-design"
+              ],
               "weight": 5
             },
             {
               "label": "身份表达",
               "count": 8,
+              "record_ids": [
+                "league-of-legends-vs-dota-2-moba-design"
+              ],
               "weight": 4
             },
             {
               "label": "战术可读",
               "count": 7,
+              "record_ids": [
+                "league-of-legends-vs-dota-2-moba-design"
+              ],
               "weight": 4
             },
             {
               "label": "团队协作",
               "count": 5,
+              "record_ids": [
+                "league-of-legends-vs-dota-2-moba-design"
+              ],
               "weight": 3
             },
             {
               "label": "竞技证明",
               "count": 3,
+              "record_ids": [
+                "league-of-legends-vs-dota-2-moba-design"
+              ],
               "weight": 2
             },
             {
               "label": "逆转希望",
               "count": 3,
+              "record_ids": [
+                "league-of-legends-vs-dota-2-moba-design"
+              ],
               "weight": 2
             },
             {
               "label": "空间控制",
               "count": 2,
+              "record_ids": [
+                "league-of-legends-vs-dota-2-moba-design"
+              ],
               "weight": 1
             },
             {
               "label": "系统掌控",
               "count": 2,
+              "record_ids": [
+                "league-of-legends-vs-dota-2-moba-design"
+              ],
               "weight": 1
             }
           ]
@@ -294,41 +451,65 @@
             {
               "label": "资源纪律",
               "count": 8,
+              "record_ids": [
+                "street-fighter-6-vs-tekken-8-fighting-design"
+              ],
               "weight": 5
             },
             {
               "label": "公平反制",
               "count": 4,
+              "record_ids": [
+                "street-fighter-6-vs-tekken-8-fighting-design"
+              ],
               "weight": 3
             },
             {
               "label": "空间控制",
               "count": 4,
+              "record_ids": [
+                "street-fighter-6-vs-tekken-8-fighting-design"
+              ],
               "weight": 3
             },
             {
               "label": "压迫感",
               "count": 3,
+              "record_ids": [
+                "street-fighter-6-vs-tekken-8-fighting-design"
+              ],
               "weight": 2
             },
             {
               "label": "战术可读",
               "count": 3,
+              "record_ids": [
+                "street-fighter-6-vs-tekken-8-fighting-design"
+              ],
               "weight": 2
             },
             {
               "label": "竞技证明",
               "count": 2,
+              "record_ids": [
+                "street-fighter-6-vs-tekken-8-fighting-design"
+              ],
               "weight": 2
             },
             {
               "label": "身份表达",
               "count": 2,
+              "record_ids": [
+                "street-fighter-6-vs-tekken-8-fighting-design"
+              ],
               "weight": 2
             },
             {
               "label": "逆转希望",
               "count": 1,
+              "record_ids": [
+                "street-fighter-6-vs-tekken-8-fighting-design"
+              ],
               "weight": 1
             }
           ]
@@ -345,41 +526,65 @@
             {
               "label": "团队协作",
               "count": 5,
+              "record_ids": [
+                "pubg-vs-apex-legends-battle-royale-design"
+              ],
               "weight": 5
             },
             {
               "label": "战术可读",
               "count": 5,
+              "record_ids": [
+                "pubg-vs-apex-legends-battle-royale-design"
+              ],
               "weight": 5
             },
             {
               "label": "生存焦虑",
               "count": 5,
+              "record_ids": [
+                "pubg-vs-apex-legends-battle-royale-design"
+              ],
               "weight": 5
             },
             {
               "label": "空间控制",
               "count": 4,
+              "record_ids": [
+                "pubg-vs-apex-legends-battle-royale-design"
+              ],
               "weight": 4
             },
             {
               "label": "逆转希望",
               "count": 3,
+              "record_ids": [
+                "pubg-vs-apex-legends-battle-royale-design"
+              ],
               "weight": 3
             },
             {
               "label": "压迫感",
               "count": 2,
+              "record_ids": [
+                "pubg-vs-apex-legends-battle-royale-design"
+              ],
               "weight": 2
             },
             {
               "label": "节奏释放",
               "count": 2,
+              "record_ids": [
+                "pubg-vs-apex-legends-battle-royale-design"
+              ],
               "weight": 2
             },
             {
               "label": "风险权衡",
               "count": 1,
+              "record_ids": [
+                "pubg-vs-apex-legends-battle-royale-design"
+              ],
               "weight": 1
             }
           ]
@@ -402,41 +607,65 @@
             {
               "label": "未知探索",
               "count": 7,
+              "record_ids": [
+                "minecraft-vs-valheim-survival-crafting-design"
+              ],
               "weight": 5
             },
             {
               "label": "成长成就",
               "count": 6,
+              "record_ids": [
+                "minecraft-vs-valheim-survival-crafting-design"
+              ],
               "weight": 4
             },
             {
               "label": "长期归属",
               "count": 5,
+              "record_ids": [
+                "minecraft-vs-valheim-survival-crafting-design"
+              ],
               "weight": 4
             },
             {
               "label": "创造自由",
               "count": 4,
+              "record_ids": [
+                "minecraft-vs-valheim-survival-crafting-design"
+              ],
               "weight": 3
             },
             {
               "label": "团队协作",
               "count": 3,
+              "record_ids": [
+                "minecraft-vs-valheim-survival-crafting-design"
+              ],
               "weight": 2
             },
             {
               "label": "生存焦虑",
               "count": 2,
+              "record_ids": [
+                "minecraft-vs-valheim-survival-crafting-design"
+              ],
               "weight": 2
             },
             {
               "label": "系统掌控",
               "count": 1,
+              "record_ids": [
+                "minecraft-vs-valheim-survival-crafting-design"
+              ],
               "weight": 1
             },
             {
               "label": "风险权衡",
               "count": 1,
+              "record_ids": [
+                "minecraft-vs-valheim-survival-crafting-design"
+              ],
               "weight": 1
             }
           ]
@@ -453,41 +682,65 @@
             {
               "label": "政治抉择",
               "count": 5,
+              "record_ids": [
+                "cities-skylines-2-vs-frostpunk-2-city-builder-design"
+              ],
               "weight": 5
             },
             {
               "label": "系统掌控",
               "count": 4,
+              "record_ids": [
+                "cities-skylines-2-vs-frostpunk-2-city-builder-design"
+              ],
               "weight": 4
             },
             {
               "label": "创造自由",
               "count": 3,
+              "record_ids": [
+                "cities-skylines-2-vs-frostpunk-2-city-builder-design"
+              ],
               "weight": 3
             },
             {
               "label": "责任感",
               "count": 3,
+              "record_ids": [
+                "cities-skylines-2-vs-frostpunk-2-city-builder-design"
+              ],
               "weight": 3
             },
             {
               "label": "风险权衡",
               "count": 2,
+              "record_ids": [
+                "cities-skylines-2-vs-frostpunk-2-city-builder-design"
+              ],
               "weight": 2
             },
             {
               "label": "压迫感",
               "count": 1,
+              "record_ids": [
+                "cities-skylines-2-vs-frostpunk-2-city-builder-design"
+              ],
               "weight": 1
             },
             {
               "label": "成长成就",
               "count": 1,
+              "record_ids": [
+                "cities-skylines-2-vs-frostpunk-2-city-builder-design"
+              ],
               "weight": 1
             },
             {
               "label": "长期归属",
               "count": 1,
+              "record_ids": [
+                "cities-skylines-2-vs-frostpunk-2-city-builder-design"
+              ],
               "weight": 1
             }
           ]

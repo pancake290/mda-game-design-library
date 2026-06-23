@@ -2465,10 +2465,16 @@ body::before {
   display: inline-flex;
   align-items: flex-start;
   gap: 5px;
+  border: 0;
+  padding: 3px 4px;
   color: #e0aa45;
+  font-family: inherit;
   font-size: var(--cloud-size, 20px);
   line-height: 1;
   white-space: nowrap;
+  background: transparent;
+  cursor: pointer;
+  transition: color 150ms ease, transform 150ms ease, background 150ms ease;
 }
 
 .cloud-word[data-tone="1"] { color: #7eabd0; }
@@ -2482,6 +2488,48 @@ body::before {
   font-size: 11px;
   font-weight: 800;
   line-height: 1;
+}
+
+.cloud-word:hover,
+.cloud-word:focus-visible {
+  border-radius: 4px;
+  color: #151b1f;
+  background: var(--amber);
+  outline: none;
+  transform: translateY(-2px);
+}
+
+.cloud-word:hover small,
+.cloud-word:focus-visible small {
+  color: #39413e;
+}
+
+.result-meta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.result-meta p { margin: 0; }
+
+#clearCloudFilter {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 7px 10px;
+  color: var(--teal-dark);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 900;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+#clearCloudFilter:hover,
+#clearCloudFilter:focus-visible {
+  border-color: var(--amber-dark);
+  background: var(--amber-soft);
+  outline: none;
 }
 
 .cloud-method {
@@ -2508,4 +2556,5 @@ body::before {
   .cloud-view-head > p { max-width: none; text-align: left; }
   .aesthetic-cloud { min-height: 190px; gap: 12px 14px; padding: 16px 0 4px; }
   .cloud-word { font-size: min(var(--cloud-size, 20px), 31px); }
+  .result-meta { align-items: flex-end; flex-direction: column; gap: 6px; }
 }

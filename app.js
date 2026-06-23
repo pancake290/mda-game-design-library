@@ -9,6 +9,8 @@ const state = {
   clouds: { categories: [] },
   selectedCloudCategory: "shooting",
   selectedCloudTrack: "bomb",
+  selectedCloudTerm: "",
+  selectedCloudRecordIds: [],
   page: 1,
 };
 
@@ -77,12 +79,15 @@ function renderIndexPage() {
     aestheticCloud: document.querySelector("#aestheticCloud"),
     cloudSampleHint: document.querySelector("#cloudSampleHint"),
     cloudMethod: document.querySelector("#cloudMethod"),
+    clearCloudFilter: document.querySelector("#clearCloudFilter"),
   };
 
   nodes.search.addEventListener("input", () => {
+    clearCloudFilter(nodes, false);
     state.page = 1;
     applyFilter(nodes);
   });
+  nodes.clearCloudFilter.addEventListener("click", () => clearCloudFilter(nodes));
   nodes.refresh.addEventListener("click", loadRecords);
   renderAestheticCloud(nodes);
   applyFilter(nodes);
@@ -107,7 +112,7 @@ function renderAestheticCloud(nodes) {
   nodes.aestheticCloud.innerHTML = (track.terms || [])
     .map((item, index) => {
       const size = 15 + Number(item.weight || 1) * 5;
-      return `<span class="cloud-word" data-tone="${index % 4}" style="--cloud-size:${size}px"><strong>${escapeHtml(item.label)}</strong><small>${Number(item.count || 0)}</small></span>`;
+      return `<button class="cloud-word" type="button" data-cloud-term="${escapeAttribute(item.label)}" data-tone="${index % 4}" style="--cloud-size:${size}px" aria-label="查看「${escapeAttribute(item.label)}」相关分析，命中 ${Number(item.count || 0)} 次"><strong>${escapeHtml(item.label)}</strong><small>${Number(item.count || 0)}</small></button>`;
     })
     .join("");
   nodes.cloudSampleHint.textContent = `${track.description} · ${track.sample_count || 0} 篇样本`;
@@ -115,6 +120,7 @@ function renderAestheticCloud(nodes) {
 
   for (const button of nodes.cloudCategoryTabs.querySelectorAll("[data-cloud-category]")) {
     button.addEventListener("click", () => {
+      clearCloudFilter(nodes, false);
       const nextCategory = categories.find((item) => item.id === button.dataset.cloudCategory);
       state.selectedCloudCategory = nextCategory?.id || categories[0].id;
       state.selectedCloudTrack = nextCategory?.tracks?.[0]?.id || "";
@@ -123,9 +129,32 @@ function renderAestheticCloud(nodes) {
   }
   for (const button of nodes.cloudTrackTabs.querySelectorAll("[data-cloud-track]")) {
     button.addEventListener("click", () => {
+      clearCloudFilter(nodes, false);
       state.selectedCloudTrack = button.dataset.cloudTrack;
       renderAestheticCloud(nodes);
     });
+  }
+  for (const button of nodes.aestheticCloud.querySelectorAll("[data-cloud-term]")) {
+    button.addEventListener("click", () => {
+      const term = (track.terms || []).find((item) => item.label === button.dataset.cloudTerm);
+      state.selectedCloudTerm = term?.label || "";
+      state.selectedCloudRecordIds = term?.record_ids || track.record_ids || [];
+      state.selectedGenre = "全部类型";
+      state.showAllGenres = false;
+      state.page = 1;
+      nodes.search.value = "";
+      applyFilter(nodes);
+      document.querySelector("#analysisIndex")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+}
+
+function clearCloudFilter(nodes, render = true) {
+  state.selectedCloudTerm = "";
+  state.selectedCloudRecordIds = [];
+  if (render) {
+    state.page = 1;
+    applyFilter(nodes);
   }
 }
 
@@ -134,15 +163,19 @@ function applyFilter(nodes) {
   state.filtered = state.records.filter((record) => {
     const genres = getGenres(record);
     const matchesGenre = state.selectedGenre === "全部类型" || genres.includes(state.selectedGenre);
+    const matchesCloudTerm = !state.selectedCloudRecordIds.length || state.selectedCloudRecordIds.includes(record.id);
     const haystack = collectSearchText(record, genres).toLowerCase();
-    return matchesGenre && haystack.includes(query);
+    return matchesGenre && matchesCloudTerm && haystack.includes(query);
   });
 
   const genres = collectGenres();
   nodes.totalCount.textContent = state.records.length.toString();
   nodes.chainCount.textContent = state.records.reduce((sum, record) => sum + (record.chains || []).length, 0).toString();
   nodes.genreCount.textContent = Math.max(genres.length - 1, 0).toString();
-  nodes.resultHint.textContent = `${state.filtered.length} 条结果 · 第 ${state.filtered.length ? state.page : 0} 页`;
+  nodes.resultHint.textContent = state.selectedCloudTerm
+    ? `美学词条「${state.selectedCloudTerm}」 · ${state.filtered.length} 篇相关分析`
+    : `${state.filtered.length} 条结果 · 第 ${state.filtered.length ? state.page : 0} 页`;
+  nodes.clearCloudFilter.hidden = !state.selectedCloudTerm;
   renderGenres(nodes, genres);
   renderCards(nodes);
   renderPagination(nodes);
@@ -183,6 +216,7 @@ function renderGenres(nodes, genres) {
 
   for (const button of nodes.genreList.querySelectorAll(".genre-chip")) {
     button.addEventListener("click", () => {
+      clearCloudFilter(nodes, false);
       state.selectedGenre = button.dataset.genre || "全部类型";
       state.page = 1;
       applyFilter(nodes);
