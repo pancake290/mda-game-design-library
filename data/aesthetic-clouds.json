@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T14:35:18+00:00",
+  "generated_at": "2026-06-24T03:06:30+00:00",
   "method": "命中数来自对应赛道分析记录的摘要、MDA 链、共同系统影响与关键判断；每个语义单元对同一词条最多计一次。",
   "categories": [
     {
@@ -740,6 +740,399 @@
               "count": 1,
               "record_ids": [
                 "cities-skylines-2-vs-frostpunk-2-city-builder-design"
+              ],
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "action-rpg",
+      "label": "动作与角色扮演",
+      "tracks": [
+        {
+          "id": "loot-arpg",
+          "label": "刷宝 ARPG",
+          "description": "战斗、掉落与构筑把即时力量连接到长期追求。",
+          "sample_count": 1,
+          "record_ids": [
+            "diablo-4-vs-path-of-exile-2-arpg-design"
+          ],
+          "terms": [
+            {
+              "label": "身份表达",
+              "count": 11,
+              "record_ids": [
+                "diablo-4-vs-path-of-exile-2-arpg-design"
+              ],
+              "weight": 5
+            },
+            {
+              "label": "构筑研究",
+              "count": 10,
+              "record_ids": [
+                "diablo-4-vs-path-of-exile-2-arpg-design"
+              ],
+              "weight": 5
+            },
+            {
+              "label": "资源纪律",
+              "count": 8,
+              "record_ids": [
+                "diablo-4-vs-path-of-exile-2-arpg-design"
+              ],
+              "weight": 4
+            },
+            {
+              "label": "力量释放",
+              "count": 6,
+              "record_ids": [
+                "diablo-4-vs-path-of-exile-2-arpg-design"
+              ],
+              "weight": 3
+            },
+            {
+              "label": "长期归属",
+              "count": 5,
+              "record_ids": [
+                "diablo-4-vs-path-of-exile-2-arpg-design"
+              ],
+              "weight": 3
+            },
+            {
+              "label": "成长成就",
+              "count": 3,
+              "record_ids": [
+                "diablo-4-vs-path-of-exile-2-arpg-design"
+              ],
+              "weight": 2
+            },
+            {
+              "label": "风险权衡",
+              "count": 2,
+              "record_ids": [
+                "diablo-4-vs-path-of-exile-2-arpg-design"
+              ],
+              "weight": 1
+            },
+            {
+              "label": "系统掌控",
+              "count": 1,
+              "record_ids": [
+                "diablo-4-vs-path-of-exile-2-arpg-design"
+              ],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "id": "action-roguelite",
+          "label": "动作 Roguelite",
+          "description": "死亡重置局内成长，再把知识、操作与少量永久进展带回下一轮。",
+          "sample_count": 1,
+          "record_ids": [
+            "hades-vs-dead-cells-action-roguelite-design"
+          ],
+          "terms": [
+            {
+              "label": "操作进化",
+              "count": 9,
+              "record_ids": [
+                "hades-vs-dead-cells-action-roguelite-design"
+              ],
+              "weight": 5
+            },
+            {
+              "label": "构筑研究",
+              "count": 5,
+              "record_ids": [
+                "hades-vs-dead-cells-action-roguelite-design"
+              ],
+              "weight": 3
+            },
+            {
+              "label": "叙事回返",
+              "count": 4,
+              "record_ids": [
+                "hades-vs-dead-cells-action-roguelite-design"
+              ],
+              "weight": 3
+            },
+            {
+              "label": "竞技证明",
+              "count": 3,
+              "record_ids": [
+                "hades-vs-dead-cells-action-roguelite-design"
+              ],
+              "weight": 2
+            },
+            {
+              "label": "成长成就",
+              "count": 2,
+              "record_ids": [
+                "hades-vs-dead-cells-action-roguelite-design"
+              ],
+              "weight": 1
+            },
+            {
+              "label": "未知探索",
+              "count": 2,
+              "record_ids": [
+                "hades-vs-dead-cells-action-roguelite-design"
+              ],
+              "weight": 1
+            },
+            {
+              "label": "风险权衡",
+              "count": 2,
+              "record_ids": [
+                "hades-vs-dead-cells-action-roguelite-design"
+              ],
+              "weight": 1
+            },
+            {
+              "label": "逆转希望",
+              "count": 1,
+              "record_ids": [
+                "hades-vs-dead-cells-action-roguelite-design"
+              ],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "id": "soulslike",
+          "label": "类魂动作",
+          "description": "高惩罚推进把探索、构筑与敌人模式学习转化为掌握感。",
+          "sample_count": 1,
+          "record_ids": [
+            "elden-ring-vs-lies-of-p-soulslike-design"
+          ],
+          "terms": [
+            {
+              "label": "成长成就",
+              "count": 8,
+              "record_ids": [
+                "elden-ring-vs-lies-of-p-soulslike-design"
+              ],
+              "weight": 5
+            },
+            {
+              "label": "精密攻防",
+              "count": 7,
+              "record_ids": [
+                "elden-ring-vs-lies-of-p-soulslike-design"
+              ],
+              "weight": 4
+            },
+            {
+              "label": "身份表达",
+              "count": 7,
+              "record_ids": [
+                "elden-ring-vs-lies-of-p-soulslike-design"
+              ],
+              "weight": 4
+            },
+            {
+              "label": "未知探索",
+              "count": 6,
+              "record_ids": [
+                "elden-ring-vs-lies-of-p-soulslike-design"
+              ],
+              "weight": 4
+            },
+            {
+              "label": "压迫感",
+              "count": 5,
+              "record_ids": [
+                "elden-ring-vs-lies-of-p-soulslike-design"
+              ],
+              "weight": 3
+            },
+            {
+              "label": "自主解题",
+              "count": 5,
+              "record_ids": [
+                "elden-ring-vs-lies-of-p-soulslike-design"
+              ],
+              "weight": 3
+            },
+            {
+              "label": "竞技证明",
+              "count": 3,
+              "record_ids": [
+                "elden-ring-vs-lies-of-p-soulslike-design"
+              ],
+              "weight": 2
+            },
+            {
+              "label": "风险权衡",
+              "count": 1,
+              "record_ids": [
+                "elden-ring-vs-lies-of-p-soulslike-design"
+              ],
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cooperative",
+      "label": "合作游戏",
+      "tracks": [
+        {
+          "id": "coop-pve",
+          "label": "合作 PvE",
+          "description": "任务、资源和空间职责让陌生玩家或好友形成共同命运。",
+          "sample_count": 1,
+          "record_ids": [
+            "helldivers-2-vs-deep-rock-galactic-coop-pve-design"
+          ],
+          "terms": [
+            {
+              "label": "团队协作",
+              "count": 9,
+              "record_ids": [
+                "helldivers-2-vs-deep-rock-galactic-coop-pve-design"
+              ],
+              "weight": 5
+            },
+            {
+              "label": "职业互补",
+              "count": 7,
+              "record_ids": [
+                "helldivers-2-vs-deep-rock-galactic-coop-pve-design"
+              ],
+              "weight": 4
+            },
+            {
+              "label": "战争喜剧",
+              "count": 5,
+              "record_ids": [
+                "helldivers-2-vs-deep-rock-galactic-coop-pve-design"
+              ],
+              "weight": 3
+            },
+            {
+              "label": "责任感",
+              "count": 3,
+              "record_ids": [
+                "helldivers-2-vs-deep-rock-galactic-coop-pve-design"
+              ],
+              "weight": 2
+            },
+            {
+              "label": "长期归属",
+              "count": 2,
+              "record_ids": [
+                "helldivers-2-vs-deep-rock-galactic-coop-pve-design"
+              ],
+              "weight": 1
+            },
+            {
+              "label": "战场奇观",
+              "count": 1,
+              "record_ids": [
+                "helldivers-2-vs-deep-rock-galactic-coop-pve-design"
+              ],
+              "weight": 1
+            },
+            {
+              "label": "节奏释放",
+              "count": 1,
+              "record_ids": [
+                "helldivers-2-vs-deep-rock-galactic-coop-pve-design"
+              ],
+              "weight": 1
+            },
+            {
+              "label": "风险权衡",
+              "count": 1,
+              "record_ids": [
+                "helldivers-2-vs-deep-rock-galactic-coop-pve-design"
+              ],
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "strategy",
+      "label": "策略游戏",
+      "tracks": [
+        {
+          "id": "rts",
+          "label": "即时战略 RTS",
+          "description": "实时经济、侦察与军队控制把长期计划压缩进持续执行。",
+          "sample_count": 1,
+          "record_ids": [
+            "age-of-empires-4-vs-starcraft-2-rts-design"
+          ],
+          "terms": [
+            {
+              "label": "帝国经营",
+              "count": 15,
+              "record_ids": [
+                "age-of-empires-4-vs-starcraft-2-rts-design"
+              ],
+              "weight": 5
+            },
+            {
+              "label": "资源纪律",
+              "count": 13,
+              "record_ids": [
+                "age-of-empires-4-vs-starcraft-2-rts-design"
+              ],
+              "weight": 4
+            },
+            {
+              "label": "多线执行",
+              "count": 9,
+              "record_ids": [
+                "age-of-empires-4-vs-starcraft-2-rts-design"
+              ],
+              "weight": 3
+            },
+            {
+              "label": "竞技证明",
+              "count": 6,
+              "record_ids": [
+                "age-of-empires-4-vs-starcraft-2-rts-design"
+              ],
+              "weight": 2
+            },
+            {
+              "label": "战术可读",
+              "count": 4,
+              "record_ids": [
+                "age-of-empires-4-vs-starcraft-2-rts-design"
+              ],
+              "weight": 2
+            },
+            {
+              "label": "身份表达",
+              "count": 3,
+              "record_ids": [
+                "age-of-empires-4-vs-starcraft-2-rts-design"
+              ],
+              "weight": 2
+            },
+            {
+              "label": "空间控制",
+              "count": 1,
+              "record_ids": [
+                "age-of-empires-4-vs-starcraft-2-rts-design"
+              ],
+              "weight": 1
+            },
+            {
+              "label": "系统掌控",
+              "count": 1,
+              "record_ids": [
+                "age-of-empires-4-vs-starcraft-2-rts-design"
               ],
               "weight": 1
             }
