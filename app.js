@@ -157,7 +157,7 @@ function renderFeaturedAnalysis(target) {
       </div>
     </div>
     <div class="featured-map">
-      ${renderMiniMdaRoute(firstChain)}
+      ${renderMiniMdaRoute(firstChain, getPrimaryAesthetic(record))}
       <div class="featured-meta">
         <span>${(record.chains || []).length} 条 MDA 链</span>
         <span>${(record.comparison_systems || []).length} 个共同系统</span>
@@ -188,7 +188,7 @@ function renderAestheticCloud(nodes) {
     .join("");
   nodes.aestheticCloud.innerHTML = (track.terms || [])
     .map((item, index) => {
-      const size = 13 + Number(item.weight || 1) * 3;
+      const size = 15 + Number(item.weight || 1) * 5;
       return `<button class="cloud-word" type="button" data-cloud-term="${escapeAttribute(item.label)}" data-tone="${index % 4}" style="--cloud-size:${size}px" aria-label="查看「${escapeAttribute(item.label)}」相关分析，命中 ${Number(item.count || 0)} 次"><strong>${escapeHtml(item.label)}</strong><small>${Number(item.count || 0)}</small></button>`;
     })
     .join("");
@@ -324,6 +324,7 @@ function renderIndexCard(record) {
   const cover = record.cover_image || "";
   const firstChain = record.chains?.[0] || {};
   const topSystems = systems.slice(0, 3).map((item) => item.system).filter(Boolean);
+  const aestheticTags = getAestheticTags(record);
   return `
     <article class="record-card">
       <div class="record-cover">
@@ -338,7 +339,7 @@ function renderIndexCard(record) {
         <h3>${escapeHtml(record.title || "未命名分析")}</h3>
         <p>${escapeHtml(compactText(record.summary || "暂无摘要。", 132))}</p>
         <div class="card-route">
-          <span>A</span><strong>${escapeHtml(compactText(firstChain.aesthetic || "体验目标待读", 18))}</strong>
+          <span>A</span><strong>${escapeHtml(compactText(getPrimaryAesthetic(record, firstChain.aesthetic || "体验目标待读"), 18))}</strong>
           <span>D</span><strong>${escapeHtml(compactText(firstChain.dynamic || "玩家动态待读", 18))}</strong>
           <span>M</span><strong>${escapeHtml(compactText(firstChain.mechanic || "机制条件待读", 18))}</strong>
         </div>
@@ -346,6 +347,7 @@ function renderIndexCard(record) {
           ${topSystems.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
         </div>
         <div class="tag-row small">
+          ${aestheticTags.slice(0, 3).map((tag) => `<span class="tag aesthetic-tag">${escapeHtml(tag)}</span>`).join("")}
           ${getGenres(record).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}
         </div>
         <div class="card-metrics">
@@ -399,6 +401,7 @@ function renderDetailPage() {
 
 function renderRecordDetail(record) {
   const cover = record.cover_image || "";
+  const aestheticTags = getAestheticTags(record);
   return `
     <article class="analysis-record">
       <header class="record-header${cover ? " has-cover" : ""}">
@@ -410,7 +413,7 @@ function renderRecordDetail(record) {
             <h1>${escapeHtml(record.title || "未命名分析")}</h1>
           </div>
           <div class="tag-row">
-            ${[...getGenres(record), ...(record.subjects || [])].map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}
+            ${[...aestheticTags.slice(0, 5), ...getGenres(record), ...(record.subjects || [])].map((tag, index) => `<span class="tag${index < aestheticTags.slice(0, 5).length ? " aesthetic-tag" : ""}">${escapeHtml(tag)}</span>`).join("")}
           </div>
         </div>
       </header>
@@ -445,12 +448,14 @@ function renderDetailDashboard(record) {
   const chains = record.chains || [];
   const systems = record.comparison_systems || [];
   const judgments = record.judgments || [];
+  const aestheticTags = getAestheticTags(record);
   return `
     <section class="detail-dashboard" aria-label="阅读仪表盘">
       <div class="dashboard-summary">
         <p class="eyebrow">Reader Dashboard</p>
         <h2>先用 30 秒抓住这篇的设计问题</h2>
         <p>${escapeHtml(compactText(record.summary || "", 190))}</p>
+        ${aestheticTags.length ? `<div class="dashboard-aesthetics">${aestheticTags.slice(0, 6).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
       </div>
       <div class="dashboard-metrics">
         <div><span>${chains.length}</span><small>MDA 链</small></div>
@@ -458,7 +463,7 @@ function renderDetailDashboard(record) {
         <div><span>${judgments.length}</span><small>关键判断</small></div>
       </div>
       <div class="dashboard-route">
-        ${renderMiniMdaRoute(chains[0] || {})}
+        ${renderMiniMdaRoute(chains[0] || {}, getPrimaryAesthetic(record))}
       </div>
     </section>
   `;
@@ -479,10 +484,10 @@ function renderDetailNav() {
   `;
 }
 
-function renderMiniMdaRoute(chain) {
+function renderMiniMdaRoute(chain, aestheticLabel = "") {
   return `
     <div class="mini-mda-route">
-      <div><span>A</span><strong>${escapeHtml(compactText(chain.aesthetic || "体验承诺", 34))}</strong></div>
+      <div><span>A</span><strong>${escapeHtml(compactText(aestheticLabel || chain.aesthetic || "体验承诺", 34))}</strong></div>
       <div><span>D</span><strong>${escapeHtml(compactText(chain.dynamic || "玩家动态", 42))}</strong></div>
       <div><span>M</span><strong>${escapeHtml(compactText(chain.mechanic || "机制选择", 46))}</strong></div>
     </div>
@@ -676,7 +681,7 @@ function renderSystemMatrix(items) {
             ${items.map((item) => `
               <tr>
                 <th scope="row">${escapeHtml(item.system || "")}</th>
-                <td>${escapeHtml(compactText(item.mda?.aesthetic || "", 34))}</td>
+                <td>${escapeHtml(compactText(getAestheticLabel(item.mda || {}, ""), 34))}</td>
                 <td>${escapeHtml(compactText(item.mda?.dynamic || "", 54))}</td>
                 <td>${escapeHtml(compactText(item.mda?.mechanic || "", 54))}</td>
                 <td>${escapeHtml(compactText(item.impact || "", 54))}</td>
@@ -697,7 +702,7 @@ function renderMapRoute(title, thesis, chain, variant) {
         <strong>${escapeHtml(thesis)}</strong>
       </div>
       <div class="map-node-list">
-        <div><span>A 美学</span><p>${escapeHtml(chain?.aesthetic || "待补充美学目标")}</p></div>
+        <div><span>A 美学</span>${renderAestheticValue(chain, "待补充美学目标")}</div>
         <div><span>D 动态</span><p>${escapeHtml(chain?.dynamic || "待补充玩家动态")}</p></div>
         <div><span>M 机制</span><p>${escapeHtml(chain?.mechanic || "待补充实现机制")}</p></div>
       </div>
@@ -723,7 +728,7 @@ function renderMapChipGroup(title, note, items, variant) {
 function findChain(chains, keywords, fallbackIndex) {
   return (
     chains.find((chain) => {
-      const text = [chain.aesthetic, chain.dynamic, chain.mechanic, chain.evidence].filter(Boolean).join(" ");
+      const text = [chain.aesthetic_tag, chain.aesthetic, chain.dynamic, chain.mechanic, chain.evidence].filter(Boolean).join(" ");
       return keywords.some((keyword) => text.includes(keyword));
     }) || chains[fallbackIndex] || chains[0] || null
   );
@@ -777,7 +782,7 @@ function renderComparisonRow(item, record) {
 function renderMdaCell(mda) {
   return `
     <div class="mda-cell">
-      <div><span>A 美学</span><p>${escapeHtml(mda.aesthetic || "")}</p></div>
+      <div><span>A 美学</span>${renderAestheticValue(mda, "")}</div>
       <div><span>D 动态</span><p>${escapeHtml(mda.dynamic || "")}</p></div>
       <div><span>M 机制</span><p>${escapeHtml(mda.mechanic || "")}</p></div>
     </div>
@@ -843,7 +848,8 @@ function renderChain(chain) {
     <article class="chain-card">
       <div class="chain-stage aesthetic">
         <span>美学目标</span>
-        <strong>${escapeHtml(chain.aesthetic || "")}</strong>
+        <strong>${escapeHtml(getAestheticLabel(chain, ""))}</strong>
+        ${chain.aesthetic_tag && chain.aesthetic && chain.aesthetic_tag !== chain.aesthetic ? `<small>${escapeHtml(chain.aesthetic)}</small>` : ""}
       </div>
       <div class="chain-stage dynamic">
         <span>玩家动态</span>
@@ -911,6 +917,34 @@ function compactText(value, max = 90) {
   return `${text.slice(0, Math.max(max - 1, 0))}…`;
 }
 
+function getAestheticTags(record) {
+  if (Array.isArray(record.aesthetic_tags) && record.aesthetic_tags.length) {
+    return [...new Set(record.aesthetic_tags.filter(Boolean))];
+  }
+  const tags = [
+    ...(record.chains || []).map((chain) => chain.aesthetic_tag || chain.aesthetic),
+    ...(record.comparison_systems || []).map((item) => item.mda?.aesthetic_tag || item.mda?.aesthetic),
+  ].filter(Boolean);
+  return [...new Set(tags)];
+}
+
+function getPrimaryAesthetic(record, fallback = "") {
+  return getAestheticTags(record)[0] || fallback;
+}
+
+function getAestheticLabel(item, fallback = "") {
+  return item?.aesthetic_tag || item?.aesthetic || fallback;
+}
+
+function renderAestheticValue(item, fallback = "") {
+  const label = getAestheticLabel(item, fallback);
+  const original = item?.aesthetic || "";
+  if (item?.aesthetic_tag && original && item.aesthetic_tag !== original) {
+    return `<p class="aesthetic-value"><strong>${escapeHtml(item.aesthetic_tag)}</strong><small>${escapeHtml(original)}</small></p>`;
+  }
+  return `<p>${escapeHtml(label)}</p>`;
+}
+
 function collectGenres() {
   const counts = new Map([["全部类型", state.records.length]]);
   for (const record of state.records) {
@@ -942,6 +976,7 @@ function collectSearchText(record, genres) {
   return [
     record.title,
     record.summary,
+    ...(record.aesthetic_tags || []),
     ...(record.subjects || []),
     ...genres,
     ...(record.reading_guide || []).flatMap((item) => [item.point, item.text]),
@@ -949,6 +984,7 @@ function collectSearchText(record, genres) {
     ...(record.comparison_systems || []).flatMap((item) => [
       item.system,
       item.shared,
+      item.mda?.aesthetic_tag,
       item.mda?.aesthetic,
       item.mda?.dynamic,
       item.mda?.mechanic,
@@ -962,7 +998,7 @@ function collectSearchText(record, genres) {
     record.quantification?.scale,
     record.quantification?.method,
     ...(record.quantification?.dimensions || []).flatMap((item) => [item.dimension, item.mda_link, item.reading, ...(item.scores || []).flatMap((score) => [score.label, score.score])]),
-    ...(record.chains || []).flatMap((chain) => [chain.aesthetic, chain.dynamic, chain.mechanic, chain.evidence]),
+    ...(record.chains || []).flatMap((chain) => [chain.aesthetic_tag, chain.aesthetic, chain.dynamic, chain.mechanic, chain.evidence]),
     ...(record.judgments || []).flatMap((item) => [item.issue, item.why, item.impact]),
     ...(record.recommendations || []).flatMap((item) => [item.goal, item.change, item.impact, item.risk]),
   ]
