@@ -2470,8 +2470,10 @@ body::before {
   color: #e0aa45;
   font-family: inherit;
   font-size: var(--cloud-size, 20px);
-  line-height: 1;
-  white-space: nowrap;
+  line-height: 1.12;
+  max-width: 260px;
+  white-space: normal;
+  text-align: left;
   background: transparent;
   cursor: pointer;
   transition: color 150ms ease, transform 150ms ease, background 150ms ease;
@@ -2552,10 +2554,39 @@ body::before {
   .genre-cloud-intro h2 { font-size: 24px; }
   .genre-cloud-intro > p:not(.eyebrow),
   .cloud-method { display: none; }
+  .cloud-category-tabs,
+  .cloud-track-tabs { min-width: 0; }
+  .cloud-tab,
+  .cloud-track {
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
   .cloud-view-head { display: grid; }
   .cloud-view-head > p { max-width: none; text-align: left; }
-  .aesthetic-cloud { min-height: 190px; gap: 12px 14px; padding: 16px 0 4px; }
-  .cloud-word { font-size: min(var(--cloud-size, 20px), 31px); }
+  .aesthetic-cloud {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+    justify-items: stretch;
+    min-height: 0;
+    gap: 8px;
+    padding: 14px 0 4px;
+  }
+  .cloud-word {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    width: 100%;
+    max-width: none;
+    border: 1px solid rgba(185, 197, 192, 0.18);
+    border-left: 3px solid currentColor;
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: min(var(--cloud-size, 20px), 22px);
+    background: rgba(255, 255, 255, 0.035);
+  }
+  .cloud-word strong { overflow-wrap: anywhere; }
+  .cloud-word small { margin-top: 4px; }
   .result-meta { align-items: flex-end; flex-direction: column; gap: 6px; }
 }
 

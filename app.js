@@ -188,7 +188,7 @@ function renderAestheticCloud(nodes) {
     .join("");
   nodes.aestheticCloud.innerHTML = (track.terms || [])
     .map((item, index) => {
-      const size = 15 + Number(item.weight || 1) * 5;
+      const size = 13 + Number(item.weight || 1) * 3;
       return `<button class="cloud-word" type="button" data-cloud-term="${escapeAttribute(item.label)}" data-tone="${index % 4}" style="--cloud-size:${size}px" aria-label="查看「${escapeAttribute(item.label)}」相关分析，命中 ${Number(item.count || 0)} 次"><strong>${escapeHtml(item.label)}</strong><small>${Number(item.count || 0)}</small></button>`;
     })
     .join("");
