@@ -104,7 +104,7 @@ async function loadRecords() {
   const clouds = cloudResponse.ok ? await cloudResponse.json() : { categories: [] };
   state.records = Array.isArray(records) ? records : [];
   state.clouds = clouds && Array.isArray(clouds.categories) ? clouds : { categories: [] };
-  if (pageType === "detail") renderDetailPage();
+  if (pageType === "detail" || pageType === "deep-dive") renderDetailPage();
   else renderIndexPage();
 }
 
@@ -311,7 +311,7 @@ function renderIndexCard(record) {
           <span>${(record.chains || []).length} 条 MDA 链</span>
           <span>${gaps.length} 个覆盖差异</span>
         </div>
-        <a class="primary-link" href="./detail.html?id=${encodeURIComponent(record.id)}">查看完整对比</a>
+        <a class="primary-link" href="./detail.html?id=${encodeURIComponent(record.id)}">查看速览</a>
       </div>
     </article>
   `;
@@ -352,53 +352,266 @@ function renderDetailPage() {
     return;
   }
 
-  document.title = `${record.title} - 游戏 MDA 策划分析库`;
-  root.innerHTML = renderRecordDetail(record);
+  const isDeepDive = pageType === "deep-dive";
+  document.title = `${record.title} - ${isDeepDive ? "详述" : "速览"} - 游戏 MDA 策划分析库`;
+  root.innerHTML = isDeepDive ? renderRecordDeepDive(record) : renderRecordDetail(record);
 }
 
 function renderRecordDetail(record) {
-  const cover = record.cover_image || "";
   return `
-    <article class="analysis-record">
-      <header class="record-header${cover ? " has-cover" : ""}">
-        ${cover ? `<img class="record-header-image" src="${escapeAttribute(cover)}" alt="${escapeAttribute(record.cover_alt || record.title || "分析专题封面")}" loading="eager" decoding="async" />` : ""}
-        ${cover ? `<div class="record-header-shade" aria-hidden="true"></div>` : ""}
-        <div class="record-header-content">
-          <div class="record-header-copy">
-            <p class="eyebrow">${escapeHtml(formatDate(record.updated_at || record.created_at))}</p>
-            <h1>${escapeHtml(record.title || "未命名分析")}</h1>
-          </div>
-          <div class="tag-row">
-            ${[...getGenres(record), ...(record.subjects || [])].map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}
-          </div>
-        </div>
-      </header>
-
-      ${renderVisualRoutes(record.visual_routes || [], record)}
-
-      <section class="summary-band">
-        <span>MDA 对比结论</span>
-        <p>${escapeHtml(record.summary || "暂无摘要。")}</p>
-      </section>
-
-      ${renderReadingGuide(record.reading_guide || [])}
+    <article class="analysis-record overview-record">
+      ${renderRecordHeader(record)}
+      ${renderViewSwitch(record, "overview")}
+      ${renderThesisBoard(record)}
       ${renderArgumentMap(record)}
-      ${renderQuantification(record.quantification, record)}
+      ${renderScoreMatrix(record)}
+      ${renderStageFlowMatrix(record)}
+      ${renderLeverMatrix(record)}
+      ${renderValidationMatrix(record)}
+      ${renderJudgmentMatrix(record)}
+      ${renderRecommendationMatrix(record)}
+      ${renderDeepDivePrompt(record)}
+    </article>
+  `;
+}
+
+function renderRecordDeepDive(record) {
+  return `
+    <article class="analysis-record deep-record">
+      ${renderRecordHeader(record)}
+      ${renderViewSwitch(record, "deep")}
+      ${renderSummaryBand(record)}
+      ${renderReadingGuide(record.reading_guide || [])}
+      ${renderVisualRoutes(record.visual_routes || [], record)}
       ${renderDeepDives(record.deep_dives || [])}
-      ${renderFailureModes(record.failure_modes || [])}
-      ${renderDesignLevers(record.design_levers || [])}
-      ${renderValidationSignals(record.validation_signals || [])}
 
       <section class="record-grid">
         ${renderComparisonSystems(record.comparison_systems || [], record)}
         ${renderSystemGaps(record.system_gaps || [], record)}
         ${renderMdaChains(record.chains || [])}
+        ${renderFailureModes(record.failure_modes || [])}
+        ${renderDesignLevers(record.design_levers || [])}
+        ${renderValidationSignals(record.validation_signals || [])}
         ${renderJudgments(record.judgments || [])}
         ${renderRecommendations(record.recommendations || [])}
         ${renderSources(record.sources || [])}
       </section>
     </article>
   `;
+}
+
+function renderRecordHeader(record) {
+  const cover = record.cover_image || "";
+  return `
+    <header class="record-header${cover ? " has-cover" : ""}">
+      ${cover ? `<img class="record-header-image" src="${escapeAttribute(cover)}" alt="${escapeAttribute(record.cover_alt || record.title || "分析专题封面")}" loading="eager" decoding="async" />` : ""}
+      ${cover ? `<div class="record-header-shade" aria-hidden="true"></div>` : ""}
+      <div class="record-header-content">
+        <div class="record-header-copy">
+          <p class="eyebrow">${escapeHtml(formatDate(record.updated_at || record.created_at))}</p>
+          <h1>${escapeHtml(record.title || "未命名分析")}</h1>
+        </div>
+        <div class="tag-row">
+          ${[...getGenres(record), ...(record.subjects || [])].map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}
+        </div>
+      </div>
+    </header>
+  `;
+}
+
+function renderViewSwitch(record, active) {
+  const id = encodeURIComponent(record.id || "");
+  return `
+    <nav class="view-switch" aria-label="文章视图">
+      <div>
+        <p class="eyebrow">View Mode</p>
+        <strong>${active === "deep" ? "详述页：证据、情境和完整解释" : "速览页：图谱、矩阵和判断路线"}</strong>
+      </div>
+      <div class="view-links">
+        <a class="${active === "overview" ? "primary-link" : "secondary-link"}" href="./detail.html?id=${id}">速览</a>
+        <a class="${active === "deep" ? "primary-link" : "secondary-link"}" href="./deep-dive.html?id=${id}">详述</a>
+      </div>
+    </nav>
+  `;
+}
+
+function renderSummaryBand(record) {
+  return `
+    <section class="summary-band">
+      <span>MDA 对比结论</span>
+      <p>${escapeHtml(record.summary || "暂无摘要。")}</p>
+    </section>
+  `;
+}
+
+function renderThesisBoard(record) {
+  const overview = record.overview || {};
+  const nodes = overview.thesis_nodes || [
+    { label: "核心命题", value: record.argument_map?.core || record.summary || "待补充核心命题" },
+    ...((record.argument_map?.routes || []).map((route, index) => ({
+      label: route.title || `路线 ${index + 1}`,
+      value: route.thesis || "",
+    }))),
+  ];
+  if (!nodes.length) return "";
+  return `
+    <section class="overview-board">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">Fast Read</p>
+          <h2>速览结论：先抓判断骨架</h2>
+        </div>
+      </div>
+      <div class="thesis-grid">
+        ${nodes
+          .map(
+            (node, index) => `
+              <article class="thesis-node${index === 0 ? " core" : ""}">
+                <span>${escapeHtml(node.label || "")}</span>
+                <strong>${escapeHtml(node.value || "")}</strong>
+              </article>
+            `,
+          )
+          .join("")}
+      </div>
+    </section>
+  `;
+}
+
+function renderScoreMatrix(record) {
+  const dimensions = record.quantification?.dimensions || [];
+  if (!dimensions.length) return "";
+  const rows = dimensions.map((item) => {
+    const scores = getScoreEntries(item, record);
+    const cs2 = scores.find((entry) => entry.label === "CS2") || scores[0];
+    const valorant = scores.find((entry) => entry.label === "VALORANT") || scores[1] || scores[0];
+    return [
+      item.dimension,
+      scorePill(cs2?.label || "对象 A", cs2?.score ?? 0),
+      scorePill(valorant?.label || "对象 B", valorant?.score ?? 0),
+      compactText(item.reading, 68),
+    ];
+  });
+  return renderMatrixSection("Score Matrix", "倾向矩阵：6 个维度看分叉", ["维度", "CS2", "VALORANT", "速读"], rows);
+}
+
+function renderStageFlowMatrix(record) {
+  const rows = record.overview?.stage_flow || (record.comparison_systems || []).map((item) => {
+    const games = getGameEntries(item, record);
+    return {
+      stage: item.system,
+      input: compactText(item.shared, 42),
+      cs2: compactText(games[0]?.text, 46),
+      valorant: compactText(games[1]?.text, 46),
+      output: compactText(item.impact, 44),
+    };
+  });
+  return renderMatrixSection(
+    "Round Flow",
+    "回合流程表：同一阶段，不同责任分配",
+    ["阶段", "系统问题", "CS2 路线", "VALORANT 路线", "设计含义"],
+    rows.map((item) => [item.stage, item.input, item.cs2, item.valorant, item.output]),
+  );
+}
+
+function renderLeverMatrix(record) {
+  const rows = record.overview?.lever_matrix || (record.design_levers || []).map((item) => ({
+    lever: item.lever,
+    cs2: compactText(item.cs2_read, 42),
+    valorant: compactText(item.valorant_read, 42),
+    question: compactText(item.tuning_question, 46),
+    risk: compactText(item.risk, 40),
+  }));
+  return renderMatrixSection(
+    "Tuning Matrix",
+    "调参矩阵：哪些旋钮会改变体验",
+    ["机制杠杆", "CS2 读法", "VALORANT 读法", "调参问题", "风险"],
+    rows.map((item) => [item.lever, item.cs2, item.valorant, item.question, item.risk]),
+  );
+}
+
+function renderValidationMatrix(record) {
+  const rows = record.overview?.validation_matrix || (record.validation_signals || []).map((item) => ({
+    signal: item.signal,
+    good: compactText(item.good, 58),
+    warning: compactText(item.warning, 58),
+  }));
+  return renderMatrixSection(
+    "Validation Matrix",
+    "验证矩阵：怎么判断设计真的成立",
+    ["观察信号", "健康状态", "危险状态"],
+    rows.map((item) => [item.signal, item.good, item.warning]),
+  );
+}
+
+function renderJudgmentMatrix(record) {
+  const rows = (record.judgments || []).map((item) => [item.issue, compactText(item.why, 58), compactText(item.impact, 58)]);
+  return renderMatrixSection("Judgment Matrix", "关键判断表", ["判断", "为什么", "玩家影响"], rows);
+}
+
+function renderRecommendationMatrix(record) {
+  const rows = (record.recommendations || []).map((item) => [item.goal, compactText(item.change, 58), compactText(item.impact, 54), compactText(item.risk, 46)]);
+  return renderMatrixSection("Action Matrix", "设计建议表", ["目标", "机制调整", "预期影响", "风险"], rows);
+}
+
+function renderDeepDivePrompt(record) {
+  const id = encodeURIComponent(record.id || "");
+  return `
+    <section class="deep-dive-prompt">
+      <div>
+        <p class="eyebrow">Need Detail</p>
+        <h2>情境、证据和完整解释放在详述页</h2>
+      </div>
+      <a class="primary-link" href="./deep-dive.html?id=${id}">进入详述页</a>
+    </section>
+  `;
+}
+
+function renderMatrixSection(eyebrow, title, columns, rows) {
+  if (!rows.length) return "";
+  return `
+    <section class="matrix-section">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">${escapeHtml(eyebrow)}</p>
+          <h2>${escapeHtml(title)}</h2>
+        </div>
+        <span>${rows.length}</span>
+      </div>
+      <div class="matrix-table-wrap">
+        <table class="overview-table">
+          <thead>
+            <tr>${columns.map((column) => `<th scope="col">${escapeHtml(column)}</th>`).join("")}</tr>
+          </thead>
+          <tbody>
+            ${rows
+              .map(
+                (row) => `
+                  <tr>
+                    ${row.map((cell, index) => renderTableCell(cell, index)).join("")}
+                  </tr>
+                `,
+              )
+              .join("")}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  `;
+}
+
+function renderTableCell(value, index) {
+  const html = value && typeof value === "object" && "html" in value ? value.html : escapeHtml(value || "");
+  return index === 0 ? `<th scope="row">${html}</th>` : `<td>${html}</td>`;
+}
+
+function scorePill(label, score) {
+  return { html: `<span class="score-pill"><b>${escapeHtml(label)}</b><i>${clampScore(score)}/5</i></span>` };
+}
+
+function compactText(value, max = 72) {
+  const text = String(value || "").trim();
+  return text.length > max ? `${text.slice(0, max - 1)}…` : text;
 }
 
 function renderDeepDives(items) {
@@ -933,6 +1146,10 @@ function collectSearchText(record, genres) {
     record.summary,
     ...(record.subjects || []),
     ...genres,
+    ...(record.overview?.thesis_nodes || []).flatMap((item) => [item.label, item.value]),
+    ...(record.overview?.stage_flow || []).flatMap((item) => [item.stage, item.input, item.cs2, item.valorant, item.output]),
+    ...(record.overview?.lever_matrix || []).flatMap((item) => [item.lever, item.cs2, item.valorant, item.question, item.risk]),
+    ...(record.overview?.validation_matrix || []).flatMap((item) => [item.signal, item.good, item.warning]),
     ...(record.reading_guide || []).flatMap((item) => [item.point, item.text]),
     ...(record.visual_routes || []).flatMap((item) => [item.title, item.caption, item.takeaway]),
     ...(record.comparison_systems || []).flatMap((item) => [
