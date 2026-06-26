@@ -1,5 +1,2805 @@
 [
   {
+    "id": "breath-of-the-wild-vs-tears-of-the-kingdom-open-world-design",
+    "title": "旷野之息 vs 王国之泪：开放世界的自然发现与发明自由",
+    "genre_tags": [
+      "开放世界",
+      "动作冒险",
+      "系统解谜",
+      "探索"
+    ],
+    "subjects": [
+      "The Legend of Zelda: Breath of the Wild",
+      "The Legend of Zelda: Tears of the Kingdom"
+    ],
+    "scope": {
+      "system": "地图探索、物理交互、能力工具、解谜、移动方式与玩家自发目标",
+      "player_context": "喜欢探索、实验、低指令开放目标和环境解谜的单人玩家",
+      "evidence": "官方产品页、稳定公开玩法规则与可观察核心循环。",
+      "assumptions": "不比较临时版本数值、短期活动、玩家社区元环境和商业表现。"
+    },
+    "summary": "两者都把开放世界从清单任务拉回“我看见了什么、想到什么、试了什么”；旷野之息用地形、天气、物理和少量高泛用能力建立自然发现，让玩家像旅行者一样理解世界；王国之泪在此基础上把组合、粘连、倒转和建造推到前台，让玩家像发明者一样改写问题。前者的核心是发现世界，后者的核心是发明解法。",
+    "cover_image": "./assets/covers/breath-of-the-wild-vs-tears-of-the-kingdom-open-world-design.webp",
+    "cover_alt": "奇幻荒野中，左侧暗色留白，右侧是悬崖、古代装置和玩家发明机器的探索场景",
+    "reading_guide": [
+      {
+        "point": "先看问题怎么出现",
+        "text": "旷野之息常让地形和天气自然提出问题；王国之泪常让材料和装置暗示可组合解法。"
+      },
+      {
+        "point": "再看工具边界",
+        "text": "前者能力少而泛用，后者工具多且可叠加，玩家表达空间更大。"
+      },
+      {
+        "point": "最后看失败反馈",
+        "text": "只要失败能解释成物理、角度、能量或时机，玩家就愿意继续试。"
+      }
+    ],
+    "argument_map": {
+      "core": "旷野之息把玩家变成观察世界的旅行者，王国之泪把玩家变成改造世界的发明者。",
+      "routes": [
+        {
+          "title": "旷野之息路线",
+          "thesis": "让自然地形、天气和物理诱导玩家探索",
+          "chain_index": 0
+        },
+        {
+          "title": "王国之泪路线",
+          "thesis": "让玩家用组合系统创造自己的路径和答案",
+          "chain_index": 1
+        }
+      ]
+    },
+    "quantification": {
+      "scale": "1-5 表示设计倾向强度，不是品质、热度或商业表现评分。",
+      "method": "依据稳定核心机制对玩家行为的持续影响进行 MDA 策划判断。",
+      "dimensions": [
+        {
+          "dimension": "自然发现",
+          "mda_link": "A 未知探索 / M 地标与地形",
+          "scores": [
+            {
+              "label": "旷野之息",
+              "score": 5
+            },
+            {
+              "label": "王国之泪",
+              "score": 4
+            }
+          ],
+          "reading": "旷野之息更纯粹地把世界本身当作奖励。"
+        },
+        {
+          "dimension": "发明自由",
+          "mda_link": "A 创造自由 / M 组合建造",
+          "scores": [
+            {
+              "label": "旷野之息",
+              "score": 3
+            },
+            {
+              "label": "王国之泪",
+              "score": 5
+            }
+          ],
+          "reading": "王国之泪的工具组合显著提高解法表达。"
+        },
+        {
+          "dimension": "解法可替代性",
+          "mda_link": "A 自主解题 / D 多路径尝试",
+          "scores": [
+            {
+              "label": "旷野之息",
+              "score": 4
+            },
+            {
+              "label": "王国之泪",
+              "score": 5
+            }
+          ],
+          "reading": "两者都强，但王国之泪能产生更多非预设方案。"
+        },
+        {
+          "dimension": "世界静谧感",
+          "mda_link": "A 旅行感 / M 留白节奏",
+          "scores": [
+            {
+              "label": "旷野之息",
+              "score": 5
+            },
+            {
+              "label": "王国之泪",
+              "score": 3
+            }
+          ],
+          "reading": "旷野之息的空旷和节制更强化孤独旅行。"
+        }
+      ]
+    },
+    "comparison_systems": [
+      {
+        "system": "能力工具",
+        "shared": "都给玩家少量高泛用能力，而不是每个谜题一把钥匙。",
+        "mda": {
+          "aesthetic": "自主解题",
+          "dynamic": "玩家将同一能力迁移到战斗、移动、解谜和探索中。",
+          "mechanic": "物理能力、环境交互、移动工具、材料和能量限制。"
+        },
+        "games": [
+          {
+            "label": "旷野之息",
+            "text": "能力更少、更基础，强调理解物理规则。",
+            "example": "用磁力、炸弹和时间停滞处理地形、机关和战斗。"
+          },
+          {
+            "label": "王国之泪",
+            "text": "能力更偏组合和生产，强调创造新对象。",
+            "example": "把木板、风扇和轮子组合成临时载具越过障碍。"
+          }
+        ],
+        "impact": "能力越泛用，玩家越容易把解法归功于自己。"
+      },
+      {
+        "system": "地图引导",
+        "shared": "都依赖地标、视线和好奇心驱动移动。",
+        "mda": {
+          "aesthetic": "未知探索",
+          "dynamic": "玩家从远处看到异常，再主动偏离原路线。",
+          "mechanic": "塔、地标、地形高度、神庙/洞穴、视觉轮廓和奖励密度。"
+        },
+        "games": [
+          {
+            "label": "旷野之息",
+            "text": "地形留白更强，远景目标更像自然旅行。",
+            "example": "玩家爬上山顶后被远处光点和建筑轮廓吸引。"
+          },
+          {
+            "label": "王国之泪",
+            "text": "天空、地底和洞穴增加垂直层次。",
+            "example": "玩家从天空岛落下时临时改变路线，追逐地表异象。"
+          }
+        ],
+        "impact": "探索从地图图标转向空间观察，降低清单疲劳。"
+      },
+      {
+        "system": "材料系统",
+        "shared": "都让路上拾取物参与解法。",
+        "mda": {
+          "aesthetic": "创造自由",
+          "dynamic": "玩家把资源理解为工具，而不是只当消耗品。",
+          "mechanic": "采集物、武器耐久、料理、装置、粘连、能量和环境状态。"
+        },
+        "games": [
+          {
+            "label": "旷野之息",
+            "text": "材料更常服务生存、战斗和临时环境应对。",
+            "example": "做抗寒料理或用火把解决天气与地形压力。"
+          },
+          {
+            "label": "王国之泪",
+            "text": "材料直接改变装备和世界对象功能。",
+            "example": "把怪物素材附在武器上，或把装置拼成移动平台。"
+          }
+        ],
+        "impact": "王国之泪把拾取物的语义从补给提升为发明零件。"
+      }
+    ],
+    "system_gaps": [
+      {
+        "system": "建造式解法",
+        "games": [
+          {
+            "label": "旷野之息",
+            "text": "有物理实验，但不以组装机器为中心。",
+            "example": ""
+          },
+          {
+            "label": "王国之泪",
+            "text": "核心表达，让玩家把解法做出来。",
+            "example": ""
+          }
+        ]
+      },
+      {
+        "system": "静谧旅行留白",
+        "games": [
+          {
+            "label": "旷野之息",
+            "text": "更强，空旷本身就是审美。",
+            "example": ""
+          },
+          {
+            "label": "王国之泪",
+            "text": "系统密度更高，奇观和活动更频繁。",
+            "example": ""
+          }
+        ]
+      }
+    ],
+    "chains": [
+      {
+        "aesthetic": "自然发现",
+        "dynamic": "玩家观察地形、天气和远景，自主决定去哪里。",
+        "mechanic": "可攀爬地形、滑翔、视线地标、天气、物理和少量地图标记。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "发明自由",
+        "dynamic": "玩家把环境物和工具组合成自己的移动、战斗或解谜方案。",
+        "mechanic": "究极手、材料粘连、装置、电池、倒转和通天能力。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "自主解题",
+        "dynamic": "玩家相信不止一种答案，并愿意为奇怪想法付出试错。",
+        "mechanic": "统一物理规则、低硬性失败、即时反馈和可回收材料。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      }
+    ],
+    "judgments": [
+      {
+        "issue": "开放世界的自由来自规则可信，不来自地图面积",
+        "why": "玩家愿意探索，是因为看见的问题可以被已有规则解释和尝试。",
+        "impact": "世界越能回应玩家想法，越不需要大量任务图标维持动机。"
+      },
+      {
+        "issue": "工具复杂度会改变审美重心",
+        "why": "当组合系统足够强，玩家注意力会从观察世界转向改造世界。",
+        "impact": "王国之泪更容易产出玩家故事，但也会牺牲一部分旷野孤独感。"
+      }
+    ],
+    "recommendations": [
+      {
+        "goal": "未知探索",
+        "change": "优先设计可从远处读到的地形异常，而不是堆叠 UI 标记。",
+        "impact": "玩家会觉得路线是自己发现的。",
+        "risk": "奖励密度不足时会显得空。"
+      },
+      {
+        "goal": "创造自由",
+        "change": "保证核心物理规则一致，并允许低成本回收失败尝试。",
+        "impact": "玩家更愿意实验，而不是只找标准答案。",
+        "risk": "强组合系统容易产生跳关和内容绕过。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "旷野之息官网",
+        "url": "https://zelda.nintendo.com/breath-of-the-wild/"
+      },
+      {
+        "label": "王国之泪官网",
+        "url": "https://zelda.nintendo.com/tears-of-the-kingdom/"
+      }
+    ],
+    "created_at": "2026-06-26T06:31:03+00:00",
+    "updated_at": "2026-06-26T06:31:38+00:00",
+    "markdown": "**结论**\n两者都把开放世界从清单任务拉回“我看见了什么、想到什么、试了什么”；旷野之息用地形、天气、物理和少量高泛用能力建立自然发现，让玩家像旅行者一样理解世界；王国之泪在此基础上把组合、粘连、倒转和建造推到前台，让玩家像发明者一样改写问题。前者的核心是发现世界，后者的核心是发明解法。\n\n**分析范围**\n- System: 地图探索、物理交互、能力工具、解谜、移动方式与玩家自发目标\n- Player context: 喜欢探索、实验、低指令开放目标和环境解谜的单人玩家\n- Evidence: 官方产品页、稳定公开玩法规则与可观察核心循环。\n- Assumptions: 不比较临时版本数值、短期活动、玩家社区元环境和商业表现。\n\n**MDA 拆解**\n| Aesthetic | Dynamic | Mechanic | Evidence | Confidence |\n|---|---|---|---|---|\n| 自然发现 | 玩家观察地形、天气和远景，自主决定去哪里。 | 可攀爬地形、滑翔、视线地标、天气、物理和少量地图标记。 | 官方产品页与稳定公开玩法结构。 | High |\n| 发明自由 | 玩家把环境物和工具组合成自己的移动、战斗或解谜方案。 | 究极手、材料粘连、装置、电池、倒转和通天能力。 | 官方产品页与稳定公开玩法结构。 | High |\n| 自主解题 | 玩家相信不止一种答案，并愿意为奇怪想法付出试错。 | 统一物理规则、低硬性失败、即时反馈和可回收材料。 | 官方产品页与稳定公开玩法结构。 | High |\n\n**关键判断**\n| Issue / Strength | Why | Player impact |\n|---|---|---|\n| 开放世界的自由来自规则可信，不来自地图面积 | 玩家愿意探索，是因为看见的问题可以被已有规则解释和尝试。 | 世界越能回应玩家想法，越不需要大量任务图标维持动机。 |\n| 工具复杂度会改变审美重心 | 当组合系统足够强，玩家注意力会从观察世界转向改造世界。 | 王国之泪更容易产出玩家故事，但也会牺牲一部分旷野孤独感。 |\n\n**设计建议**\n| Goal aesthetic | Mechanic change | Expected player impact | Risk |\n|---|---|---|---|\n| 未知探索 | 优先设计可从远处读到的地形异常，而不是堆叠 UI 标记。 | 玩家会觉得路线是自己发现的。 | 奖励密度不足时会显得空。 |\n| 创造自由 | 保证核心物理规则一致，并允许低成本回收失败尝试。 | 玩家更愿意实验，而不是只找标准答案。 | 强组合系统容易产生跳关和内容绕过。 |"
+  },
+  {
+    "id": "hitman-vs-dishonored-stealth-design",
+    "title": "Hitman World of Assassination vs Dishonored 2：潜行设计的钟表谜题与超能力即兴",
+    "genre_tags": [
+      "潜行",
+      "沉浸模拟",
+      "关卡解谜",
+      "动作冒险"
+    ],
+    "subjects": [
+      "Hitman World of Assassination",
+      "Dishonored 2"
+    ],
+    "scope": {
+      "system": "潜行关卡、目标处理、伪装/能力、警觉状态、路线与非线性解法",
+      "player_context": "喜欢观察、试探、低正面冲突和多解法关卡的单人玩家",
+      "evidence": "官方产品页、稳定公开玩法规则与可观察核心循环。",
+      "assumptions": "不比较临时版本数值、短期活动、玩家社区元环境和商业表现。"
+    },
+    "summary": "两者都让玩家在高密度关卡里寻找“不被系统抓住”的解法；Hitman 把关卡做成社会机器，伪装、日程、禁区和事故击杀让玩家像调钟表一样安排目标死亡；Dishonored 2 把关卡做成能力沙盒，瞬移、控制、时间和垂直空间让玩家像舞台魔术师一样即兴穿越。前者卖冷静编排，后者卖高表达潜入。",
+    "cover_image": "./assets/covers/hitman-vs-dishonored-stealth-design.webp",
+    "cover_alt": "夜间宅邸中，左侧暗色留白，右侧是巡逻阴影、机关和潜入路线",
+    "reading_guide": [
+      {
+        "point": "先看玩家身份",
+        "text": "Hitman 让玩家扮演社会系统里的伪装者；Dishonored 2 让玩家扮演能改写空间规则的超常行动者。"
+      },
+      {
+        "point": "再看关卡时间",
+        "text": "Hitman 的 NPC 日程像钟表，Dishonored 2 的关卡更像垂直路线和能力拼图。"
+      },
+      {
+        "point": "最后看暴露后的处理",
+        "text": "一方强调回到伪装和低调，另一方允许用能力把失误转化为战斗或逃脱。"
+      }
+    ],
+    "argument_map": {
+      "core": "Hitman 强在社会机器的冷静编排，Dishonored 2 强在空间能力的即兴表达。",
+      "routes": [
+        {
+          "title": "Hitman 路线",
+          "thesis": "让玩家观察 NPC 日程并把事故伪装成系统自然结果",
+          "chain_index": 0
+        },
+        {
+          "title": "Dishonored 2 路线",
+          "thesis": "让玩家用超能力、垂直空间和道具组合即兴潜入",
+          "chain_index": 1
+        }
+      ]
+    },
+    "quantification": {
+      "scale": "1-5 表示设计倾向强度，不是品质、热度或商业表现评分。",
+      "method": "依据稳定核心机制对玩家行为的持续影响进行 MDA 策划判断。",
+      "dimensions": [
+        {
+          "dimension": "社会伪装",
+          "mda_link": "A 冷静控制 / M 伪装与禁区",
+          "scores": [
+            {
+              "label": "Hitman",
+              "score": 5
+            },
+            {
+              "label": "Dishonored 2",
+              "score": 2
+            }
+          ],
+          "reading": "Hitman 的潜行更依赖身份规则。"
+        },
+        {
+          "dimension": "能力表达",
+          "mda_link": "A 身份表达 / M 超能力组合",
+          "scores": [
+            {
+              "label": "Hitman",
+              "score": 2
+            },
+            {
+              "label": "Dishonored 2",
+              "score": 5
+            }
+          ],
+          "reading": "Dishonored 2 给玩家更多动作型解法。"
+        },
+        {
+          "dimension": "关卡复盘",
+          "mda_link": "A 系统掌控 / D 日程与机会",
+          "scores": [
+            {
+              "label": "Hitman",
+              "score": 5
+            },
+            {
+              "label": "Dishonored 2",
+              "score": 4
+            }
+          ],
+          "reading": "两者都可复盘，Hitman 更像机械剧场。"
+        },
+        {
+          "dimension": "失误恢复",
+          "mda_link": "A 逆转希望 / M 逃脱能力",
+          "scores": [
+            {
+              "label": "Hitman",
+              "score": 3
+            },
+            {
+              "label": "Dishonored 2",
+              "score": 5
+            }
+          ],
+          "reading": "Dishonored 2 更允许把暴露变成临场动作。"
+        }
+      ]
+    },
+    "comparison_systems": [
+      {
+        "system": "多解法目标",
+        "shared": "都允许玩家用不同路线完成目标。",
+        "mda": {
+          "aesthetic": "自主解题",
+          "dynamic": "玩家观察规则漏洞，并选择低风险或高表达方案。",
+          "mechanic": "目标日程、路线、禁区、能力、道具、环境机关和警觉 AI。"
+        },
+        "games": [
+          {
+            "label": "Hitman",
+            "text": "目标处理更像把社会规则推到某个事故状态。",
+            "example": "玩家换装进入厨房、投毒、等待目标按日程饮用。"
+          },
+          {
+            "label": "Dishonored 2",
+            "text": "目标处理更像空间穿越和能力组合。",
+            "example": "玩家从屋顶瞬移进目标房间，再用非致命手段撤离。"
+          }
+        ],
+        "impact": "共同点是多解法，差异是一个靠身份系统，一个靠能力系统。"
+      },
+      {
+        "system": "信息收集",
+        "shared": "都鼓励玩家先观察再行动。",
+        "mda": {
+          "aesthetic": "战术可读",
+          "dynamic": "玩家根据巡逻、对话、路线和反馈判断机会窗口。",
+          "mechanic": "NPC 对话、日程、视觉锥、声音、提示、标记和关卡动线。"
+        },
+        "games": [
+          {
+            "label": "Hitman",
+            "text": "机会信息常来自 NPC 对话和社会日程。",
+            "example": "偷听工作人员能发现目标会参加某个私人事件。"
+          },
+          {
+            "label": "Dishonored 2",
+            "text": "机会信息更多来自空间扫描和能力侦察。",
+            "example": "玩家用心跳或高处观察确认守卫与符文位置。"
+          }
+        ],
+        "impact": "信息越可读，玩家越会把成功归因到计划。"
+      },
+      {
+        "system": "警觉状态",
+        "shared": "都需要警觉阶梯让失误有层次。",
+        "mda": {
+          "aesthetic": "公平反制",
+          "dynamic": "玩家在怀疑、搜索、战斗和逃脱之间寻找恢复窗口。",
+          "mechanic": "伪装破绽、目击、尸体发现、声音、搜索状态和战斗 AI。"
+        },
+        "games": [
+          {
+            "label": "Hitman",
+            "text": "伪装和可疑行为让警觉更社会化。",
+            "example": "在错误区域停留会先引起怀疑，而不是立刻失败。"
+          },
+          {
+            "label": "Dishonored 2",
+            "text": "能力和机动性让警觉后仍能快速重置。",
+            "example": "被发现后可以瞬移到高处、断视线再重新潜入。"
+          }
+        ],
+        "impact": "失误可恢复会鼓励实验，失误太宽松则削弱潜行张力。"
+      }
+    ],
+    "system_gaps": [
+      {
+        "system": "伪装身份系统",
+        "games": [
+          {
+            "label": "Hitman",
+            "text": "核心机制，把社会空间变成解谜规则。",
+            "example": ""
+          },
+          {
+            "label": "Dishonored 2",
+            "text": "不作为核心，更多依赖空间、能力和隐蔽。",
+            "example": ""
+          }
+        ]
+      },
+      {
+        "system": "超能力移动",
+        "games": [
+          {
+            "label": "Hitman",
+            "text": "弱化，主角身体能力相对写实。",
+            "example": ""
+          },
+          {
+            "label": "Dishonored 2",
+            "text": "核心机制，改变路线和失误恢复。",
+            "example": ""
+          }
+        ]
+      }
+    ],
+    "chains": [
+      {
+        "aesthetic": "钟表谜题",
+        "dynamic": "玩家观察日程、伪装和禁区，等待目标进入可操控状态。",
+        "mechanic": "NPC 循环、伪装等级、禁区规则、机会事件和事故击杀。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "超能力即兴",
+        "dynamic": "玩家用能力改写路线、距离和暴露后的逃脱方式。",
+        "mechanic": "瞬移、控制、时间能力、垂直空间、道具和警觉 AI。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "可复盘潜行",
+        "dynamic": "失败后玩家能理解是哪条规则被触发。",
+        "mechanic": "视觉/声音反馈、警觉阶段、保存点、目标提示和环境反馈。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      }
+    ],
+    "judgments": [
+      {
+        "issue": "潜行不是少给玩家力量，而是让力量有代价",
+        "why": "如果行动只有一种正确路线，潜行会退化成背板；如果能力无成本，潜行会退化成动作碾压。",
+        "impact": "强潜行关卡需要让玩家既敢试，又尊重系统边界。"
+      },
+      {
+        "issue": "关卡密度比地图规模更重要",
+        "why": "潜行乐趣来自规则交叉点，而不是走路距离。",
+        "impact": "高密度小关卡更容易产生计划、失误和复盘故事。"
+      }
+    ],
+    "recommendations": [
+      {
+        "goal": "冷静编排",
+        "change": "为目标设计多条可观察日程，并让每条日程连接不同风险等级。",
+        "impact": "玩家会像导演一样安排结果。",
+        "risk": "制作成本高，重复游玩才回本。"
+      },
+      {
+        "goal": "即兴表达",
+        "change": "让移动能力绕过路线但不能绕过信息判断。",
+        "impact": "玩家能炫技，同时仍需观察。",
+        "risk": "能力过强会破坏关卡边界。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Hitman 官方页",
+        "url": "https://ioi.dk/hitman"
+      },
+      {
+        "label": "Dishonored 2 官方页",
+        "url": "https://bethesda.net/en/game/dishonored2"
+      }
+    ],
+    "created_at": "2026-06-26T06:31:03+00:00",
+    "updated_at": "2026-06-26T06:31:38+00:00",
+    "markdown": "**结论**\n两者都让玩家在高密度关卡里寻找“不被系统抓住”的解法；Hitman 把关卡做成社会机器，伪装、日程、禁区和事故击杀让玩家像调钟表一样安排目标死亡；Dishonored 2 把关卡做成能力沙盒，瞬移、控制、时间和垂直空间让玩家像舞台魔术师一样即兴穿越。前者卖冷静编排，后者卖高表达潜入。\n\n**分析范围**\n- System: 潜行关卡、目标处理、伪装/能力、警觉状态、路线与非线性解法\n- Player context: 喜欢观察、试探、低正面冲突和多解法关卡的单人玩家\n- Evidence: 官方产品页、稳定公开玩法规则与可观察核心循环。\n- Assumptions: 不比较临时版本数值、短期活动、玩家社区元环境和商业表现。\n\n**MDA 拆解**\n| Aesthetic | Dynamic | Mechanic | Evidence | Confidence |\n|---|---|---|---|---|\n| 钟表谜题 | 玩家观察日程、伪装和禁区，等待目标进入可操控状态。 | NPC 循环、伪装等级、禁区规则、机会事件和事故击杀。 | 官方产品页与稳定公开玩法结构。 | High |\n| 超能力即兴 | 玩家用能力改写路线、距离和暴露后的逃脱方式。 | 瞬移、控制、时间能力、垂直空间、道具和警觉 AI。 | 官方产品页与稳定公开玩法结构。 | High |\n| 可复盘潜行 | 失败后玩家能理解是哪条规则被触发。 | 视觉/声音反馈、警觉阶段、保存点、目标提示和环境反馈。 | 官方产品页与稳定公开玩法结构。 | High |\n\n**关键判断**\n| Issue / Strength | Why | Player impact |\n|---|---|---|\n| 潜行不是少给玩家力量，而是让力量有代价 | 如果行动只有一种正确路线，潜行会退化成背板；如果能力无成本，潜行会退化成动作碾压。 | 强潜行关卡需要让玩家既敢试，又尊重系统边界。 |\n| 关卡密度比地图规模更重要 | 潜行乐趣来自规则交叉点，而不是走路距离。 | 高密度小关卡更容易产生计划、失误和复盘故事。 |\n\n**设计建议**\n| Goal aesthetic | Mechanic change | Expected player impact | Risk |\n|---|---|---|---|\n| 冷静编排 | 为目标设计多条可观察日程，并让每条日程连接不同风险等级。 | 玩家会像导演一样安排结果。 | 制作成本高，重复游玩才回本。 |\n| 即兴表达 | 让移动能力绕过路线但不能绕过信息判断。 | 玩家能炫技，同时仍需观察。 | 能力过强会破坏关卡边界。 |"
+  },
+  {
+    "id": "forza-horizon-5-vs-gran-turismo-7-driving-design",
+    "title": "Forza Horizon 5 vs Gran Turismo 7：驾驶幻想的开放节庆与汽车信仰",
+    "genre_tags": [
+      "竞速",
+      "驾驶模拟",
+      "开放世界",
+      "汽车收藏"
+    ],
+    "subjects": [
+      "Forza Horizon 5",
+      "Gran Turismo 7"
+    ],
+    "scope": {
+      "system": "驾驶手感、赛事结构、开放地图、车辆收藏、调校与长期目标",
+      "player_context": "喜欢汽车文化、竞速挑战、收藏成长和可重复驾驶的玩家",
+      "evidence": "官方产品页、稳定公开玩法规则与可观察核心循环。",
+      "assumptions": "不比较临时版本数值、短期活动、玩家社区元环境和商业表现。"
+    },
+    "summary": "两者都让玩家追求车、速度和驾驶技术；Forza Horizon 5 把汽车放进开放节庆，把地形、活动和社交包装成“想开就开”的自由幻想；Gran Turismo 7 把汽车放进赛道、许可、调校和收藏史里，把驾驶变成对车辆和线路的认真理解。前者卖开放世界的驾驶快乐，后者卖汽车文化的精密信仰。",
+    "cover_image": "./assets/covers/forza-horizon-5-vs-gran-turismo-7-driving-design.webp",
+    "cover_alt": "夕阳山路和赛道中，左侧暗色留白，右侧是无品牌跑车驶向开放道路与赛车场",
+    "reading_guide": [
+      {
+        "point": "先看场景承诺",
+        "text": "Horizon 是节庆和风景，GT7 是赛道和车库。"
+      },
+      {
+        "point": "再看进步口径",
+        "text": "Horizon 更强调活动完成和车辆体验宽度，GT7 更强调驾驶线、刹车点、调校和圈速。"
+      },
+      {
+        "point": "最后看收藏意义",
+        "text": "一方收藏服务“换车体验”，另一方收藏更像汽车知识和历史归属。"
+      }
+    ],
+    "argument_map": {
+      "core": "Forza Horizon 5 把驾驶做成自由节庆，Gran Turismo 7 把驾驶做成汽车信仰和赛道纪律。",
+      "routes": [
+        {
+          "title": "Horizon 路线",
+          "thesis": "让玩家在开放地图中不断遇到驾驶理由",
+          "chain_index": 0
+        },
+        {
+          "title": "GT7 路线",
+          "thesis": "让玩家通过赛道、许可和调校尊重汽车本身",
+          "chain_index": 1
+        }
+      ]
+    },
+    "quantification": {
+      "scale": "1-5 表示设计倾向强度，不是品质、热度或商业表现评分。",
+      "method": "依据稳定核心机制对玩家行为的持续影响进行 MDA 策划判断。",
+      "dimensions": [
+        {
+          "dimension": "开放自由",
+          "mda_link": "A 驾驶幻想 / M 开放地图",
+          "scores": [
+            {
+              "label": "Forza Horizon 5",
+              "score": 5
+            },
+            {
+              "label": "Gran Turismo 7",
+              "score": 2
+            }
+          ],
+          "reading": "Horizon 更强调即兴探索和活动密度。"
+        },
+        {
+          "dimension": "驾驶纪律",
+          "mda_link": "A 竞技证明 / M 赛道与许可",
+          "scores": [
+            {
+              "label": "Forza Horizon 5",
+              "score": 3
+            },
+            {
+              "label": "Gran Turismo 7",
+              "score": 5
+            }
+          ],
+          "reading": "GT7 更强调细节驾驶和线路学习。"
+        },
+        {
+          "dimension": "汽车收藏",
+          "mda_link": "A 长期归属 / M 车库与历史",
+          "scores": [
+            {
+              "label": "Forza Horizon 5",
+              "score": 4
+            },
+            {
+              "label": "Gran Turismo 7",
+              "score": 5
+            }
+          ],
+          "reading": "两者都强，GT7 更重汽车文化叙事。"
+        },
+        {
+          "dimension": "社交节奏",
+          "mda_link": "A 节奏释放 / M 节庆活动",
+          "scores": [
+            {
+              "label": "Forza Horizon 5",
+              "score": 5
+            },
+            {
+              "label": "Gran Turismo 7",
+              "score": 3
+            }
+          ],
+          "reading": "Horizon 更适合随开随玩的高频刺激。"
+        }
+      ]
+    },
+    "comparison_systems": [
+      {
+        "system": "驾驶目标",
+        "shared": "都用赛事和车辆成长组织长期游玩。",
+        "mda": {
+          "aesthetic": "成长成就",
+          "dynamic": "玩家通过赢比赛、攒车、调车和挑战更高目标证明进步。",
+          "mechanic": "赛事列表、奖励车、货币、调校、难度、辅助线和成绩反馈。"
+        },
+        "games": [
+          {
+            "label": "Forza Horizon 5",
+            "text": "目标更分散，玩家可以在地图上自由切活动。",
+            "example": "跑完越野赛后，玩家马上改开超跑去测速区。"
+          },
+          {
+            "label": "Gran Turismo 7",
+            "text": "目标更集中于赛道学习和车辆理解。",
+            "example": "为了过许可考试，玩家反复修正刹车点和出弯油门。"
+          }
+        ],
+        "impact": "开放结构降低进入门槛，赛道结构提高精通感。"
+      },
+      {
+        "system": "车辆语义",
+        "shared": "车辆既是性能工具，也是身份和收藏对象。",
+        "mda": {
+          "aesthetic": "身份表达",
+          "dynamic": "玩家用车库表达审美、历史偏好和驾驶风格。",
+          "mechanic": "车辆等级、品牌、改装、调校、涂装、收藏和稀有度。"
+        },
+        "games": [
+          {
+            "label": "Forza Horizon 5",
+            "text": "车更像玩具箱，鼓励换车体验地形和活动。",
+            "example": "玩家用越野车冲沙漠，再换漂移车跑山路。"
+          },
+          {
+            "label": "Gran Turismo 7",
+            "text": "车更像被理解和照料的对象。",
+            "example": "玩家围绕一台车调轮胎、悬挂和齿比以适应赛道。"
+          }
+        ],
+        "impact": "前者扩大尝试，后者加深关系。"
+      },
+      {
+        "system": "反馈手感",
+        "shared": "都需要让玩家相信车和路面有差异。",
+        "mda": {
+          "aesthetic": "驾驶掌控",
+          "dynamic": "玩家通过速度、转向、制动和路面反馈学习极限。",
+          "mechanic": "物理模型、辅助系统、震动、声音、视角、轮胎和路面材质。"
+        },
+        "games": [
+          {
+            "label": "Forza Horizon 5",
+            "text": "手感服务多地形爽快和快速恢复。",
+            "example": "失误冲出路面也常能继续获得刺激场面。"
+          },
+          {
+            "label": "Gran Turismo 7",
+            "text": "手感服务赛道纪律和细节修正。",
+            "example": "稍晚刹车就会影响出弯速度和整圈节奏。"
+          }
+        ],
+        "impact": "宽容度不同，决定玩家把失误理解为表演还是技术问题。"
+      }
+    ],
+    "system_gaps": [
+      {
+        "system": "开放世界节庆结构",
+        "games": [
+          {
+            "label": "Forza Horizon 5",
+            "text": "核心包装，地图就是活动入口和情绪舞台。",
+            "example": ""
+          },
+          {
+            "label": "Gran Turismo 7",
+            "text": "不是核心，主要以赛道、菜单和车库组织。",
+            "example": ""
+          }
+        ]
+      },
+      {
+        "system": "许可与汽车文化教育",
+        "games": [
+          {
+            "label": "Forza Horizon 5",
+            "text": "较轻，偏快速体验。",
+            "example": ""
+          },
+          {
+            "label": "Gran Turismo 7",
+            "text": "核心，强调学习、收藏和汽车历史。",
+            "example": ""
+          }
+        ]
+      }
+    ],
+    "chains": [
+      {
+        "aesthetic": "开放驾驶快乐",
+        "dynamic": "玩家随时在地图上切换赛事、特技、探索和社交活动。",
+        "mechanic": "开放世界、公路/越野活动、快速换车、奖励密度和节庆包装。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "汽车信仰",
+        "dynamic": "玩家通过学习车辆特性、赛道线路和调校建立尊重。",
+        "mechanic": "许可考试、赛道赛事、车库收藏、调校、驾驶辅助和历史展示。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "驾驶掌控",
+        "dynamic": "玩家在速度、刹车、路线和路面反馈中感到进步。",
+        "mechanic": "物理模型、手柄反馈、声音、轮胎、AI 对手和成绩统计。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      }
+    ],
+    "judgments": [
+      {
+        "issue": "竞速的宽容度会定义用户画像",
+        "why": "越宽容越适合开放幻想，越精确越适合长期技术追求。",
+        "impact": "同样是开车，Horizon 更容易拉新，GT7 更容易让汽车爱好者沉浸。"
+      },
+      {
+        "issue": "收藏必须服务下一次驾驶",
+        "why": "车库如果只堆数量，会变成清单；车辆差异要能改变路线、赛事或操作。",
+        "impact": "玩家才会记住自己为什么想要某台车。"
+      }
+    ],
+    "recommendations": [
+      {
+        "goal": "开放驾驶幻想",
+        "change": "把地图事件设计成车辆类型的邀请，而不是统一速度挑战。",
+        "impact": "玩家会主动换车探索更多玩法。",
+        "risk": "活动太碎会削弱长期目标。"
+      },
+      {
+        "goal": "汽车信仰",
+        "change": "把调校结果用可感知的驾驶反馈解释出来。",
+        "impact": "普通玩家能理解汽车差异，而不是只抄设置。",
+        "risk": "过度教学会降低车迷的探索空间。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Forza Horizon 5 官方页",
+        "url": "https://forza.net/games/forza-horizon-5"
+      },
+      {
+        "label": "Gran Turismo 7 官方页",
+        "url": "https://www.gran-turismo.com/us/products/gt7/"
+      }
+    ],
+    "created_at": "2026-06-26T06:31:03+00:00",
+    "updated_at": "2026-06-26T06:31:38+00:00",
+    "markdown": "**结论**\n两者都让玩家追求车、速度和驾驶技术；Forza Horizon 5 把汽车放进开放节庆，把地形、活动和社交包装成“想开就开”的自由幻想；Gran Turismo 7 把汽车放进赛道、许可、调校和收藏史里，把驾驶变成对车辆和线路的认真理解。前者卖开放世界的驾驶快乐，后者卖汽车文化的精密信仰。\n\n**分析范围**\n- System: 驾驶手感、赛事结构、开放地图、车辆收藏、调校与长期目标\n- Player context: 喜欢汽车文化、竞速挑战、收藏成长和可重复驾驶的玩家\n- Evidence: 官方产品页、稳定公开玩法规则与可观察核心循环。\n- Assumptions: 不比较临时版本数值、短期活动、玩家社区元环境和商业表现。\n\n**MDA 拆解**\n| Aesthetic | Dynamic | Mechanic | Evidence | Confidence |\n|---|---|---|---|---|\n| 开放驾驶快乐 | 玩家随时在地图上切换赛事、特技、探索和社交活动。 | 开放世界、公路/越野活动、快速换车、奖励密度和节庆包装。 | 官方产品页与稳定公开玩法结构。 | High |\n| 汽车信仰 | 玩家通过学习车辆特性、赛道线路和调校建立尊重。 | 许可考试、赛道赛事、车库收藏、调校、驾驶辅助和历史展示。 | 官方产品页与稳定公开玩法结构。 | High |\n| 驾驶掌控 | 玩家在速度、刹车、路线和路面反馈中感到进步。 | 物理模型、手柄反馈、声音、轮胎、AI 对手和成绩统计。 | 官方产品页与稳定公开玩法结构。 | High |\n\n**关键判断**\n| Issue / Strength | Why | Player impact |\n|---|---|---|\n| 竞速的宽容度会定义用户画像 | 越宽容越适合开放幻想，越精确越适合长期技术追求。 | 同样是开车，Horizon 更容易拉新，GT7 更容易让汽车爱好者沉浸。 |\n| 收藏必须服务下一次驾驶 | 车库如果只堆数量，会变成清单；车辆差异要能改变路线、赛事或操作。 | 玩家才会记住自己为什么想要某台车。 |\n\n**设计建议**\n| Goal aesthetic | Mechanic change | Expected player impact | Risk |\n|---|---|---|---|\n| 开放驾驶幻想 | 把地图事件设计成车辆类型的邀请，而不是统一速度挑战。 | 玩家会主动换车探索更多玩法。 | 活动太碎会削弱长期目标。 |\n| 汽车信仰 | 把调校结果用可感知的驾驶反馈解释出来。 | 普通玩家能理解汽车差异，而不是只抄设置。 | 过度教学会降低车迷的探索空间。 |"
+  },
+  {
+    "id": "persona-5-royal-vs-metaphor-refantazio-jrpg-design",
+    "title": "Persona 5 Royal vs Metaphor: ReFantazio：JRPG 的日常羁绊与政治远征",
+    "genre_tags": [
+      "JRPG",
+      "回合制战斗",
+      "社交成长",
+      "叙事冒险"
+    ],
+    "subjects": [
+      "Persona 5 Royal",
+      "Metaphor: ReFantazio"
+    ],
+    "scope": {
+      "system": "时间管理、同伴关系、回合制战斗、职业/人格成长、叙事节奏与长期推进",
+      "player_context": "重视角色羁绊、叙事推进、战斗构筑和日程权衡的单人玩家",
+      "evidence": "官方产品页、稳定公开玩法规则与可观察核心循环。",
+      "assumptions": "不比较临时版本数值、短期活动、玩家社区元环境和商业表现。"
+    },
+    "summary": "两者都把日历、同伴、回合制战斗和长期成长绑在一起；Persona 5 Royal 把青少年日常、社交关系和都市反抗折叠成时间管理，让玩家在考试、打工、约会和迷宫之间经营自我；Metaphor: ReFantazio 把同样的时间压力带到政治远征和职业寓言中，让玩家在旅行、选举、种族关系和队伍职责之间承担更公开的使命。前者强调私人身份的觉醒，后者强调公共命运的承担。",
+    "cover_image": "./assets/covers/persona-5-royal-vs-metaphor-refantazio-jrpg-design.webp",
+    "cover_alt": "现代城市夜色与幻想广场交叠，左侧暗色留白，右侧是同伴、无字钟面和旅行建筑",
+    "reading_guide": [
+      {
+        "point": "先看时间属于谁",
+        "text": "Persona 的时间更像个人青春预算；Metaphor 的时间更像政治旅程和公共承诺。"
+      },
+      {
+        "point": "再看关系如何变强",
+        "text": "两者都用羁绊推动能力，但 Persona 更日常，Metaphor 更职业和队伍职责。"
+      },
+      {
+        "point": "最后看战斗身份",
+        "text": "人格/职业系统都让角色成长与主题绑定，区别在私人面具还是公共角色。"
+      }
+    ],
+    "argument_map": {
+      "core": "Persona 5 Royal 让玩家经营私人身份觉醒，Metaphor: ReFantazio 让玩家承担公共命运远征。",
+      "routes": [
+        {
+          "title": "Persona 路线",
+          "thesis": "让日常选择积累成角色关系和反抗身份",
+          "chain_index": 0
+        },
+        {
+          "title": "Metaphor 路线",
+          "thesis": "让旅行和职业成长服务政治使命与队伍责任",
+          "chain_index": 1
+        }
+      ]
+    },
+    "quantification": {
+      "scale": "1-5 表示设计倾向强度，不是品质、热度或商业表现评分。",
+      "method": "依据稳定核心机制对玩家行为的持续影响进行 MDA 策划判断。",
+      "dimensions": [
+        {
+          "dimension": "日常羁绊",
+          "mda_link": "A 长期归属 / M 日历社交",
+          "scores": [
+            {
+              "label": "Persona 5 Royal",
+              "score": 5
+            },
+            {
+              "label": "Metaphor: ReFantazio",
+              "score": 4
+            }
+          ],
+          "reading": "Persona 更集中于校园都市日常。"
+        },
+        {
+          "dimension": "公共使命",
+          "mda_link": "A 责任感 / M 旅程与政治目标",
+          "scores": [
+            {
+              "label": "Persona 5 Royal",
+              "score": 3
+            },
+            {
+              "label": "Metaphor: ReFantazio",
+              "score": 5
+            }
+          ],
+          "reading": "Metaphor 更强调公开旅程和政治命题。"
+        },
+        {
+          "dimension": "战斗构筑",
+          "mda_link": "A 身份表达 / M 人格/职业",
+          "scores": [
+            {
+              "label": "Persona 5 Royal",
+              "score": 4
+            },
+            {
+              "label": "Metaphor: ReFantazio",
+              "score": 5
+            }
+          ],
+          "reading": "Metaphor 的职业职责更直接塑造队伍组合。"
+        },
+        {
+          "dimension": "时间压力",
+          "mda_link": "A 资源纪律 / M 日历限制",
+          "scores": [
+            {
+              "label": "Persona 5 Royal",
+              "score": 5
+            },
+            {
+              "label": "Metaphor: ReFantazio",
+              "score": 5
+            }
+          ],
+          "reading": "两者都把时间作为最重要的非战斗资源。"
+        }
+      ]
+    },
+    "comparison_systems": [
+      {
+        "system": "日历推进",
+        "shared": "都用有限天数组织行动机会。",
+        "mda": {
+          "aesthetic": "资源纪律",
+          "dynamic": "玩家必须在关系、能力、探索和主线目标之间分配时间。",
+          "mechanic": "日历、昼夜行动、期限、地下城/旅程节点、社交和训练。"
+        },
+        "games": [
+          {
+            "label": "Persona 5 Royal",
+            "text": "时间被日常生活切成私人选择。",
+            "example": "玩家今晚选择读书、打工、提升关系还是潜入宫殿。"
+          },
+          {
+            "label": "Metaphor: ReFantazio",
+            "text": "时间被旅行和政治进程塑造成公开压力。",
+            "example": "玩家在赶往目标城市途中决定训练、交流或处理支线。"
+          }
+        ],
+        "impact": "日历让成长选择有真实机会成本。"
+      },
+      {
+        "system": "关系成长",
+        "shared": "都让同伴关系转化为能力优势。",
+        "mda": {
+          "aesthetic": "长期归属",
+          "dynamic": "玩家通过陪伴、对话和共同战斗建立队伍情感投资。",
+          "mechanic": "社交等级、对话事件、能力解锁、队伍成员、支线和剧情门槛。"
+        },
+        "games": [
+          {
+            "label": "Persona 5 Royal",
+            "text": "羁绊更贴近日常亲密关系和都市身份。",
+            "example": "提升协助者关系会解锁战斗、金钱或时间管理优势。"
+          },
+          {
+            "label": "Metaphor: ReFantazio",
+            "text": "羁绊更贴近旅途职责和政治同盟。",
+            "example": "追随者关系推进职业成长和队伍定位。"
+          }
+        ],
+        "impact": "关系系统把数值成长变成情感承诺。"
+      },
+      {
+        "system": "战斗身份",
+        "shared": "都用可切换能力体系支持回合制策略。",
+        "mda": {
+          "aesthetic": "身份表达",
+          "dynamic": "玩家围绕弱点、职业职责和队伍协同规划行动。",
+          "mechanic": "Persona/Archetype、弱点打击、行动经济、技能继承、装备和队伍编成。"
+        },
+        "games": [
+          {
+            "label": "Persona 5 Royal",
+            "text": "人格更像内心面具与弱点解题工具。",
+            "example": "玩家切换人格覆盖属性弱点并触发总攻击。"
+          },
+          {
+            "label": "Metaphor: ReFantazio",
+            "text": "职业更像队伍职责和社会寓言。",
+            "example": "玩家调整职业阵容，平衡输出、防御、支援和资源。"
+          }
+        ],
+        "impact": "战斗系统把主题身份变成可操作策略。"
+      }
+    ],
+    "system_gaps": [
+      {
+        "system": "校园都市日常",
+        "games": [
+          {
+            "label": "Persona 5 Royal",
+            "text": "核心舞台，支撑青春、秘密身份和关系经营。",
+            "example": ""
+          },
+          {
+            "label": "Metaphor: ReFantazio",
+            "text": "不是核心，舞台转向旅途和幻想政治。",
+            "example": ""
+          }
+        ]
+      },
+      {
+        "system": "政治远征结构",
+        "games": [
+          {
+            "label": "Persona 5 Royal",
+            "text": "政治表达较隐喻，重心仍在都市反抗。",
+            "example": ""
+          },
+          {
+            "label": "Metaphor: ReFantazio",
+            "text": "核心结构，旅程和选举把目标公共化。",
+            "example": ""
+          }
+        ]
+      }
+    ],
+    "chains": [
+      {
+        "aesthetic": "私人身份觉醒",
+        "dynamic": "玩家在日常选择和秘密行动之间经营自我形象。",
+        "mechanic": "日历、协助者、校园/都市活动、宫殿期限和人格系统。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "公共命运承担",
+        "dynamic": "玩家把旅行、同盟和职业成长连接到更大的政治目标。",
+        "mechanic": "旅途日程、追随者、Archetype、选举目标和队伍职责。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "时间资源压力",
+        "dynamic": "玩家每次行动都意味着放弃另一个成长机会。",
+        "mechanic": "有限日期、昼夜行动、任务期限、社交事件和能力训练。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      }
+    ],
+    "judgments": [
+      {
+        "issue": "日历系统的价值在于让关系有机会成本",
+        "why": "如果所有关系都能无痛刷满，羁绊就会变成清单。",
+        "impact": "有限时间让玩家的队伍关系像个人选择，而不是收集任务。"
+      },
+      {
+        "issue": "战斗身份需要和叙事身份互相解释",
+        "why": "人格或职业不是单纯技能树，它们承载角色如何面对世界。",
+        "impact": "玩家更容易记住构筑，因为构筑也是角色表达。"
+      }
+    ],
+    "recommendations": [
+      {
+        "goal": "日常羁绊",
+        "change": "让社交能力解锁改变时间管理和战斗节奏。",
+        "impact": "玩家会把陪伴看成长期投资。",
+        "risk": "最优路线可能压扁角色偏好。"
+      },
+      {
+        "goal": "公共使命",
+        "change": "把主线压力投射到旅行路线和队伍职责变化上。",
+        "impact": "玩家会感到自己不只是升级，而是在承担目标。",
+        "risk": "主题压力太重会削弱轻松日常。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Persona 5 Royal 官方页",
+        "url": "https://persona.atlus.com/p5r/"
+      },
+      {
+        "label": "Metaphor: ReFantazio 官方页",
+        "url": "https://metaphor.atlus.com/"
+      }
+    ],
+    "created_at": "2026-06-26T06:31:03+00:00",
+    "updated_at": "2026-06-26T06:31:38+00:00",
+    "markdown": "**结论**\n两者都把日历、同伴、回合制战斗和长期成长绑在一起；Persona 5 Royal 把青少年日常、社交关系和都市反抗折叠成时间管理，让玩家在考试、打工、约会和迷宫之间经营自我；Metaphor: ReFantazio 把同样的时间压力带到政治远征和职业寓言中，让玩家在旅行、选举、种族关系和队伍职责之间承担更公开的使命。前者强调私人身份的觉醒，后者强调公共命运的承担。\n\n**分析范围**\n- System: 时间管理、同伴关系、回合制战斗、职业/人格成长、叙事节奏与长期推进\n- Player context: 重视角色羁绊、叙事推进、战斗构筑和日程权衡的单人玩家\n- Evidence: 官方产品页、稳定公开玩法规则与可观察核心循环。\n- Assumptions: 不比较临时版本数值、短期活动、玩家社区元环境和商业表现。\n\n**MDA 拆解**\n| Aesthetic | Dynamic | Mechanic | Evidence | Confidence |\n|---|---|---|---|---|\n| 私人身份觉醒 | 玩家在日常选择和秘密行动之间经营自我形象。 | 日历、协助者、校园/都市活动、宫殿期限和人格系统。 | 官方产品页与稳定公开玩法结构。 | High |\n| 公共命运承担 | 玩家把旅行、同盟和职业成长连接到更大的政治目标。 | 旅途日程、追随者、Archetype、选举目标和队伍职责。 | 官方产品页与稳定公开玩法结构。 | High |\n| 时间资源压力 | 玩家每次行动都意味着放弃另一个成长机会。 | 有限日期、昼夜行动、任务期限、社交事件和能力训练。 | 官方产品页与稳定公开玩法结构。 | High |\n\n**关键判断**\n| Issue / Strength | Why | Player impact |\n|---|---|---|\n| 日历系统的价值在于让关系有机会成本 | 如果所有关系都能无痛刷满，羁绊就会变成清单。 | 有限时间让玩家的队伍关系像个人选择，而不是收集任务。 |\n| 战斗身份需要和叙事身份互相解释 | 人格或职业不是单纯技能树，它们承载角色如何面对世界。 | 玩家更容易记住构筑，因为构筑也是角色表达。 |\n\n**设计建议**\n| Goal aesthetic | Mechanic change | Expected player impact | Risk |\n|---|---|---|---|\n| 日常羁绊 | 让社交能力解锁改变时间管理和战斗节奏。 | 玩家会把陪伴看成长期投资。 | 最优路线可能压扁角色偏好。 |\n| 公共使命 | 把主线压力投射到旅行路线和队伍职责变化上。 | 玩家会感到自己不只是升级，而是在承担目标。 | 主题压力太重会削弱轻松日常。 |"
+  },
+  {
+    "id": "rainbow-six-siege-vs-ready-or-not-tactical-design",
+    "title": "Rainbow Six Siege vs Ready or Not：战术清房的竞技反制与程序纪律",
+    "genre_tags": [
+      "战术射击",
+      "合作 PvE",
+      "目标攻防",
+      "军事射击"
+    ],
+    "subjects": [
+      "Rainbow Six Siege",
+      "Ready or Not"
+    ],
+    "scope": {
+      "system": "室内攻防、破门清房、情报工具、队伍职责、AI/玩家对抗与失败归因",
+      "player_context": "喜欢低容错空间控制、信息收集和团队执行的 PvP 或合作玩家",
+      "evidence": "官方产品页、稳定公开玩法规则与可观察核心循环。",
+      "assumptions": "不比较临时版本数值、短期活动、玩家社区元环境和商业表现。"
+    },
+    "summary": "两者都围绕门、墙、角度、信息和小队协作制造室内战术张力；Rainbow Six Siege 把清房变成攻防竞技，干员技能、可破坏墙体和反制工具让玩家围绕信息差争夺空间；Ready or Not 把清房变成程序纪律，交战规则、嫌犯/人质、致命判断和队形执行让玩家承担执法压力。前者卖战术反制，后者卖谨慎程序。",
+    "cover_image": "./assets/covers/rainbow-six-siege-vs-ready-or-not-tactical-design.webp",
+    "cover_alt": "雨夜建筑剖面中，左侧暗色留白，右侧是破门、无人机、门角和战术小队剪影",
+    "reading_guide": [
+      {
+        "point": "先看对手是谁",
+        "text": "Siege 的核心对手是会反制的玩家队伍；Ready or Not 的核心对手是高不确定 AI 场景和程序错误。"
+      },
+      {
+        "point": "再看工具定位",
+        "text": "Siege 工具用于创造竞技优势，Ready or Not 工具用于降低误判风险。"
+      },
+      {
+        "point": "最后看失败归因",
+        "text": "一方失败多归因于信息、反制和执行；另一方失败多归因于流程、纪律和目标识别。"
+      }
+    ],
+    "argument_map": {
+      "core": "Siege 把室内战术压缩为竞技反制，Ready or Not 把室内战术压缩为程序纪律。",
+      "routes": [
+        {
+          "title": "Siege 路线",
+          "thesis": "让队伍用情报、破坏和技能反制对手空间",
+          "chain_index": 0
+        },
+        {
+          "title": "Ready or Not 路线",
+          "thesis": "让小队用流程、识别和约束处理高风险房间",
+          "chain_index": 1
+        }
+      ]
+    },
+    "quantification": {
+      "scale": "1-5 表示设计倾向强度，不是品质、热度或商业表现评分。",
+      "method": "依据稳定核心机制对玩家行为的持续影响进行 MDA 策划判断。",
+      "dimensions": [
+        {
+          "dimension": "竞技反制",
+          "mda_link": "A 公平反制 / M 干员与可破坏环境",
+          "scores": [
+            {
+              "label": "Rainbow Six Siege",
+              "score": 5
+            },
+            {
+              "label": "Ready or Not",
+              "score": 3
+            }
+          ],
+          "reading": "Siege 更强调玩家间的工具克制。"
+        },
+        {
+          "dimension": "程序纪律",
+          "mda_link": "A 责任感 / M ROE 与目标识别",
+          "scores": [
+            {
+              "label": "Rainbow Six Siege",
+              "score": 2
+            },
+            {
+              "label": "Ready or Not",
+              "score": 5
+            }
+          ],
+          "reading": "Ready or Not 更强调正确流程。"
+        },
+        {
+          "dimension": "信息工具",
+          "mda_link": "A 战术可读 / M 无人机与侦察",
+          "scores": [
+            {
+              "label": "Rainbow Six Siege",
+              "score": 5
+            },
+            {
+              "label": "Ready or Not",
+              "score": 4
+            }
+          ],
+          "reading": "两者都强，但用途不同。"
+        },
+        {
+          "dimension": "团队协作",
+          "mda_link": "A 团队协作 / D 角色分工",
+          "scores": [
+            {
+              "label": "Rainbow Six Siege",
+              "score": 5
+            },
+            {
+              "label": "Ready or Not",
+              "score": 5
+            }
+          ],
+          "reading": "两者都高度依赖沟通。"
+        }
+      ]
+    },
+    "comparison_systems": [
+      {
+        "system": "房间进入",
+        "shared": "都把门口和转角设计成最高风险瞬间。",
+        "mda": {
+          "aesthetic": "压迫感",
+          "dynamic": "玩家在进入前用信息和工具降低未知风险。",
+          "mechanic": "门、视线角、破门工具、闪光、无人机、盾牌、AI/玩家埋伏。"
+        },
+        "games": [
+          {
+            "label": "Rainbow Six Siege",
+            "text": "进入是攻防反制的一环，防守方也在准备陷阱和交叉火力。",
+            "example": "攻击方先无人机侦察，再用爆破创造新角度。"
+          },
+          {
+            "label": "Ready or Not",
+            "text": "进入是程序执行和目标识别测试。",
+            "example": "队伍喊话、窥镜、闪光后进入，避免误伤平民。"
+          }
+        ],
+        "impact": "同样的门，在 Siege 中是竞技资源，在 Ready or Not 中是纪律考题。"
+      },
+      {
+        "system": "信息侦察",
+        "shared": "都让信息先于枪线。",
+        "mda": {
+          "aesthetic": "战术可读",
+          "dynamic": "玩家通过侦察工具判断敌人、陷阱、平民和路线。",
+          "mechanic": "无人机、摄像头、窥镜、声音、呼叫、标记和队友视角。"
+        },
+        "games": [
+          {
+            "label": "Rainbow Six Siege",
+            "text": "信息会被对手主动欺骗、摧毁或反制。",
+            "example": "防守方打掉无人机，让攻击方只能带着不完整信息推进。"
+          },
+          {
+            "label": "Ready or Not",
+            "text": "信息用于减少执法错误和突然伤亡。",
+            "example": "窥镜发现门后平民后，小队改用非致命流程。"
+          }
+        ],
+        "impact": "信息系统决定玩家是否愿意慢下来。"
+      },
+      {
+        "system": "角色职责",
+        "shared": "都需要队伍分工而非五个人各打各的。",
+        "mda": {
+          "aesthetic": "团队协作",
+          "dynamic": "玩家根据工具和位置承担侦察、突破、压制、覆盖和支援。",
+          "mechanic": "干员/装备、队形、武器、盾牌、投掷物、通信和目标规则。"
+        },
+        "games": [
+          {
+            "label": "Rainbow Six Siege",
+            "text": "职责来自干员技能和对局策略。",
+            "example": "开墙、电击、防突破和信息干员共同决定进攻路径。"
+          },
+          {
+            "label": "Ready or Not",
+            "text": "职责来自装备和程序流程。",
+            "example": "盾牌手吸收风险，队友覆盖角度并约束嫌犯。"
+          }
+        ],
+        "impact": "分工越清楚，团队失败越可复盘。"
+      }
+    ],
+    "system_gaps": [
+      {
+        "system": "干员技能竞技池",
+        "games": [
+          {
+            "label": "Rainbow Six Siege",
+            "text": "核心系统，支撑长期反制和内容更新。",
+            "example": ""
+          },
+          {
+            "label": "Ready or Not",
+            "text": "弱化，装备更贴近任务流程。",
+            "example": ""
+          }
+        ]
+      },
+      {
+        "system": "交战规则与平民压力",
+        "games": [
+          {
+            "label": "Rainbow Six Siege",
+            "text": "不是核心胜负约束。",
+            "example": ""
+          },
+          {
+            "label": "Ready or Not",
+            "text": "核心约束，误判会破坏评分和体验。",
+            "example": ""
+          }
+        ]
+      }
+    ],
+    "chains": [
+      {
+        "aesthetic": "竞技反制",
+        "dynamic": "玩家围绕墙体、信息和干员技能进行攻防博弈。",
+        "mechanic": "可破坏环境、干员技能、无人机、摄像头、目标点和回合经济。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "程序纪律",
+        "dynamic": "玩家以正确流程进入房间、识别目标并控制风险。",
+        "mechanic": "交战规则、嫌犯/平民 AI、破门工具、非致命装备和评分系统。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "团队协作",
+        "dynamic": "玩家通过分工和通信把未知角落变成可控空间。",
+        "mechanic": "语音、标记、队形、工具互补、同步进入和覆盖角度。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      }
+    ],
+    "judgments": [
+      {
+        "issue": "战术射击的公平感来自信息责任",
+        "why": "玩家需要知道失败是没侦察、没沟通还是被对手反制，而不是被黑箱秒杀。",
+        "impact": "可归因失败会促成复盘和队伍训练。"
+      },
+      {
+        "issue": "慢节奏必须给出足够强的结果反馈",
+        "why": "玩家愿意等，是因为等能显著减少风险或提升成功率。",
+        "impact": "侦察和流程若没有收益，玩家会回到冲门对枪。"
+      }
+    ],
+    "recommendations": [
+      {
+        "goal": "战术可读",
+        "change": "强化声音、门缝、工具反馈和队友视角共享。",
+        "impact": "玩家会更愿意用流程解决问题。",
+        "risk": "信息过强会削弱突发张力。"
+      },
+      {
+        "goal": "团队协作",
+        "change": "让关键工具必须互补，而不是单人全能。",
+        "impact": "队伍沟通会自然增加。",
+        "risk": "独狼体验会变差。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Rainbow Six Siege 官方页",
+        "url": "https://www.ubisoft.com/en-us/game/rainbow-six/siege"
+      },
+      {
+        "label": "Ready or Not 官方页",
+        "url": "https://voidinteractive.net/"
+      }
+    ],
+    "created_at": "2026-06-26T06:31:03+00:00",
+    "updated_at": "2026-06-26T06:31:38+00:00",
+    "markdown": "**结论**\n两者都围绕门、墙、角度、信息和小队协作制造室内战术张力；Rainbow Six Siege 把清房变成攻防竞技，干员技能、可破坏墙体和反制工具让玩家围绕信息差争夺空间；Ready or Not 把清房变成程序纪律，交战规则、嫌犯/人质、致命判断和队形执行让玩家承担执法压力。前者卖战术反制，后者卖谨慎程序。\n\n**分析范围**\n- System: 室内攻防、破门清房、情报工具、队伍职责、AI/玩家对抗与失败归因\n- Player context: 喜欢低容错空间控制、信息收集和团队执行的 PvP 或合作玩家\n- Evidence: 官方产品页、稳定公开玩法规则与可观察核心循环。\n- Assumptions: 不比较临时版本数值、短期活动、玩家社区元环境和商业表现。\n\n**MDA 拆解**\n| Aesthetic | Dynamic | Mechanic | Evidence | Confidence |\n|---|---|---|---|---|\n| 竞技反制 | 玩家围绕墙体、信息和干员技能进行攻防博弈。 | 可破坏环境、干员技能、无人机、摄像头、目标点和回合经济。 | 官方产品页与稳定公开玩法结构。 | High |\n| 程序纪律 | 玩家以正确流程进入房间、识别目标并控制风险。 | 交战规则、嫌犯/平民 AI、破门工具、非致命装备和评分系统。 | 官方产品页与稳定公开玩法结构。 | High |\n| 团队协作 | 玩家通过分工和通信把未知角落变成可控空间。 | 语音、标记、队形、工具互补、同步进入和覆盖角度。 | 官方产品页与稳定公开玩法结构。 | High |\n\n**关键判断**\n| Issue / Strength | Why | Player impact |\n|---|---|---|\n| 战术射击的公平感来自信息责任 | 玩家需要知道失败是没侦察、没沟通还是被对手反制，而不是被黑箱秒杀。 | 可归因失败会促成复盘和队伍训练。 |\n| 慢节奏必须给出足够强的结果反馈 | 玩家愿意等，是因为等能显著减少风险或提升成功率。 | 侦察和流程若没有收益，玩家会回到冲门对枪。 |\n\n**设计建议**\n| Goal aesthetic | Mechanic change | Expected player impact | Risk |\n|---|---|---|---|\n| 战术可读 | 强化声音、门缝、工具反馈和队友视角共享。 | 玩家会更愿意用流程解决问题。 | 信息过强会削弱突发张力。 |\n| 团队协作 | 让关键工具必须互补，而不是单人全能。 | 队伍沟通会自然增加。 | 独狼体验会变差。 |"
+  },
+  {
+    "id": "monster-hunter-world-vs-rise-hunting-design",
+    "title": "Monster Hunter: World vs Monster Hunter Rise：狩猎动作的生态准备与机动节奏",
+    "genre_tags": [
+      "动作角色扮演",
+      "共斗狩猎",
+      "Boss 战",
+      "装备构筑"
+    ],
+    "subjects": [
+      "Monster Hunter: World",
+      "Monster Hunter Rise"
+    ],
+    "scope": {
+      "system": "怪物追踪、武器动作、装备制作、地图生态、机动能力与多人狩猎节奏",
+      "player_context": "喜欢研究怪物、练武器、刷素材和合作讨伐的单人或多人玩家",
+      "evidence": "官方产品页、稳定公开玩法规则与可观察核心循环。",
+      "assumptions": "不比较临时版本数值、短期活动、玩家社区元环境和商业表现。"
+    },
+    "summary": "两者都把一次狩猎做成“观察、准备、交锋、剥取、再制作”的长期循环；World 更强调生态、痕迹、地形和厚重动作，让玩家像进入真实狩猎场；Rise 更强调翔虫、御龙、快速移动和招式流转，让玩家像掌握高机动武艺。前者卖生态沉浸和准备感，后者卖机动表达和节奏爽感。",
+    "cover_image": "./assets/covers/monster-hunter-world-vs-rise-hunting-design.webp",
+    "cover_alt": "古代森林悬崖中，左侧暗色留白，右侧是巨兽、猎人、陷阱与高速移动轨迹",
+    "reading_guide": [
+      {
+        "point": "先看狩猎前半段",
+        "text": "World 更重追踪和生态理解，Rise 更快进入交锋和移动。"
+      },
+      {
+        "point": "再看武器节奏",
+        "text": "两者都重武器熟练，但 Rise 的翔虫让失误恢复和进攻延展更强。"
+      },
+      {
+        "point": "最后看合作职责",
+        "text": "狩猎真正的团队感来自部位、控制、补给和失败次数共享。"
+      }
+    ],
+    "argument_map": {
+      "core": "World 把狩猎做成生态准备，Rise 把狩猎做成高机动动作循环。",
+      "routes": [
+        {
+          "title": "World 路线",
+          "thesis": "让玩家先理解生态和怪物，再用准备换取胜利",
+          "chain_index": 0
+        },
+        {
+          "title": "Rise 路线",
+          "thesis": "让玩家用翔虫和招式流转压缩狩猎节奏",
+          "chain_index": 1
+        }
+      ]
+    },
+    "quantification": {
+      "scale": "1-5 表示设计倾向强度，不是品质、热度或商业表现评分。",
+      "method": "依据稳定核心机制对玩家行为的持续影响进行 MDA 策划判断。",
+      "dimensions": [
+        {
+          "dimension": "生态沉浸",
+          "mda_link": "A 未知探索 / M 痕迹与地图生态",
+          "scores": [
+            {
+              "label": "Monster Hunter: World",
+              "score": 5
+            },
+            {
+              "label": "Monster Hunter Rise",
+              "score": 3
+            }
+          ],
+          "reading": "World 的地图生态更强调真实狩猎感。"
+        },
+        {
+          "dimension": "机动表达",
+          "mda_link": "A 操作进化 / M 翔虫移动",
+          "scores": [
+            {
+              "label": "Monster Hunter: World",
+              "score": 3
+            },
+            {
+              "label": "Monster Hunter Rise",
+              "score": 5
+            }
+          ],
+          "reading": "Rise 让玩家更快重返进攻。"
+        },
+        {
+          "dimension": "动作重量",
+          "mda_link": "A 精密攻防 / M 动画承诺",
+          "scores": [
+            {
+              "label": "Monster Hunter: World",
+              "score": 5
+            },
+            {
+              "label": "Monster Hunter Rise",
+              "score": 4
+            }
+          ],
+          "reading": "World 更强调沉重承诺和空间站位。"
+        },
+        {
+          "dimension": "共斗节奏",
+          "mda_link": "A 团队协作 / D 控制与部位",
+          "scores": [
+            {
+              "label": "Monster Hunter: World",
+              "score": 5
+            },
+            {
+              "label": "Monster Hunter Rise",
+              "score": 5
+            }
+          ],
+          "reading": "两者都依赖队伍目标和失败次数共享。"
+        }
+      ]
+    },
+    "comparison_systems": [
+      {
+        "system": "怪物学习",
+        "shared": "都要求玩家理解怪物动作和窗口。",
+        "mda": {
+          "aesthetic": "精密攻防",
+          "dynamic": "玩家通过观察前摇、站位和硬直选择攻击或回避。",
+          "mechanic": "怪物招式、部位肉质、异常状态、怒气、疲劳、倒地和捕获。"
+        },
+        "games": [
+          {
+            "label": "Monster Hunter: World",
+            "text": "学习更绑定生态行为和地图互动。",
+            "example": "玩家追踪痕迹、利用地形落石和环境生物创造机会。"
+          },
+          {
+            "label": "Monster Hunter Rise",
+            "text": "学习更绑定高速机动和招式应对。",
+            "example": "玩家用翔虫受身恢复，再用铁虫丝技接回输出。"
+          }
+        ],
+        "impact": "怪物是移动谜题，区别是解题节奏慢厚还是快灵。"
+      },
+      {
+        "system": "武器熟练",
+        "shared": "都让每种武器形成独立动作身份。",
+        "mda": {
+          "aesthetic": "身份表达",
+          "dynamic": "玩家通过武器节奏选择自己承担的战斗角色。",
+          "mechanic": "武器动作、连段、派生、防御/回避、瓶/弹/虫资源和装备技能。"
+        },
+        "games": [
+          {
+            "label": "Monster Hunter: World",
+            "text": "动作承诺更厚，站位和时机惩罚更明显。",
+            "example": "大剑玩家围绕蓄力窗口和怪物倒地安排爆发。"
+          },
+          {
+            "label": "Monster Hunter Rise",
+            "text": "机动能力让武器循环更灵活。",
+            "example": "长枪或太刀可用翔虫技扩展防反和追击节奏。"
+          }
+        ],
+        "impact": "武器不是换皮，而是玩家性格和团队位置。"
+      },
+      {
+        "system": "装备循环",
+        "shared": "都让怪物素材转化为下一次狩猎能力。",
+        "mda": {
+          "aesthetic": "成长成就",
+          "dynamic": "玩家为了目标装备反复讨伐，并用新构筑挑战更强怪物。",
+          "mechanic": "素材掉落、打造、强化、技能、护石/装饰品和目标怪物。 "
+        },
+        "games": [
+          {
+            "label": "Monster Hunter: World",
+            "text": "装备成长更服务长期生态推进和高难准备。",
+            "example": "为了抗性和技能，玩家回刷特定怪物部位。"
+          },
+          {
+            "label": "Monster Hunter Rise",
+            "text": "装备成长更快接入动作节奏和招式流派。",
+            "example": "玩家围绕翔虫技能冷却和输出技能调整套装。"
+          }
+        ],
+        "impact": "刷素材不只是数值提升，而是下一次动作风格变化。"
+      }
+    ],
+    "system_gaps": [
+      {
+        "system": "痕迹追踪与生态观察",
+        "games": [
+          {
+            "label": "Monster Hunter: World",
+            "text": "核心沉浸入口，强化狩猎前戏。",
+            "example": ""
+          },
+          {
+            "label": "Monster Hunter Rise",
+            "text": "明显弱化，更快进入战斗和移动。",
+            "example": ""
+          }
+        ]
+      },
+      {
+        "system": "翔虫高机动系统",
+        "games": [
+          {
+            "label": "Monster Hunter: World",
+            "text": "没有等价核心，移动更受地形和动画承诺限制。",
+            "example": ""
+          },
+          {
+            "label": "Monster Hunter Rise",
+            "text": "核心系统，改变回避、追击和招式节奏。",
+            "example": ""
+          }
+        ]
+      }
+    ],
+    "chains": [
+      {
+        "aesthetic": "生态准备",
+        "dynamic": "玩家先追踪、观察和布置，再与怪物正面交锋。",
+        "mechanic": "痕迹、生态地图、环境机关、补给、陷阱、餐食和装备抗性。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "机动节奏",
+        "dynamic": "玩家用高机动能力减少停顿，快速把防守转为进攻。",
+        "mechanic": "翔虫、铁虫丝技、受身、御龙、垂直移动和招式派生。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "装备驱动狩猎",
+        "dynamic": "玩家把怪物素材转化为新能力，再锁定下一只目标。",
+        "mechanic": "素材掉落、武器树、防具技能、装饰品、护石和高难任务。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      }
+    ],
+    "judgments": [
+      {
+        "issue": "狩猎的核心不是 Boss 血条，而是准备是否改变胜率",
+        "why": "如果准备不重要，素材、陷阱和地图就会退化成背景。",
+        "impact": "World 的慢节奏更适合沉浸，Rise 的快节奏更适合动作复玩。"
+      },
+      {
+        "issue": "高机动会提高爽感，也会压缩怪物压迫感",
+        "why": "恢复手段越强，怪物每次命中的情绪成本越低。",
+        "impact": "Rise 更流畅，但需要更强招式和节奏设计维持威胁。"
+      }
+    ],
+    "recommendations": [
+      {
+        "goal": "生态沉浸",
+        "change": "让追踪、地形和环境生物显著改变战斗机会。",
+        "impact": "玩家会把地图当成狩猎工具。",
+        "risk": "前戏过长会劝退追求动作的玩家。"
+      },
+      {
+        "goal": "操作进化",
+        "change": "为高机动动作设计明确资源和冷却窗口。",
+        "impact": "玩家能炫技但仍需判断。",
+        "risk": "资源过宽会削弱怪物威胁。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Monster Hunter: World 官方页",
+        "url": "https://www.monsterhunter.com/world/"
+      },
+      {
+        "label": "Monster Hunter Rise 官方页",
+        "url": "https://www.monsterhunter.com/rise/"
+      }
+    ],
+    "created_at": "2026-06-26T06:31:03+00:00",
+    "updated_at": "2026-06-26T06:31:38+00:00",
+    "markdown": "**结论**\n两者都把一次狩猎做成“观察、准备、交锋、剥取、再制作”的长期循环；World 更强调生态、痕迹、地形和厚重动作，让玩家像进入真实狩猎场；Rise 更强调翔虫、御龙、快速移动和招式流转，让玩家像掌握高机动武艺。前者卖生态沉浸和准备感，后者卖机动表达和节奏爽感。\n\n**分析范围**\n- System: 怪物追踪、武器动作、装备制作、地图生态、机动能力与多人狩猎节奏\n- Player context: 喜欢研究怪物、练武器、刷素材和合作讨伐的单人或多人玩家\n- Evidence: 官方产品页、稳定公开玩法规则与可观察核心循环。\n- Assumptions: 不比较临时版本数值、短期活动、玩家社区元环境和商业表现。\n\n**MDA 拆解**\n| Aesthetic | Dynamic | Mechanic | Evidence | Confidence |\n|---|---|---|---|---|\n| 生态准备 | 玩家先追踪、观察和布置，再与怪物正面交锋。 | 痕迹、生态地图、环境机关、补给、陷阱、餐食和装备抗性。 | 官方产品页与稳定公开玩法结构。 | High |\n| 机动节奏 | 玩家用高机动能力减少停顿，快速把防守转为进攻。 | 翔虫、铁虫丝技、受身、御龙、垂直移动和招式派生。 | 官方产品页与稳定公开玩法结构。 | High |\n| 装备驱动狩猎 | 玩家把怪物素材转化为新能力，再锁定下一只目标。 | 素材掉落、武器树、防具技能、装饰品、护石和高难任务。 | 官方产品页与稳定公开玩法结构。 | High |\n\n**关键判断**\n| Issue / Strength | Why | Player impact |\n|---|---|---|\n| 狩猎的核心不是 Boss 血条，而是准备是否改变胜率 | 如果准备不重要，素材、陷阱和地图就会退化成背景。 | World 的慢节奏更适合沉浸，Rise 的快节奏更适合动作复玩。 |\n| 高机动会提高爽感，也会压缩怪物压迫感 | 恢复手段越强，怪物每次命中的情绪成本越低。 | Rise 更流畅，但需要更强招式和节奏设计维持威胁。 |\n\n**设计建议**\n| Goal aesthetic | Mechanic change | Expected player impact | Risk |\n|---|---|---|---|\n| 生态沉浸 | 让追踪、地形和环境生物显著改变战斗机会。 | 玩家会把地图当成狩猎工具。 | 前戏过长会劝退追求动作的玩家。 |\n| 操作进化 | 为高机动动作设计明确资源和冷却窗口。 | 玩家能炫技但仍需判断。 | 资源过宽会削弱怪物威胁。 |"
+  },
+  {
+    "id": "civilization-vi-vs-crusader-kings-iii-strategy-design",
+    "title": "Civilization VI vs Crusader Kings III：大战略的帝国棋盘与王朝戏剧",
+    "genre_tags": [
+      "4X策略",
+      "大战略",
+      "政治模拟",
+      "回合策略"
+    ],
+    "subjects": [
+      "Civilization VI",
+      "Crusader Kings III"
+    ],
+    "scope": {
+      "system": "长期战略、版图扩张、科技/文化成长、外交、战争、角色与王朝继承",
+      "player_context": "喜欢长期规划、历史幻想、制度选择和可复盘战略故事的玩家",
+      "evidence": "官方产品页、稳定公开玩法规则与可观察核心循环。",
+      "assumptions": "不比较临时版本数值、短期活动、玩家社区元环境和商业表现。"
+    },
+    "summary": "两者都让玩家在历史长河中做长期选择；Civilization VI 把历史压成清晰棋盘，城市、科技、文化、战争和胜利条件让玩家把世界当作可优化帝国；Crusader Kings III 把历史展开为人物关系，继承、婚姻、封臣、信仰和性格让玩家把权力当作一场不断失控的家族戏剧。前者卖帝国经营，后者卖王朝叙事。",
+    "cover_image": "./assets/covers/civilization-vi-vs-crusader-kings-iii-strategy-design.webp",
+    "cover_alt": "烛光战略地图桌上，左侧暗色留白，右侧是城市模型、路线和王朝肖像阴影",
+    "reading_guide": [
+      {
+        "point": "先看玩家扮演对象",
+        "text": "文明让玩家像国家意志，CK3 让玩家像家族掌权者。"
+      },
+      {
+        "point": "再看失败形态",
+        "text": "文明的失败常是战略落后，CK3 的失败常是继承、关系和内部政治失控。"
+      },
+      {
+        "point": "最后看故事来源",
+        "text": "一方故事来自胜利路线，一方故事来自人和制度不断制造麻烦。"
+      }
+    ],
+    "argument_map": {
+      "core": "Civilization VI 把历史做成可优化帝国棋盘，Crusader Kings III 把历史做成可失控王朝戏剧。",
+      "routes": [
+        {
+          "title": "文明路线",
+          "thesis": "让玩家用城市、科技和胜利条件规划帝国成长",
+          "chain_index": 0
+        },
+        {
+          "title": "王朝路线",
+          "thesis": "让玩家在人物关系和继承风险中维持权力",
+          "chain_index": 1
+        }
+      ]
+    },
+    "quantification": {
+      "scale": "1-5 表示设计倾向强度，不是品质、热度或商业表现评分。",
+      "method": "依据稳定核心机制对玩家行为的持续影响进行 MDA 策划判断。",
+      "dimensions": [
+        {
+          "dimension": "帝国经营",
+          "mda_link": "A 系统掌控 / M 城市与科技",
+          "scores": [
+            {
+              "label": "Civilization VI",
+              "score": 5
+            },
+            {
+              "label": "Crusader Kings III",
+              "score": 3
+            }
+          ],
+          "reading": "文明更像宏观优化棋盘。"
+        },
+        {
+          "dimension": "王朝叙事",
+          "mda_link": "A 叙事回返 / M 人物与继承",
+          "scores": [
+            {
+              "label": "Civilization VI",
+              "score": 2
+            },
+            {
+              "label": "Crusader Kings III",
+              "score": 5
+            }
+          ],
+          "reading": "CK3 的故事来自人物关系和意外。"
+        },
+        {
+          "dimension": "政治抉择",
+          "mda_link": "A 政治抉择 / M 外交与封臣",
+          "scores": [
+            {
+              "label": "Civilization VI",
+              "score": 4
+            },
+            {
+              "label": "Crusader Kings III",
+              "score": 5
+            }
+          ],
+          "reading": "两者都有政治，CK3 更私人化和内部化。"
+        },
+        {
+          "dimension": "胜利可读性",
+          "mda_link": "A 成长成就 / M 明确胜利条件",
+          "scores": [
+            {
+              "label": "Civilization VI",
+              "score": 5
+            },
+            {
+              "label": "Crusader Kings III",
+              "score": 3
+            }
+          ],
+          "reading": "文明更容易知道自己是否接近目标。"
+        }
+      ]
+    },
+    "comparison_systems": [
+      {
+        "system": "扩张逻辑",
+        "shared": "都让领土和资源塑造长期实力。",
+        "mda": {
+          "aesthetic": "系统掌控",
+          "dynamic": "玩家通过扩张获得资源、人口、安全和战略位置。",
+          "mechanic": "城市/领地、资源、边界、建筑、科技、税收、军队和外交。"
+        },
+        "games": [
+          {
+            "label": "Civilization VI",
+            "text": "扩张服务明确产出和胜利路线。",
+            "example": "玩家在河流和奢侈资源旁建城，以支撑科技或文化胜利。"
+          },
+          {
+            "label": "Crusader Kings III",
+            "text": "扩张会增加封臣、继承和内部管理复杂度。",
+            "example": "夺下一块公国后，如何分封和继承可能比战争本身更危险。"
+          }
+        ],
+        "impact": "一个问“能产出什么”，一个问“谁会因此不满”。"
+      },
+      {
+        "system": "外交系统",
+        "shared": "都让其他势力成为长期约束。",
+        "mda": {
+          "aesthetic": "政治抉择",
+          "dynamic": "玩家用盟友、威慑、婚姻、条约或战争降低风险。",
+          "mechanic": "外交关系、盟约、战争借口、贸易、声望、威胁和承诺。"
+        },
+        "games": [
+          {
+            "label": "Civilization VI",
+            "text": "外交更服务国家目标和胜利竞争。",
+            "example": "玩家与邻国结盟换取安全，再抢文化胜利节奏。"
+          },
+          {
+            "label": "Crusader Kings III",
+            "text": "外交高度人物化，婚姻和血统就是战略。",
+            "example": "为了继承权，玩家安排婚姻、谋杀或封臣联盟。"
+          }
+        ],
+        "impact": "外交从系统变量变成人际戏剧时，故事密度会上升。"
+      },
+      {
+        "system": "长期成长",
+        "shared": "都让玩家跨越时代或世代推进。",
+        "mda": {
+          "aesthetic": "成长成就",
+          "dynamic": "玩家把早期选择累积成后期优势或麻烦。",
+          "mechanic": "科技/文化树、制度、宗教、发展度、角色特质、继承和传统。"
+        },
+        "games": [
+          {
+            "label": "Civilization VI",
+            "text": "成长路径更清晰，科技文化直接导向胜利。",
+            "example": "早期学院布局会滚动为中后期科技优势。"
+          },
+          {
+            "label": "Crusader Kings III",
+            "text": "成长路径更叙事，角色死亡会重塑计划。",
+            "example": "优秀继承人突然死亡，迫使玩家接受弱势继承。"
+          }
+        ],
+        "impact": "前者让玩家感到计划兑现，后者让玩家记住计划如何被现实折断。"
+      }
+    ],
+    "system_gaps": [
+      {
+        "system": "明确胜利条件",
+        "games": [
+          {
+            "label": "Civilization VI",
+            "text": "核心牵引，支撑科技、文化、宗教等路线规划。",
+            "example": ""
+          },
+          {
+            "label": "Crusader Kings III",
+            "text": "弱化，目标更开放和角色化。",
+            "example": ""
+          }
+        ]
+      },
+      {
+        "system": "继承与人物性格",
+        "games": [
+          {
+            "label": "Civilization VI",
+            "text": "不是核心。领袖更像文明特性。",
+            "example": ""
+          },
+          {
+            "label": "Crusader Kings III",
+            "text": "核心系统，角色会改变国家命运。",
+            "example": ""
+          }
+        ]
+      }
+    ],
+    "chains": [
+      {
+        "aesthetic": "帝国棋盘",
+        "dynamic": "玩家围绕城市、地块、科技和胜利路线优化长期产出。",
+        "mechanic": "六边格地图、城市区划、资源、科技/文化树、胜利条件和外交。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "王朝戏剧",
+        "dynamic": "玩家在家族、继承、封臣和人物关系中维持权力。",
+        "mechanic": "角色特质、婚姻、继承法、封臣、宗教、密谋和头衔。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "长期后果",
+        "dynamic": "早期选择在几十回合或几代人后变成优势或危机。",
+        "mechanic": "发展度、科技、法律、外交承诺、血统和制度积累。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      }
+    ],
+    "judgments": [
+      {
+        "issue": "大战略需要决定玩家到底扮演谁",
+        "why": "国家意志和家族个体会导向完全不同的反馈、失败和故事。",
+        "impact": "文明适合优化型玩家，CK3 适合叙事和混乱承受度更高的玩家。"
+      },
+      {
+        "issue": "失控也是一种设计资产",
+        "why": "如果所有长期计划都稳定执行，策略会变成最优路线背诵。",
+        "impact": "CK3 的人物事故让失败更像历史故事，而不是单纯算错。"
+      }
+    ],
+    "recommendations": [
+      {
+        "goal": "帝国经营",
+        "change": "保持产出链、地块和胜利路线的因果可读。",
+        "impact": "玩家能复盘为什么强盛或落后。",
+        "risk": "过度可读会形成固定开局。"
+      },
+      {
+        "goal": "王朝叙事",
+        "change": "让人物关系对战略产生真实后果，而不是只做事件文本。",
+        "impact": "玩家会记住角色，而不只记住地图。",
+        "risk": "随机事故过强会让玩家失去掌控感。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Civilization VI 官方页",
+        "url": "https://civilization.2k.com/civ-vi/"
+      },
+      {
+        "label": "Crusader Kings III 官方页",
+        "url": "https://www.paradoxinteractive.com/games/crusader-kings-iii/about"
+      }
+    ],
+    "created_at": "2026-06-26T06:31:03+00:00",
+    "updated_at": "2026-06-26T06:31:38+00:00",
+    "markdown": "**结论**\n两者都让玩家在历史长河中做长期选择；Civilization VI 把历史压成清晰棋盘，城市、科技、文化、战争和胜利条件让玩家把世界当作可优化帝国；Crusader Kings III 把历史展开为人物关系，继承、婚姻、封臣、信仰和性格让玩家把权力当作一场不断失控的家族戏剧。前者卖帝国经营，后者卖王朝叙事。\n\n**分析范围**\n- System: 长期战略、版图扩张、科技/文化成长、外交、战争、角色与王朝继承\n- Player context: 喜欢长期规划、历史幻想、制度选择和可复盘战略故事的玩家\n- Evidence: 官方产品页、稳定公开玩法规则与可观察核心循环。\n- Assumptions: 不比较临时版本数值、短期活动、玩家社区元环境和商业表现。\n\n**MDA 拆解**\n| Aesthetic | Dynamic | Mechanic | Evidence | Confidence |\n|---|---|---|---|---|\n| 帝国棋盘 | 玩家围绕城市、地块、科技和胜利路线优化长期产出。 | 六边格地图、城市区划、资源、科技/文化树、胜利条件和外交。 | 官方产品页与稳定公开玩法结构。 | High |\n| 王朝戏剧 | 玩家在家族、继承、封臣和人物关系中维持权力。 | 角色特质、婚姻、继承法、封臣、宗教、密谋和头衔。 | 官方产品页与稳定公开玩法结构。 | High |\n| 长期后果 | 早期选择在几十回合或几代人后变成优势或危机。 | 发展度、科技、法律、外交承诺、血统和制度积累。 | 官方产品页与稳定公开玩法结构。 | High |\n\n**关键判断**\n| Issue / Strength | Why | Player impact |\n|---|---|---|\n| 大战略需要决定玩家到底扮演谁 | 国家意志和家族个体会导向完全不同的反馈、失败和故事。 | 文明适合优化型玩家，CK3 适合叙事和混乱承受度更高的玩家。 |\n| 失控也是一种设计资产 | 如果所有长期计划都稳定执行，策略会变成最优路线背诵。 | CK3 的人物事故让失败更像历史故事，而不是单纯算错。 |\n\n**设计建议**\n| Goal aesthetic | Mechanic change | Expected player impact | Risk |\n|---|---|---|---|\n| 帝国经营 | 保持产出链、地块和胜利路线的因果可读。 | 玩家能复盘为什么强盛或落后。 | 过度可读会形成固定开局。 |\n| 王朝叙事 | 让人物关系对战略产生真实后果，而不是只做事件文本。 | 玩家会记住角色，而不只记住地图。 | 随机事故过强会让玩家失去掌控感。 |"
+  },
+  {
+    "id": "among-us-vs-goose-goose-duck-social-deduction-design",
+    "title": "Among Us vs Goose Goose Duck：社交推理的极简怀疑与角色混乱",
+    "genre_tags": [
+      "社交推理",
+      "派对游戏",
+      "多人合作",
+      "身份博弈"
+    ],
+    "subjects": [
+      "Among Us",
+      "Goose Goose Duck"
+    ],
+    "scope": {
+      "system": "隐藏身份、任务、会议投票、背叛、角色能力、语音社交与短局节奏",
+      "player_context": "朋友局、语音局或轻度线上社交玩家",
+      "evidence": "官方产品页、稳定公开玩法规则与可观察核心循环。",
+      "assumptions": "不比较临时版本数值、短期活动、玩家社区元环境和商业表现。"
+    },
+    "summary": "两者都把“我信不信你”变成核心玩法；Among Us 用极少规则、任务、击杀和会议投票制造低门槛怀疑，让社交关系自己产出戏剧；Goose Goose Duck 在同一骨架上加入大量阵营和角色能力，让信息、误导、反转和荒诞事件更频繁。前者卖极简怀疑，后者卖角色混乱和派对戏剧。",
+    "cover_image": "./assets/covers/among-us-vs-goose-goose-duck-social-deduction-design.webp",
+    "cover_alt": "昏暗圆桌会议室中，左侧暗色留白，右侧是一圈戴面具的匿名玩家正在投票",
+    "reading_guide": [
+      {
+        "point": "先看规则负担",
+        "text": "Among Us 的低规则量让任何人快速进入怀疑；Goose Goose Duck 的角色量提高戏剧密度，也提高解释成本。"
+      },
+      {
+        "point": "再看信息来源",
+        "text": "一方主要靠路径、尸体、任务和发言，另一方还要处理角色能力制造的真假信息。"
+      },
+      {
+        "point": "最后看局后记忆",
+        "text": "极简局记住的是谁骗了谁，角色局记住的是荒诞连锁如何发生。"
+      }
+    ],
+    "argument_map": {
+      "core": "Among Us 把社交推理压到极简怀疑，Goose Goose Duck 把社交推理扩成角色能力制造的派对混乱。",
+      "routes": [
+        {
+          "title": "Among Us 路线",
+          "thesis": "让低门槛任务和投票把朋友关系变成怀疑场",
+          "chain_index": 0
+        },
+        {
+          "title": "Goose Goose Duck 路线",
+          "thesis": "让多角色能力制造更高频反转和荒诞故事",
+          "chain_index": 1
+        }
+      ]
+    },
+    "quantification": {
+      "scale": "1-5 表示设计倾向强度，不是品质、热度或商业表现评分。",
+      "method": "依据稳定核心机制对玩家行为的持续影响进行 MDA 策划判断。",
+      "dimensions": [
+        {
+          "dimension": "上手速度",
+          "mda_link": "A 社交进入 / M 极简规则",
+          "scores": [
+            {
+              "label": "Among Us",
+              "score": 5
+            },
+            {
+              "label": "Goose Goose Duck",
+              "score": 3
+            }
+          ],
+          "reading": "Among Us 更容易一局讲明白。"
+        },
+        {
+          "dimension": "角色戏剧",
+          "mda_link": "A 战争喜剧 / M 多身份能力",
+          "scores": [
+            {
+              "label": "Among Us",
+              "score": 2
+            },
+            {
+              "label": "Goose Goose Duck",
+              "score": 5
+            }
+          ],
+          "reading": "Goose Goose Duck 的乐趣更来自能力事故。"
+        },
+        {
+          "dimension": "推理清晰",
+          "mda_link": "A 公平反制 / M 线索有限",
+          "scores": [
+            {
+              "label": "Among Us",
+              "score": 4
+            },
+            {
+              "label": "Goose Goose Duck",
+              "score": 3
+            }
+          ],
+          "reading": "极简规则更容易复盘，复杂角色更容易制造噪声。"
+        },
+        {
+          "dimension": "社交压力",
+          "mda_link": "A 团队协作 / D 会议发言",
+          "scores": [
+            {
+              "label": "Among Us",
+              "score": 5
+            },
+            {
+              "label": "Goose Goose Duck",
+              "score": 5
+            }
+          ],
+          "reading": "两者核心都在发言和信任崩塌。"
+        }
+      ]
+    },
+    "comparison_systems": [
+      {
+        "system": "隐藏身份",
+        "shared": "都把玩家分成知道真相和不知道真相的阵营。",
+        "mda": {
+          "aesthetic": "社交推理",
+          "dynamic": "玩家通过行动轨迹、发言、投票和反应判断谁可信。",
+          "mechanic": "阵营、击杀、尸体报告、紧急会议、任务和胜负条件。"
+        },
+        "games": [
+          {
+            "label": "Among Us",
+            "text": "身份结构简单，谎言更依赖玩家表达。",
+            "example": "伪装者谎称自己在电力修任务，其他人用路线时间反驳。"
+          },
+          {
+            "label": "Goose Goose Duck",
+            "text": "身份结构复杂，角色能力会改变证词价值。",
+            "example": "某个角色能力可能制造看似矛盾的信息，引发会议混乱。"
+          }
+        ],
+        "impact": "规则越少，社交越突出；能力越多，事件越丰富。"
+      },
+      {
+        "system": "任务系统",
+        "shared": "普通阵营都需要通过任务推动胜利或制造行动理由。",
+        "mda": {
+          "aesthetic": "责任感",
+          "dynamic": "玩家必须在做任务、抱团、观察和报告之间分配注意力。",
+          "mechanic": "任务点、进度条、地图路线、破坏事件、视野和尸体发现。"
+        },
+        "games": [
+          {
+            "label": "Among Us",
+            "text": "任务是移动和不在场证明的基础语言。",
+            "example": "玩家用自己经过的任务点解释行动路线。"
+          },
+          {
+            "label": "Goose Goose Duck",
+            "text": "任务仍是基础，但角色能力会打断单纯路线推理。",
+            "example": "玩家需要同时解释任务、能力触发和阵营目标。"
+          }
+        ],
+        "impact": "任务让社交发言有可核对素材。"
+      },
+      {
+        "system": "会议投票",
+        "shared": "都用会议把行动信息转化为社交压力。",
+        "mda": {
+          "aesthetic": "压迫感",
+          "dynamic": "玩家在有限时间内说服、撒谎、质疑或沉默。",
+          "mechanic": "报告、紧急按钮、聊天/语音、投票、放逐和信息记忆。"
+        },
+        "games": [
+          {
+            "label": "Among Us",
+            "text": "会议更像短促审判，重点是语言可信度。",
+            "example": "一个玩家发言过慢或路线不清就可能被票走。"
+          },
+          {
+            "label": "Goose Goose Duck",
+            "text": "会议更像喜剧混战，角色信息会不断改写判断。",
+            "example": "多个阵营都在会议中利用半真半假的信息转移焦点。"
+          }
+        ],
+        "impact": "会议是玩法真正发生的舞台，而不是任务之间的暂停。"
+      }
+    ],
+    "system_gaps": [
+      {
+        "system": "极简规则骨架",
+        "games": [
+          {
+            "label": "Among Us",
+            "text": "核心优势，任何玩家能快速理解怀疑关系。",
+            "example": ""
+          },
+          {
+            "label": "Goose Goose Duck",
+            "text": "保留骨架但加入大量角色复杂度。",
+            "example": ""
+          }
+        ]
+      },
+      {
+        "system": "多阵营多角色能力",
+        "games": [
+          {
+            "label": "Among Us",
+            "text": "较弱，默认局更依赖通用规则。",
+            "example": ""
+          },
+          {
+            "label": "Goose Goose Duck",
+            "text": "核心卖点，制造反转和派对事故。",
+            "example": ""
+          }
+        ]
+      }
+    ],
+    "chains": [
+      {
+        "aesthetic": "极简怀疑",
+        "dynamic": "玩家用少量线索和发言判断谁在撒谎。",
+        "mechanic": "任务、移动路线、尸体、会议、投票和少量阵营规则。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "角色混乱",
+        "dynamic": "玩家必须同时处理角色能力、阵营目标和社交谎言。",
+        "mechanic": "多角色能力、多阵营、特殊胜利条件、语音和会议信息。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "社交压力",
+        "dynamic": "朋友关系和发言表现变成比系统信息更重要的证据。",
+        "mechanic": "限时讨论、投票放逐、目击证词、不在场证明和群体记忆。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      }
+    ],
+    "judgments": [
+      {
+        "issue": "社交推理的复杂度上限取决于玩家愿不愿意解释规则",
+        "why": "朋友局能接受混乱，但陌生人局需要更强可读性。",
+        "impact": "Among Us 更适合大众扩散，Goose Goose Duck 更适合熟人局和重度派对效果。"
+      },
+      {
+        "issue": "系统只提供素材，真正内容来自人",
+        "why": "任务、击杀和角色能力的作用是把玩家推上发言舞台。",
+        "impact": "会议节奏和语音氛围比任务本身更决定留存。"
+      }
+    ],
+    "recommendations": [
+      {
+        "goal": "极简怀疑",
+        "change": "保持基础局规则少，并让新玩家一局内理解证据类型。",
+        "impact": "降低社交门槛，让更多人敢开口。",
+        "risk": "熟练后变化不足。"
+      },
+      {
+        "goal": "派对混乱",
+        "change": "把复杂角色分层解锁或按房间预设组合。",
+        "impact": "既能保留荒诞反转，也能减少规则解释时间。",
+        "risk": "预设过强会降低自定义乐趣。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Among Us 官方页",
+        "url": "https://www.innersloth.com/games/among-us/"
+      },
+      {
+        "label": "Goose Goose Duck 官方页",
+        "url": "https://gaggle.fun/goose-goose-duck"
+      }
+    ],
+    "created_at": "2026-06-26T06:31:03+00:00",
+    "updated_at": "2026-06-26T06:31:38+00:00",
+    "markdown": "**结论**\n两者都把“我信不信你”变成核心玩法；Among Us 用极少规则、任务、击杀和会议投票制造低门槛怀疑，让社交关系自己产出戏剧；Goose Goose Duck 在同一骨架上加入大量阵营和角色能力，让信息、误导、反转和荒诞事件更频繁。前者卖极简怀疑，后者卖角色混乱和派对戏剧。\n\n**分析范围**\n- System: 隐藏身份、任务、会议投票、背叛、角色能力、语音社交与短局节奏\n- Player context: 朋友局、语音局或轻度线上社交玩家\n- Evidence: 官方产品页、稳定公开玩法规则与可观察核心循环。\n- Assumptions: 不比较临时版本数值、短期活动、玩家社区元环境和商业表现。\n\n**MDA 拆解**\n| Aesthetic | Dynamic | Mechanic | Evidence | Confidence |\n|---|---|---|---|---|\n| 极简怀疑 | 玩家用少量线索和发言判断谁在撒谎。 | 任务、移动路线、尸体、会议、投票和少量阵营规则。 | 官方产品页与稳定公开玩法结构。 | High |\n| 角色混乱 | 玩家必须同时处理角色能力、阵营目标和社交谎言。 | 多角色能力、多阵营、特殊胜利条件、语音和会议信息。 | 官方产品页与稳定公开玩法结构。 | High |\n| 社交压力 | 朋友关系和发言表现变成比系统信息更重要的证据。 | 限时讨论、投票放逐、目击证词、不在场证明和群体记忆。 | 官方产品页与稳定公开玩法结构。 | High |\n\n**关键判断**\n| Issue / Strength | Why | Player impact |\n|---|---|---|\n| 社交推理的复杂度上限取决于玩家愿不愿意解释规则 | 朋友局能接受混乱，但陌生人局需要更强可读性。 | Among Us 更适合大众扩散，Goose Goose Duck 更适合熟人局和重度派对效果。 |\n| 系统只提供素材，真正内容来自人 | 任务、击杀和角色能力的作用是把玩家推上发言舞台。 | 会议节奏和语音氛围比任务本身更决定留存。 |\n\n**设计建议**\n| Goal aesthetic | Mechanic change | Expected player impact | Risk |\n|---|---|---|---|\n| 极简怀疑 | 保持基础局规则少，并让新玩家一局内理解证据类型。 | 降低社交门槛，让更多人敢开口。 | 熟练后变化不足。 |\n| 派对混乱 | 把复杂角色分层解锁或按房间预设组合。 | 既能保留荒诞反转，也能减少规则解释时间。 | 预设过强会降低自定义乐趣。 |"
+  },
+  {
+    "id": "factorio-vs-satisfactory-automation-design",
+    "title": "Factorio vs Satisfactory：工厂自动化的系统掌控与工业奇观",
+    "genre_tags": [
+      "工厂自动化",
+      "基地经营",
+      "系统优化",
+      "建造沙盒"
+    ],
+    "subjects": [
+      "Factorio",
+      "Satisfactory"
+    ],
+    "scope": {
+      "system": "资源采集、产线布局、物流扩展、科技解锁与工厂规模化",
+      "player_context": "喜欢把重复劳动转化为可扩展系统的单人或合作玩家",
+      "evidence": "官方产品页、稳定公开玩法规则与可观察核心循环。",
+      "assumptions": "不比较临时版本数值、短期活动、玩家社区元环境和商业表现。"
+    },
+    "summary": "两者都把“我亲手造出一台会自己运转的机器”作为核心承诺；Factorio 更强调二维可读性、吞吐瓶颈和污染压力，让玩家把效率问题转化为系统掌控；Satisfactory 则把同样的自动化搬进第一人称空间，用垂直建造、地形远征和巨大机器兑现工业奇观。前者奖励精密优化，后者奖励身处自己工厂里的尺度感。",
+    "cover_image": "./assets/covers/factorio-vs-satisfactory-automation-design.webp",
+    "cover_alt": "外星工业地貌中，左侧暗色留白，右侧是传送带与大型机器构成的自动化工厂",
+    "reading_guide": [
+      {
+        "point": "先看视角",
+        "text": "俯视视角让 Factorio 的瓶颈和物流更像电路图；第一人称让 Satisfactory 的工厂成为可游历空间。"
+      },
+      {
+        "point": "再看压力源",
+        "text": "Factorio 用污染、虫群和吞吐堵塞逼迫扩张纪律；Satisfactory 更依赖探索距离、地形和建造尺度。"
+      },
+      {
+        "point": "最后看成就感",
+        "text": "一方像解出可复制算法，另一方像亲自站在巨型工业建筑里。"
+      }
+    ],
+    "argument_map": {
+      "core": "Factorio 把自动化做成可读的优化问题，Satisfactory 把自动化做成可进入的工业空间。",
+      "routes": [
+        {
+          "title": "Factorio 路线",
+          "thesis": "让玩家持续发现瓶颈、压缩人工操作并扩大吞吐",
+          "chain_index": 0
+        },
+        {
+          "title": "Satisfactory 路线",
+          "thesis": "让玩家在三维尺度中规划、建造并参观自己的工厂",
+          "chain_index": 1
+        }
+      ]
+    },
+    "quantification": {
+      "scale": "1-5 表示设计倾向强度，不是品质、热度或商业表现评分。",
+      "method": "依据稳定核心机制对玩家行为的持续影响进行 MDA 策划判断。",
+      "dimensions": [
+        {
+          "dimension": "系统可读性",
+          "mda_link": "A 系统掌控 / M 俯视布局",
+          "scores": [
+            {
+              "label": "Factorio",
+              "score": 5
+            },
+            {
+              "label": "Satisfactory",
+              "score": 3
+            }
+          ],
+          "reading": "Factorio 更容易把全局问题一眼看成物流网络。"
+        },
+        {
+          "dimension": "空间沉浸",
+          "mda_link": "A 工业奇观 / M 第一人称与垂直建造",
+          "scores": [
+            {
+              "label": "Factorio",
+              "score": 2
+            },
+            {
+              "label": "Satisfactory",
+              "score": 5
+            }
+          ],
+          "reading": "Satisfactory 让玩家在工厂内部感到规模。"
+        },
+        {
+          "dimension": "扩张压力",
+          "mda_link": "A 资源纪律 / D 防御与供给",
+          "scores": [
+            {
+              "label": "Factorio",
+              "score": 5
+            },
+            {
+              "label": "Satisfactory",
+              "score": 3
+            }
+          ],
+          "reading": "Factorio 的污染和敌对压力更直接推动稳态工程。"
+        },
+        {
+          "dimension": "建造表达",
+          "mda_link": "A 创造自由 / M 三维装配",
+          "scores": [
+            {
+              "label": "Factorio",
+              "score": 3
+            },
+            {
+              "label": "Satisfactory",
+              "score": 5
+            }
+          ],
+          "reading": "Satisfactory 的立体结构更容易形成个人审美和基地身份。"
+        }
+      ]
+    },
+    "comparison_systems": [
+      {
+        "system": "物流网络",
+        "shared": "都把资源从采集点转化为多级加工链。",
+        "mda": {
+          "aesthetic": "系统掌控",
+          "dynamic": "玩家追踪瓶颈、扩容关键链路，并把人工搬运替换成自动流动。",
+          "mechanic": "传送带、分拣器/分流器、管线、车站、容器与生产配方。"
+        },
+        "games": [
+          {
+            "label": "Factorio",
+            "text": "物流更像平面电路，瓶颈定位和重构成本清晰。",
+            "example": "铁板不足时，玩家能沿传送带回溯到矿机、电炉或分流处。"
+          },
+          {
+            "label": "Satisfactory",
+            "text": "物流必须穿过地形和高度，空间规划本身变成挑战。",
+            "example": "玩家可能为了跨峡谷运输而建高架带、卡车线或火车线。"
+          }
+        ],
+        "impact": "前者强化工程解题，后者强化基地尺度和路线设计。"
+      },
+      {
+        "system": "科技推进",
+        "shared": "都用科技节点把新机器、新配方和新运输方式接入循环。",
+        "mda": {
+          "aesthetic": "成长成就",
+          "dynamic": "玩家为了下一个自动化层级重组旧产线。",
+          "mechanic": "研究/里程碑、配方解锁、新资源门槛和更高吞吐设备。"
+        },
+        "games": [
+          {
+            "label": "Factorio",
+            "text": "科技常带来可量化的生产效率和防御能力。",
+            "example": "解锁铁路后，远矿区被纳入主基地供应链。"
+          },
+          {
+            "label": "Satisfactory",
+            "text": "里程碑更像远征目标，推动玩家走向新生态和新材料。",
+            "example": "为解锁电梯阶段，玩家必须建立更大规模复合材料链。"
+          }
+        ],
+        "impact": "两者都把成长绑定到“下一层复杂性”，但节奏一个更紧凑，一个更远征。"
+      },
+      {
+        "system": "环境压力",
+        "shared": "都让地图资源分布影响工厂形态。",
+        "mda": {
+          "aesthetic": "风险权衡",
+          "dynamic": "玩家在扩张收益、交通成本和防御/建设成本之间取舍。",
+          "mechanic": "资源节点距离、敌对生态/地形阻碍、电力需求和运输基础设施。"
+        },
+        "games": [
+          {
+            "label": "Factorio",
+            "text": "污染和虫群会把效率问题转化为生存压力。",
+            "example": "产线扩张太快会提升污染云，迫使玩家补防御和弹药物流。"
+          },
+          {
+            "label": "Satisfactory",
+            "text": "地形和垂直空间更常决定扩张方案。",
+            "example": "远处高纯节点诱惑玩家建设长距离输送或分基地。"
+          }
+        ],
+        "impact": "Factorio 更紧张，Satisfactory 更探索。"
+      }
+    ],
+    "system_gaps": [
+      {
+        "system": "敌对压力与污染反馈",
+        "games": [
+          {
+            "label": "Factorio",
+            "text": "核心压力源，迫使玩家平衡产能、防御和扩张。",
+            "example": ""
+          },
+          {
+            "label": "Satisfactory",
+            "text": "不是核心表达，压力更多来自地形和工程成本。",
+            "example": ""
+          }
+        ]
+      },
+      {
+        "system": "第一人称尺度感",
+        "games": [
+          {
+            "label": "Factorio",
+            "text": "弱化个人身体尺度，强化系统图景。",
+            "example": ""
+          },
+          {
+            "label": "Satisfactory",
+            "text": "核心体验，玩家能穿行在自己建造的巨型工厂中。",
+            "example": ""
+          }
+        ]
+      }
+    ],
+    "chains": [
+      {
+        "aesthetic": "系统掌控",
+        "dynamic": "玩家把重复操作替换成可扩展的物流网络。",
+        "mechanic": "传送带、自动加工、能源网络、科技解锁与可视化瓶颈。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "工业奇观",
+        "dynamic": "玩家不只看产能数字，也在空间里感受工厂规模。",
+        "mechanic": "第一人称移动、垂直建造、大型机器、远景地形和多层结构。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "资源纪律",
+        "dynamic": "玩家必须让输入、加工、输出和电力保持平衡。",
+        "mechanic": "配方比例、电力负载、运输速度、库存缓冲和远距离资源节点。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      }
+    ],
+    "judgments": [
+      {
+        "issue": "视角决定自动化的主要乐趣",
+        "why": "同样的传送带系统，俯视视角让玩家优先读全局流量，第一人称让玩家优先感到空间尺度。",
+        "impact": "目标用户不同：效率型玩家更快进入 Factorio 的心流，沉浸建造型玩家更容易被 Satisfactory 留住。"
+      },
+      {
+        "issue": "压力不能只来自产能不足",
+        "why": "纯优化容易变成表格题；外部压力会迫使玩家在扩张、稳定和安全之间权衡。",
+        "impact": "有压力的工厂更容易产生故事和复盘，而不是无限堆机器。"
+      }
+    ],
+    "recommendations": [
+      {
+        "goal": "系统掌控",
+        "change": "为关键资源链提供可视化吞吐诊断，而不是只显示仓库存量。",
+        "impact": "玩家能定位瓶颈并形成工程成就。",
+        "risk": "信息过多会削弱自我发现。"
+      },
+      {
+        "goal": "工业奇观",
+        "change": "让远景、噪音、动画和维护路径展示工厂规模。",
+        "impact": "玩家会把基地当成作品，而不是纯功能节点。",
+        "risk": "装饰和空间成本可能干扰效率玩家。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Factorio 官网",
+        "url": "https://www.factorio.com/"
+      },
+      {
+        "label": "Satisfactory 官网",
+        "url": "https://www.satisfactorygame.com/"
+      }
+    ],
+    "created_at": "2026-06-26T06:31:03+00:00",
+    "updated_at": "2026-06-26T06:31:37+00:00",
+    "markdown": "**结论**\n两者都把“我亲手造出一台会自己运转的机器”作为核心承诺；Factorio 更强调二维可读性、吞吐瓶颈和污染压力，让玩家把效率问题转化为系统掌控；Satisfactory 则把同样的自动化搬进第一人称空间，用垂直建造、地形远征和巨大机器兑现工业奇观。前者奖励精密优化，后者奖励身处自己工厂里的尺度感。\n\n**分析范围**\n- System: 资源采集、产线布局、物流扩展、科技解锁与工厂规模化\n- Player context: 喜欢把重复劳动转化为可扩展系统的单人或合作玩家\n- Evidence: 官方产品页、稳定公开玩法规则与可观察核心循环。\n- Assumptions: 不比较临时版本数值、短期活动、玩家社区元环境和商业表现。\n\n**MDA 拆解**\n| Aesthetic | Dynamic | Mechanic | Evidence | Confidence |\n|---|---|---|---|---|\n| 系统掌控 | 玩家把重复操作替换成可扩展的物流网络。 | 传送带、自动加工、能源网络、科技解锁与可视化瓶颈。 | 官方产品页与稳定公开玩法结构。 | High |\n| 工业奇观 | 玩家不只看产能数字，也在空间里感受工厂规模。 | 第一人称移动、垂直建造、大型机器、远景地形和多层结构。 | 官方产品页与稳定公开玩法结构。 | High |\n| 资源纪律 | 玩家必须让输入、加工、输出和电力保持平衡。 | 配方比例、电力负载、运输速度、库存缓冲和远距离资源节点。 | 官方产品页与稳定公开玩法结构。 | High |\n\n**关键判断**\n| Issue / Strength | Why | Player impact |\n|---|---|---|\n| 视角决定自动化的主要乐趣 | 同样的传送带系统，俯视视角让玩家优先读全局流量，第一人称让玩家优先感到空间尺度。 | 目标用户不同：效率型玩家更快进入 Factorio 的心流，沉浸建造型玩家更容易被 Satisfactory 留住。 |\n| 压力不能只来自产能不足 | 纯优化容易变成表格题；外部压力会迫使玩家在扩张、稳定和安全之间权衡。 | 有压力的工厂更容易产生故事和复盘，而不是无限堆机器。 |\n\n**设计建议**\n| Goal aesthetic | Mechanic change | Expected player impact | Risk |\n|---|---|---|---|\n| 系统掌控 | 为关键资源链提供可视化吞吐诊断，而不是只显示仓库存量。 | 玩家能定位瓶颈并形成工程成就。 | 信息过多会削弱自我发现。 |\n| 工业奇观 | 让远景、噪音、动画和维护路径展示工厂规模。 | 玩家会把基地当成作品，而不是纯功能节点。 | 装饰和空间成本可能干扰效率玩家。 |"
+  },
+  {
+    "id": "slay-the-spire-vs-balatro-card-roguelike-design",
+    "title": "Slay the Spire vs Balatro：卡牌 Roguelike 的生存构筑与倍率狂喜",
+    "genre_tags": [
+      "卡牌 Roguelike",
+      "构筑研究",
+      "随机策略",
+      "重复挑战"
+    ],
+    "subjects": [
+      "Slay the Spire",
+      "Balatro"
+    ],
+    "scope": {
+      "system": "单局卡组成长、随机奖励、路线选择、风险控制与失败回返",
+      "player_context": "追求短局高复玩、能接受随机性并愿意研究组合的单人玩家",
+      "evidence": "官方产品页、稳定公开玩法规则与可观察核心循环。",
+      "assumptions": "不比较临时版本数值、短期活动、玩家社区元环境和商业表现。"
+    },
+    "summary": "两者都用随机卡牌和单局成长制造“这把能不能成”的张力；Slay the Spire 把构筑放在敌人威胁、路线风险和长期生存之间，玩家的快感来自在不完美奖励中活下来；Balatro 把构筑压缩进扑克牌型、倍率、Joker 与商店循环，玩家的快感来自看懂概率后把数字推到爆炸。前者是生存式构筑，后者是倍率式狂喜。",
+    "cover_image": "./assets/covers/slay-the-spire-vs-balatro-card-roguelike-design.webp",
+    "cover_alt": "暗色牌桌上，路径符号、卡牌光效与几何阴影构成高风险构筑场景",
+    "reading_guide": [
+      {
+        "point": "先看失败原因",
+        "text": "Slay the Spire 的失败常来自防御、路线和敌人机制判断；Balatro 的失败更常来自经济、牌型和倍率曲线断裂。"
+      },
+      {
+        "point": "再看奖励语言",
+        "text": "一方奖励能覆盖多类敌人的稳定卡组，另一方奖励能把少数牌型推到极端的乘法组合。"
+      },
+      {
+        "point": "最后看节奏",
+        "text": "Slay the Spire 是逐层生存压力，Balatro 是更快的商店-出牌-爆分循环。"
+      }
+    ],
+    "argument_map": {
+      "core": "Slay the Spire 保护的是风险中的生存决策，Balatro 保护的是概率被玩家驯服后的爆分释放。",
+      "routes": [
+        {
+          "title": "Slay the Spire 路线",
+          "thesis": "让玩家在不完整工具中对抗明确威胁",
+          "chain_index": 0
+        },
+        {
+          "title": "Balatro 路线",
+          "thesis": "让玩家用概率、经济和乘法组件堆出爆发曲线",
+          "chain_index": 1
+        }
+      ]
+    },
+    "quantification": {
+      "scale": "1-5 表示设计倾向强度，不是品质、热度或商业表现评分。",
+      "method": "依据稳定核心机制对玩家行为的持续影响进行 MDA 策划判断。",
+      "dimensions": [
+        {
+          "dimension": "生存压力",
+          "mda_link": "A 风险权衡 / D 路线与血量管理",
+          "scores": [
+            {
+              "label": "Slay the Spire",
+              "score": 5
+            },
+            {
+              "label": "Balatro",
+              "score": 3
+            }
+          ],
+          "reading": "Slay the Spire 的血量和精英路线更像远期资源管理。"
+        },
+        {
+          "dimension": "爆分释放",
+          "mda_link": "A 节奏释放 / M 倍率乘法",
+          "scores": [
+            {
+              "label": "Slay the Spire",
+              "score": 3
+            },
+            {
+              "label": "Balatro",
+              "score": 5
+            }
+          ],
+          "reading": "Balatro 更直接让玩家看到组合指数级放大。"
+        },
+        {
+          "dimension": "敌人反制",
+          "mda_link": "A 公平反制 / M 敌人意图",
+          "scores": [
+            {
+              "label": "Slay the Spire",
+              "score": 5
+            },
+            {
+              "label": "Balatro",
+              "score": 2
+            }
+          ],
+          "reading": "Slay the Spire 的敌人意图把每回合变成可读攻防。"
+        },
+        {
+          "dimension": "经济压缩",
+          "mda_link": "A 资源纪律 / M 商店与跳盲注",
+          "scores": [
+            {
+              "label": "Slay the Spire",
+              "score": 3
+            },
+            {
+              "label": "Balatro",
+              "score": 5
+            }
+          ],
+          "reading": "Balatro 把很多决策集中在商店效率和收益曲线上。"
+        }
+      ]
+    },
+    "comparison_systems": [
+      {
+        "system": "构筑成长",
+        "shared": "都让玩家从有限初始牌组逐步形成可运行引擎。",
+        "mda": {
+          "aesthetic": "构筑研究",
+          "dynamic": "玩家识别核心协同，再决定删牌、加牌、升级或购买组件。",
+          "mechanic": "随机卡牌、遗物/Joker、升级、商店、删牌和局内奖励。"
+        },
+        "games": [
+          {
+            "label": "Slay the Spire",
+            "text": "构筑必须兼顾输出、防御、过牌和特定敌人机制。",
+            "example": "毒贼需要在叠毒速度和活过精英爆发之间平衡。"
+          },
+          {
+            "label": "Balatro",
+            "text": "构筑更集中于牌型、筹码、倍率和经济滚动。",
+            "example": "玩家围绕同花或高牌购买 Joker，让单一牌型不断增幅。"
+          }
+        ],
+        "impact": "前者让构筑服务生存，后者让构筑服务爆发曲线。"
+      },
+      {
+        "system": "路线压力",
+        "shared": "都让玩家在短期安全和长期收益之间选择。",
+        "mda": {
+          "aesthetic": "风险权衡",
+          "dynamic": "玩家判断是否承担更高风险以换取更强成长。",
+          "mechanic": "地图节点、精英/盲注、商店、休息点、奖励和失败阈值。"
+        },
+        "games": [
+          {
+            "label": "Slay the Spire",
+            "text": "精英、火堆和事件路线会消耗血量预算。",
+            "example": "血量低时玩家可能放弃精英，转向休息点保命。"
+          },
+          {
+            "label": "Balatro",
+            "text": "跳过盲注和商店选择会影响经济曲线。",
+            "example": "为了稀有标签跳盲注，可能牺牲当前资金和牌组稳定性。"
+          }
+        ],
+        "impact": "路线选择让随机性变成可承担的风险，而不是纯抽奖。"
+      },
+      {
+        "system": "反馈节奏",
+        "shared": "都把组合效果即时反馈给玩家。",
+        "mda": {
+          "aesthetic": "节奏释放",
+          "dynamic": "玩家看到自己搭出的引擎开始自动放大。",
+          "mechanic": "伤害结算、分数结算、特效触发、数值跳变和失败门槛。"
+        },
+        "games": [
+          {
+            "label": "Slay the Spire",
+            "text": "反馈更偏战斗结果和生存状态。",
+            "example": "一套防御循环成型后，玩家能稳定吃下高伤害回合。"
+          },
+          {
+            "label": "Balatro",
+            "text": "反馈更偏数字加速和倍率爆炸。",
+            "example": "Joker 连锁触发让分数从刚好过线变成巨大溢出。"
+          }
+        ],
+        "impact": "Balatro 更上头，Slay the Spire 更复盘。"
+      }
+    ],
+    "system_gaps": [
+      {
+        "system": "敌人意图系统",
+        "games": [
+          {
+            "label": "Slay the Spire",
+            "text": "核心机制，让风险可读、回合可规划。",
+            "example": ""
+          },
+          {
+            "label": "Balatro",
+            "text": "没有等价敌人行为，压力主要来自分数门槛。",
+            "example": ""
+          }
+        ]
+      },
+      {
+        "system": "扑克牌型语法",
+        "games": [
+          {
+            "label": "Slay the Spire",
+            "text": "卡牌是战斗动作和资源。",
+            "example": ""
+          },
+          {
+            "label": "Balatro",
+            "text": "核心语言，玩家用熟悉牌型进入复杂倍率系统。",
+            "example": ""
+          }
+        ]
+      }
+    ],
+    "chains": [
+      {
+        "aesthetic": "生存构筑",
+        "dynamic": "玩家在不完美奖励中组出足以应对下一层威胁的卡组。",
+        "mechanic": "敌人意图、血量、地图路线、卡牌奖励、遗物和火堆升级。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "倍率狂喜",
+        "dynamic": "玩家围绕少数牌型建立乘法引擎，并追求数字越界的释放。",
+        "mechanic": "Joker、牌型等级、筹码、倍率、商店经济和盲注门槛。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      },
+      {
+        "aesthetic": "风险权衡",
+        "dynamic": "玩家用当前稳定性换取未来成长。",
+        "mechanic": "精英/跳盲注、事件、商店、删牌、升级和资源预算。",
+        "evidence": "官方产品页与稳定公开玩法结构。",
+        "confidence": "High"
+      }
+    ],
+    "judgments": [
+      {
+        "issue": "随机性需要可复盘的控制点",
+        "why": "玩家可以接受抽不到关键牌，但需要知道自己在哪些选择上提高了成功率。",
+        "impact": "可复盘随机会刺激再开一局，不可解释随机会变成被系统戏弄。"
+      },
+      {
+        "issue": "爆发反馈越强，越需要前期铺垫成本",
+        "why": "无成本爆分会快速麻木；需要让玩家记得自己如何搭出引擎。",
+        "impact": "Balatro 的爽感来自“这是我算出来的”，不是单纯数字变大。"
+      }
+    ],
+    "recommendations": [
+      {
+        "goal": "构筑研究",
+        "change": "让失败界面回放关键断点：缺防御、经济断档、牌型不稳定或路线过贪。",
+        "impact": "玩家会把失败转化为下一局策略。",
+        "risk": "解释过多会降低神秘感。"
+      },
+      {
+        "goal": "节奏释放",
+        "change": "把连锁触发做成可读层级，而不是一次性淹没玩家。",
+        "impact": "玩家能理解爆发来自哪些部件。",
+        "risk": "结算时间过长会拖慢短局节奏。"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Slay the Spire 官网",
+        "url": "https://www.megacrit.com/"
+      },
+      {
+        "label": "Balatro 官网",
+        "url": "https://www.playbalatro.com/"
+      }
+    ],
+    "created_at": "2026-06-26T06:31:03+00:00",
+    "updated_at": "2026-06-26T06:31:37+00:00",
+    "markdown": "**结论**\n两者都用随机卡牌和单局成长制造“这把能不能成”的张力；Slay the Spire 把构筑放在敌人威胁、路线风险和长期生存之间，玩家的快感来自在不完美奖励中活下来；Balatro 把构筑压缩进扑克牌型、倍率、Joker 与商店循环，玩家的快感来自看懂概率后把数字推到爆炸。前者是生存式构筑，后者是倍率式狂喜。\n\n**分析范围**\n- System: 单局卡组成长、随机奖励、路线选择、风险控制与失败回返\n- Player context: 追求短局高复玩、能接受随机性并愿意研究组合的单人玩家\n- Evidence: 官方产品页、稳定公开玩法规则与可观察核心循环。\n- Assumptions: 不比较临时版本数值、短期活动、玩家社区元环境和商业表现。\n\n**MDA 拆解**\n| Aesthetic | Dynamic | Mechanic | Evidence | Confidence |\n|---|---|---|---|---|\n| 生存构筑 | 玩家在不完美奖励中组出足以应对下一层威胁的卡组。 | 敌人意图、血量、地图路线、卡牌奖励、遗物和火堆升级。 | 官方产品页与稳定公开玩法结构。 | High |\n| 倍率狂喜 | 玩家围绕少数牌型建立乘法引擎，并追求数字越界的释放。 | Joker、牌型等级、筹码、倍率、商店经济和盲注门槛。 | 官方产品页与稳定公开玩法结构。 | High |\n| 风险权衡 | 玩家用当前稳定性换取未来成长。 | 精英/跳盲注、事件、商店、删牌、升级和资源预算。 | 官方产品页与稳定公开玩法结构。 | High |\n\n**关键判断**\n| Issue / Strength | Why | Player impact |\n|---|---|---|\n| 随机性需要可复盘的控制点 | 玩家可以接受抽不到关键牌，但需要知道自己在哪些选择上提高了成功率。 | 可复盘随机会刺激再开一局，不可解释随机会变成被系统戏弄。 |\n| 爆发反馈越强，越需要前期铺垫成本 | 无成本爆分会快速麻木；需要让玩家记得自己如何搭出引擎。 | Balatro 的爽感来自“这是我算出来的”，不是单纯数字变大。 |\n\n**设计建议**\n| Goal aesthetic | Mechanic change | Expected player impact | Risk |\n|---|---|---|---|\n| 构筑研究 | 让失败界面回放关键断点：缺防御、经济断档、牌型不稳定或路线过贪。 | 玩家会把失败转化为下一局策略。 | 解释过多会降低神秘感。 |\n| 节奏释放 | 把连锁触发做成可读层级，而不是一次性淹没玩家。 | 玩家能理解爆发来自哪些部件。 | 结算时间过长会拖慢短局节奏。 |"
+  },
+  {
     "id": "diablo-4-vs-path-of-exile-2-arpg-design",
     "title": "暗黑破坏神 IV vs 流放之路 2：刷宝 ARPG 的爽感兑现与构筑研究",
     "genre_tags": [
