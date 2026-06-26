@@ -384,6 +384,10 @@ function renderRecordDetail(record) {
       ${renderReadingGuide(record.reading_guide || [])}
       ${renderArgumentMap(record)}
       ${renderQuantification(record.quantification, record)}
+      ${renderDeepDives(record.deep_dives || [])}
+      ${renderFailureModes(record.failure_modes || [])}
+      ${renderDesignLevers(record.design_levers || [])}
+      ${renderValidationSignals(record.validation_signals || [])}
 
       <section class="record-grid">
         ${renderComparisonSystems(record.comparison_systems || [], record)}
@@ -394,6 +398,128 @@ function renderRecordDetail(record) {
         ${renderSources(record.sources || [])}
       </section>
     </article>
+  `;
+}
+
+function renderDeepDives(items) {
+  if (!items.length) return "";
+  return `
+    <section class="record-block wide">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">System Cut</p>
+          <h2>系统切片：把判断落到一局里</h2>
+        </div>
+        <span>${items.length}</span>
+      </div>
+      <div class="comparison-cards">
+        ${items
+          .map(
+            (item) => `
+              <details class="comparison-card" open>
+                <summary>
+                  <span>${escapeHtml(item.title || "")}</span>
+                  <strong>${escapeHtml(item.claim || "")}</strong>
+                </summary>
+                <div class="comparison-detail">
+                  ${item.scenario ? `<div class="system-name"><strong>具体情境</strong><span>${escapeHtml(item.scenario)}</span></div>` : ""}
+                  ${renderMdaCell(item.mda || {})}
+                  <div class="game-compare">
+                    <div>
+                      <span>为什么</span>
+                      <p>${escapeHtml(item.why || "")}</p>
+                    </div>
+                    <div>
+                      <span>玩家影响</span>
+                      <p>${escapeHtml(item.player_impact || "")}</p>
+                    </div>
+                  </div>
+                  ${item.takeaway ? `<aside class="game-example"><strong>可复用结论</strong><p>${escapeHtml(item.takeaway)}</p></aside>` : ""}
+                </div>
+              </details>
+            `,
+          )
+          .join("")}
+      </div>
+    </section>
+  `;
+}
+
+function renderFailureModes(items) {
+  if (!items.length) return "";
+  return `
+    <section class="record-block wide">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">Failure Modes</p>
+          <h2>失败模式：什么时候会变浅或变坏</h2>
+        </div>
+        <span>${items.length}</span>
+      </div>
+      <div class="stack-list">
+        ${items
+          .map((item) =>
+            renderCard(
+              item.issue,
+              item.symptom && `表现：${item.symptom}`,
+              item.why && `为什么：${item.why}`,
+              item.player_impact && `玩家影响：${item.player_impact}`,
+              item.fix && `修正方向：${item.fix}`,
+            ),
+          )
+          .join("")}
+      </div>
+    </section>
+  `;
+}
+
+function renderDesignLevers(items) {
+  if (!items.length) return "";
+  return `
+    <section class="record-block wide">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">Tuning Levers</p>
+          <h2>可调机制杠杆</h2>
+        </div>
+        <span>${items.length}</span>
+      </div>
+      <div class="gap-grid">
+        ${items
+          .map(
+            (item) => `
+              <article class="gap-card">
+                <strong>${escapeHtml(item.lever || "")}</strong>
+                <div><span>CS2 读法</span><p>${escapeHtml(item.cs2_read || "")}</p></div>
+                <div><span>VALORANT 读法</span><p>${escapeHtml(item.valorant_read || "")}</p></div>
+                <div><span>调参问题</span><p>${escapeHtml(item.tuning_question || "")}</p></div>
+                <div><span>风险</span><p>${escapeHtml(item.risk || "")}</p></div>
+              </article>
+            `,
+          )
+          .join("")}
+      </div>
+    </section>
+  `;
+}
+
+function renderValidationSignals(items) {
+  if (!items.length) return "";
+  return `
+    <section class="record-block wide">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">Validation</p>
+          <h2>验证信号：怎么判断设计真的成立</h2>
+        </div>
+        <span>${items.length}</span>
+      </div>
+      <div class="stack-list">
+        ${items
+          .map((item) => renderCard(item.signal, item.good && `健康信号：${item.good}`, item.warning && `危险信号：${item.warning}`))
+          .join("")}
+      </div>
+    </section>
   `;
 }
 
@@ -822,6 +948,10 @@ function collectSearchText(record, genres) {
       item.impact,
     ]),
     ...(record.system_gaps || []).flatMap((item) => [item.system, item.arc, item.tarkov, ...(item.games || []).flatMap((game) => [game.label, game.text])]),
+    ...(record.deep_dives || []).flatMap((item) => [item.title, item.claim, item.scenario, item.mda?.aesthetic, item.mda?.dynamic, item.mda?.mechanic, item.why, item.player_impact, item.takeaway]),
+    ...(record.failure_modes || []).flatMap((item) => [item.issue, item.symptom, item.why, item.player_impact, item.fix]),
+    ...(record.design_levers || []).flatMap((item) => [item.lever, item.cs2_read, item.valorant_read, item.tuning_question, item.risk]),
+    ...(record.validation_signals || []).flatMap((item) => [item.signal, item.good, item.warning]),
     record.quantification?.scale,
     record.quantification?.method,
     ...(record.quantification?.dimensions || []).flatMap((item) => [item.dimension, item.mda_link, item.reading, ...(item.scores || []).flatMap((score) => [score.label, score.score])]),
