@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T07:32:45+00:00",
+  "generated_at": "2026-06-26T07:11:39+00:00",
   "method": "命中数来自对应赛道分析记录的摘要、MDA 链、共同系统影响与关键判断；每个语义单元对同一词条最多计一次。",
   "categories": [
     {
@@ -17,7 +17,15 @@
           "terms": [
             {
               "label": "战术可读",
-              "count": 13,
+              "count": 5,
+              "record_ids": [
+                "cs2-vs-valorant-bomb-design"
+              ],
+              "weight": 5
+            },
+            {
+              "label": "竞技证明",
+              "count": 5,
               "record_ids": [
                 "cs2-vs-valorant-bomb-design"
               ],
@@ -25,51 +33,43 @@
             },
             {
               "label": "资源纪律",
-              "count": 11,
+              "count": 5,
               "record_ids": [
                 "cs2-vs-valorant-bomb-design"
               ],
-              "weight": 4
+              "weight": 5
             },
             {
-              "label": "空间控制",
-              "count": 9,
-              "record_ids": [
-                "cs2-vs-valorant-bomb-design"
-              ],
-              "weight": 4
-            },
-            {
-              "label": "竞技证明",
-              "count": 7,
+              "label": "团队协作",
+              "count": 3,
               "record_ids": [
                 "cs2-vs-valorant-bomb-design"
               ],
               "weight": 3
             },
             {
-              "label": "团队协作",
-              "count": 4,
+              "label": "空间控制",
+              "count": 3,
               "record_ids": [
                 "cs2-vs-valorant-bomb-design"
               ],
-              "weight": 2
+              "weight": 3
             },
             {
               "label": "公平反制",
-              "count": 3,
+              "count": 1,
               "record_ids": [
                 "cs2-vs-valorant-bomb-design"
               ],
-              "weight": 2
+              "weight": 1
             },
             {
               "label": "压迫感",
-              "count": 3,
+              "count": 1,
               "record_ids": [
                 "cs2-vs-valorant-bomb-design"
               ],
-              "weight": 2
+              "weight": 1
             },
             {
               "label": "逆转希望",
