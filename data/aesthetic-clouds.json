@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T06:34:23+00:00",
+  "generated_at": "2026-06-26T07:11:39+00:00",
   "method": "命中数来自对应赛道分析记录的摘要、MDA 链、共同系统影响与关键判断；每个语义单元对同一词条最多计一次。",
   "categories": [
     {
@@ -353,6 +353,65 @@
               "count": 1,
               "record_ids": [
                 "delta-force-vs-arena-breakout-extraction-design"
+              ],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "id": "tactical-cqb",
+          "label": "战术清房",
+          "description": "门、角度、侦察和队伍分工把室内空间变成低容错战术题。",
+          "sample_count": 1,
+          "record_ids": [
+            "rainbow-six-siege-vs-ready-or-not-tactical-design"
+          ],
+          "terms": [
+            {
+              "label": "战术可读",
+              "count": 8,
+              "record_ids": [
+                "rainbow-six-siege-vs-ready-or-not-tactical-design"
+              ],
+              "weight": 5
+            },
+            {
+              "label": "程序纪律",
+              "count": 5,
+              "record_ids": [
+                "rainbow-six-siege-vs-ready-or-not-tactical-design"
+              ],
+              "weight": 3
+            },
+            {
+              "label": "团队协作",
+              "count": 4,
+              "record_ids": [
+                "rainbow-six-siege-vs-ready-or-not-tactical-design"
+              ],
+              "weight": 2
+            },
+            {
+              "label": "责任感",
+              "count": 4,
+              "record_ids": [
+                "rainbow-six-siege-vs-ready-or-not-tactical-design"
+              ],
+              "weight": 2
+            },
+            {
+              "label": "公平反制",
+              "count": 3,
+              "record_ids": [
+                "rainbow-six-siege-vs-ready-or-not-tactical-design"
+              ],
+              "weight": 2
+            },
+            {
+              "label": "压迫感",
+              "count": 2,
+              "record_ids": [
+                "rainbow-six-siege-vs-ready-or-not-tactical-design"
               ],
               "weight": 1
             }
@@ -744,6 +803,65 @@
               "weight": 1
             }
           ]
+        },
+        {
+          "id": "automation",
+          "label": "工厂自动化",
+          "description": "资源、物流和空间规划把重复劳动转化为可扩展系统。",
+          "sample_count": 1,
+          "record_ids": [
+            "factorio-vs-satisfactory-automation-design"
+          ],
+          "terms": [
+            {
+              "label": "工业奇观",
+              "count": 7,
+              "record_ids": [
+                "factorio-vs-satisfactory-automation-design"
+              ],
+              "weight": 5
+            },
+            {
+              "label": "效率美学",
+              "count": 7,
+              "record_ids": [
+                "factorio-vs-satisfactory-automation-design"
+              ],
+              "weight": 5
+            },
+            {
+              "label": "资源纪律",
+              "count": 5,
+              "record_ids": [
+                "factorio-vs-satisfactory-automation-design"
+              ],
+              "weight": 4
+            },
+            {
+              "label": "系统掌控",
+              "count": 4,
+              "record_ids": [
+                "factorio-vs-satisfactory-automation-design"
+              ],
+              "weight": 3
+            },
+            {
+              "label": "创造自由",
+              "count": 3,
+              "record_ids": [
+                "factorio-vs-satisfactory-automation-design"
+              ],
+              "weight": 2
+            },
+            {
+              "label": "长期归属",
+              "count": 1,
+              "record_ids": [
+                "factorio-vs-satisfactory-automation-design"
+              ],
+              "weight": 1
+            }
+          ]
         }
       ]
     },
@@ -975,6 +1093,242 @@
               "weight": 1
             }
           ]
+        },
+        {
+          "id": "open-world",
+          "label": "开放世界解谜",
+          "description": "地形观察、物理规则和工具组合让玩家形成自己的路线。",
+          "sample_count": 1,
+          "record_ids": [
+            "breath-of-the-wild-vs-tears-of-the-kingdom-open-world-design"
+          ],
+          "terms": [
+            {
+              "label": "自主解题",
+              "count": 9,
+              "record_ids": [
+                "breath-of-the-wild-vs-tears-of-the-kingdom-open-world-design"
+              ],
+              "weight": 5
+            },
+            {
+              "label": "发明自由",
+              "count": 5,
+              "record_ids": [
+                "breath-of-the-wild-vs-tears-of-the-kingdom-open-world-design"
+              ],
+              "weight": 3
+            },
+            {
+              "label": "未知探索",
+              "count": 5,
+              "record_ids": [
+                "breath-of-the-wild-vs-tears-of-the-kingdom-open-world-design"
+              ],
+              "weight": 3
+            },
+            {
+              "label": "创造自由",
+              "count": 4,
+              "record_ids": [
+                "breath-of-the-wild-vs-tears-of-the-kingdom-open-world-design"
+              ],
+              "weight": 2
+            },
+            {
+              "label": "自然发现",
+              "count": 4,
+              "record_ids": [
+                "breath-of-the-wild-vs-tears-of-the-kingdom-open-world-design"
+              ],
+              "weight": 2
+            },
+            {
+              "label": "系统掌控",
+              "count": 2,
+              "record_ids": [
+                "breath-of-the-wild-vs-tears-of-the-kingdom-open-world-design"
+              ],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "id": "stealth",
+          "label": "潜行与沉浸模拟",
+          "description": "关卡规则、身份伪装和能力路线让低冲突解法成立。",
+          "sample_count": 1,
+          "record_ids": [
+            "hitman-vs-dishonored-stealth-design"
+          ],
+          "terms": [
+            {
+              "label": "即兴潜入",
+              "count": 8,
+              "record_ids": [
+                "hitman-vs-dishonored-stealth-design"
+              ],
+              "weight": 5
+            },
+            {
+              "label": "冷静编排",
+              "count": 7,
+              "record_ids": [
+                "hitman-vs-dishonored-stealth-design"
+              ],
+              "weight": 4
+            },
+            {
+              "label": "自主解题",
+              "count": 3,
+              "record_ids": [
+                "hitman-vs-dishonored-stealth-design"
+              ],
+              "weight": 2
+            },
+            {
+              "label": "身份表达",
+              "count": 3,
+              "record_ids": [
+                "hitman-vs-dishonored-stealth-design"
+              ],
+              "weight": 2
+            },
+            {
+              "label": "战术可读",
+              "count": 2,
+              "record_ids": [
+                "hitman-vs-dishonored-stealth-design"
+              ],
+              "weight": 2
+            },
+            {
+              "label": "公平反制",
+              "count": 1,
+              "record_ids": [
+                "hitman-vs-dishonored-stealth-design"
+              ],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "id": "jrpg",
+          "label": "日历 JRPG",
+          "description": "有限日程把关系、战斗构筑和叙事使命绑定为长期选择。",
+          "sample_count": 1,
+          "record_ids": [
+            "persona-5-royal-vs-metaphor-refantazio-jrpg-design"
+          ],
+          "terms": [
+            {
+              "label": "叙事回返",
+              "count": 9,
+              "record_ids": [
+                "persona-5-royal-vs-metaphor-refantazio-jrpg-design"
+              ],
+              "weight": 5
+            },
+            {
+              "label": "日常羁绊",
+              "count": 8,
+              "record_ids": [
+                "persona-5-royal-vs-metaphor-refantazio-jrpg-design"
+              ],
+              "weight": 4
+            },
+            {
+              "label": "身份表达",
+              "count": 6,
+              "record_ids": [
+                "persona-5-royal-vs-metaphor-refantazio-jrpg-design"
+              ],
+              "weight": 3
+            },
+            {
+              "label": "责任感",
+              "count": 4,
+              "record_ids": [
+                "persona-5-royal-vs-metaphor-refantazio-jrpg-design"
+              ],
+              "weight": 2
+            },
+            {
+              "label": "资源纪律",
+              "count": 4,
+              "record_ids": [
+                "persona-5-royal-vs-metaphor-refantazio-jrpg-design"
+              ],
+              "weight": 2
+            },
+            {
+              "label": "公共使命",
+              "count": 3,
+              "record_ids": [
+                "persona-5-royal-vs-metaphor-refantazio-jrpg-design"
+              ],
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "id": "hunting",
+          "label": "共斗狩猎",
+          "description": "怪物学习、素材循环和武器熟练把 Boss 战变成长期生活方式。",
+          "sample_count": 1,
+          "record_ids": [
+            "monster-hunter-world-vs-rise-hunting-design"
+          ],
+          "terms": [
+            {
+              "label": "机动节奏",
+              "count": 6,
+              "record_ids": [
+                "monster-hunter-world-vs-rise-hunting-design"
+              ],
+              "weight": 5
+            },
+            {
+              "label": "生态准备",
+              "count": 5,
+              "record_ids": [
+                "monster-hunter-world-vs-rise-hunting-design"
+              ],
+              "weight": 4
+            },
+            {
+              "label": "团队协作",
+              "count": 1,
+              "record_ids": [
+                "monster-hunter-world-vs-rise-hunting-design"
+              ],
+              "weight": 1
+            },
+            {
+              "label": "成长成就",
+              "count": 1,
+              "record_ids": [
+                "monster-hunter-world-vs-rise-hunting-design"
+              ],
+              "weight": 1
+            },
+            {
+              "label": "操作进化",
+              "count": 1,
+              "record_ids": [
+                "monster-hunter-world-vs-rise-hunting-design"
+              ],
+              "weight": 1
+            },
+            {
+              "label": "风险权衡",
+              "count": 1,
+              "record_ids": [
+                "monster-hunter-world-vs-rise-hunting-design"
+              ],
+              "weight": 1
+            }
+          ]
         }
       ]
     },
@@ -1137,71 +1491,6 @@
               "weight": 1
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "new-expansion",
-      "label": "新增题材",
-      "tracks": [
-        {
-          "id": "automation",
-          "label": "工厂自动化",
-          "description": "资源、物流和空间规划把重复劳动转化为可扩展系统。",
-          "sample_count": 1,
-          "record_ids": [
-            "factorio-vs-satisfactory-automation-design"
-          ],
-          "terms": [
-            {
-              "label": "工业奇观",
-              "count": 7,
-              "record_ids": [
-                "factorio-vs-satisfactory-automation-design"
-              ],
-              "weight": 5
-            },
-            {
-              "label": "效率美学",
-              "count": 7,
-              "record_ids": [
-                "factorio-vs-satisfactory-automation-design"
-              ],
-              "weight": 5
-            },
-            {
-              "label": "资源纪律",
-              "count": 5,
-              "record_ids": [
-                "factorio-vs-satisfactory-automation-design"
-              ],
-              "weight": 4
-            },
-            {
-              "label": "系统掌控",
-              "count": 4,
-              "record_ids": [
-                "factorio-vs-satisfactory-automation-design"
-              ],
-              "weight": 3
-            },
-            {
-              "label": "创造自由",
-              "count": 3,
-              "record_ids": [
-                "factorio-vs-satisfactory-automation-design"
-              ],
-              "weight": 2
-            },
-            {
-              "label": "长期归属",
-              "count": 1,
-              "record_ids": [
-                "factorio-vs-satisfactory-automation-design"
-              ],
-              "weight": 1
-            }
-          ]
         },
         {
           "id": "card-roguelike",
@@ -1257,360 +1546,6 @@
               "count": 1,
               "record_ids": [
                 "slay-the-spire-vs-balatro-card-roguelike-design"
-              ],
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "id": "open-world",
-          "label": "开放世界解谜",
-          "description": "地形观察、物理规则和工具组合让玩家形成自己的路线。",
-          "sample_count": 1,
-          "record_ids": [
-            "breath-of-the-wild-vs-tears-of-the-kingdom-open-world-design"
-          ],
-          "terms": [
-            {
-              "label": "自主解题",
-              "count": 9,
-              "record_ids": [
-                "breath-of-the-wild-vs-tears-of-the-kingdom-open-world-design"
-              ],
-              "weight": 5
-            },
-            {
-              "label": "发明自由",
-              "count": 5,
-              "record_ids": [
-                "breath-of-the-wild-vs-tears-of-the-kingdom-open-world-design"
-              ],
-              "weight": 3
-            },
-            {
-              "label": "未知探索",
-              "count": 5,
-              "record_ids": [
-                "breath-of-the-wild-vs-tears-of-the-kingdom-open-world-design"
-              ],
-              "weight": 3
-            },
-            {
-              "label": "创造自由",
-              "count": 4,
-              "record_ids": [
-                "breath-of-the-wild-vs-tears-of-the-kingdom-open-world-design"
-              ],
-              "weight": 2
-            },
-            {
-              "label": "自然发现",
-              "count": 4,
-              "record_ids": [
-                "breath-of-the-wild-vs-tears-of-the-kingdom-open-world-design"
-              ],
-              "weight": 2
-            },
-            {
-              "label": "系统掌控",
-              "count": 2,
-              "record_ids": [
-                "breath-of-the-wild-vs-tears-of-the-kingdom-open-world-design"
-              ],
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "id": "stealth",
-          "label": "潜行与沉浸模拟",
-          "description": "关卡规则、身份伪装和能力路线让低冲突解法成立。",
-          "sample_count": 1,
-          "record_ids": [
-            "hitman-vs-dishonored-stealth-design"
-          ],
-          "terms": [
-            {
-              "label": "即兴潜入",
-              "count": 8,
-              "record_ids": [
-                "hitman-vs-dishonored-stealth-design"
-              ],
-              "weight": 5
-            },
-            {
-              "label": "冷静编排",
-              "count": 7,
-              "record_ids": [
-                "hitman-vs-dishonored-stealth-design"
-              ],
-              "weight": 4
-            },
-            {
-              "label": "自主解题",
-              "count": 3,
-              "record_ids": [
-                "hitman-vs-dishonored-stealth-design"
-              ],
-              "weight": 2
-            },
-            {
-              "label": "身份表达",
-              "count": 3,
-              "record_ids": [
-                "hitman-vs-dishonored-stealth-design"
-              ],
-              "weight": 2
-            },
-            {
-              "label": "战术可读",
-              "count": 2,
-              "record_ids": [
-                "hitman-vs-dishonored-stealth-design"
-              ],
-              "weight": 2
-            },
-            {
-              "label": "公平反制",
-              "count": 1,
-              "record_ids": [
-                "hitman-vs-dishonored-stealth-design"
-              ],
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "id": "driving",
-          "label": "竞速驾驶",
-          "description": "速度、线路、车辆收藏和调校共同塑造驾驶幻想。",
-          "sample_count": 1,
-          "record_ids": [
-            "forza-horizon-5-vs-gran-turismo-7-driving-design"
-          ],
-          "terms": [
-            {
-              "label": "驾驶幻想",
-              "count": 19,
-              "record_ids": [
-                "forza-horizon-5-vs-gran-turismo-7-driving-design"
-              ],
-              "weight": 5
-            },
-            {
-              "label": "汽车信仰",
-              "count": 6,
-              "record_ids": [
-                "forza-horizon-5-vs-gran-turismo-7-driving-design"
-              ],
-              "weight": 2
-            },
-            {
-              "label": "身份表达",
-              "count": 3,
-              "record_ids": [
-                "forza-horizon-5-vs-gran-turismo-7-driving-design"
-              ],
-              "weight": 1
-            },
-            {
-              "label": "竞技证明",
-              "count": 1,
-              "record_ids": [
-                "forza-horizon-5-vs-gran-turismo-7-driving-design"
-              ],
-              "weight": 1
-            },
-            {
-              "label": "节奏释放",
-              "count": 1,
-              "record_ids": [
-                "forza-horizon-5-vs-gran-turismo-7-driving-design"
-              ],
-              "weight": 1
-            },
-            {
-              "label": "长期归属",
-              "count": 1,
-              "record_ids": [
-                "forza-horizon-5-vs-gran-turismo-7-driving-design"
-              ],
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "id": "jrpg",
-          "label": "日历 JRPG",
-          "description": "有限日程把关系、战斗构筑和叙事使命绑定为长期选择。",
-          "sample_count": 1,
-          "record_ids": [
-            "persona-5-royal-vs-metaphor-refantazio-jrpg-design"
-          ],
-          "terms": [
-            {
-              "label": "叙事回返",
-              "count": 9,
-              "record_ids": [
-                "persona-5-royal-vs-metaphor-refantazio-jrpg-design"
-              ],
-              "weight": 5
-            },
-            {
-              "label": "日常羁绊",
-              "count": 8,
-              "record_ids": [
-                "persona-5-royal-vs-metaphor-refantazio-jrpg-design"
-              ],
-              "weight": 4
-            },
-            {
-              "label": "身份表达",
-              "count": 6,
-              "record_ids": [
-                "persona-5-royal-vs-metaphor-refantazio-jrpg-design"
-              ],
-              "weight": 3
-            },
-            {
-              "label": "责任感",
-              "count": 4,
-              "record_ids": [
-                "persona-5-royal-vs-metaphor-refantazio-jrpg-design"
-              ],
-              "weight": 2
-            },
-            {
-              "label": "资源纪律",
-              "count": 4,
-              "record_ids": [
-                "persona-5-royal-vs-metaphor-refantazio-jrpg-design"
-              ],
-              "weight": 2
-            },
-            {
-              "label": "公共使命",
-              "count": 3,
-              "record_ids": [
-                "persona-5-royal-vs-metaphor-refantazio-jrpg-design"
-              ],
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "id": "tactical-cqb",
-          "label": "战术清房",
-          "description": "门、角度、侦察和队伍分工把室内空间变成低容错战术题。",
-          "sample_count": 1,
-          "record_ids": [
-            "rainbow-six-siege-vs-ready-or-not-tactical-design"
-          ],
-          "terms": [
-            {
-              "label": "战术可读",
-              "count": 8,
-              "record_ids": [
-                "rainbow-six-siege-vs-ready-or-not-tactical-design"
-              ],
-              "weight": 5
-            },
-            {
-              "label": "程序纪律",
-              "count": 5,
-              "record_ids": [
-                "rainbow-six-siege-vs-ready-or-not-tactical-design"
-              ],
-              "weight": 3
-            },
-            {
-              "label": "团队协作",
-              "count": 4,
-              "record_ids": [
-                "rainbow-six-siege-vs-ready-or-not-tactical-design"
-              ],
-              "weight": 2
-            },
-            {
-              "label": "责任感",
-              "count": 4,
-              "record_ids": [
-                "rainbow-six-siege-vs-ready-or-not-tactical-design"
-              ],
-              "weight": 2
-            },
-            {
-              "label": "公平反制",
-              "count": 3,
-              "record_ids": [
-                "rainbow-six-siege-vs-ready-or-not-tactical-design"
-              ],
-              "weight": 2
-            },
-            {
-              "label": "压迫感",
-              "count": 2,
-              "record_ids": [
-                "rainbow-six-siege-vs-ready-or-not-tactical-design"
-              ],
-              "weight": 1
-            }
-          ]
-        },
-        {
-          "id": "hunting",
-          "label": "共斗狩猎",
-          "description": "怪物学习、素材循环和武器熟练把 Boss 战变成长期生活方式。",
-          "sample_count": 1,
-          "record_ids": [
-            "monster-hunter-world-vs-rise-hunting-design"
-          ],
-          "terms": [
-            {
-              "label": "机动节奏",
-              "count": 6,
-              "record_ids": [
-                "monster-hunter-world-vs-rise-hunting-design"
-              ],
-              "weight": 5
-            },
-            {
-              "label": "生态准备",
-              "count": 5,
-              "record_ids": [
-                "monster-hunter-world-vs-rise-hunting-design"
-              ],
-              "weight": 4
-            },
-            {
-              "label": "团队协作",
-              "count": 1,
-              "record_ids": [
-                "monster-hunter-world-vs-rise-hunting-design"
-              ],
-              "weight": 1
-            },
-            {
-              "label": "成长成就",
-              "count": 1,
-              "record_ids": [
-                "monster-hunter-world-vs-rise-hunting-design"
-              ],
-              "weight": 1
-            },
-            {
-              "label": "操作进化",
-              "count": 1,
-              "record_ids": [
-                "monster-hunter-world-vs-rise-hunting-design"
-              ],
-              "weight": 1
-            },
-            {
-              "label": "风险权衡",
-              "count": 1,
-              "record_ids": [
-                "monster-hunter-world-vs-rise-hunting-design"
               ],
               "weight": 1
             }
@@ -1674,7 +1609,78 @@
               "weight": 1
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "racing",
+      "label": "竞速驾驶",
+      "tracks": [
+        {
+          "id": "driving",
+          "label": "竞速驾驶",
+          "description": "速度、线路、车辆收藏和调校共同塑造驾驶幻想。",
+          "sample_count": 1,
+          "record_ids": [
+            "forza-horizon-5-vs-gran-turismo-7-driving-design"
+          ],
+          "terms": [
+            {
+              "label": "驾驶幻想",
+              "count": 19,
+              "record_ids": [
+                "forza-horizon-5-vs-gran-turismo-7-driving-design"
+              ],
+              "weight": 5
+            },
+            {
+              "label": "汽车信仰",
+              "count": 6,
+              "record_ids": [
+                "forza-horizon-5-vs-gran-turismo-7-driving-design"
+              ],
+              "weight": 2
+            },
+            {
+              "label": "身份表达",
+              "count": 3,
+              "record_ids": [
+                "forza-horizon-5-vs-gran-turismo-7-driving-design"
+              ],
+              "weight": 1
+            },
+            {
+              "label": "竞技证明",
+              "count": 1,
+              "record_ids": [
+                "forza-horizon-5-vs-gran-turismo-7-driving-design"
+              ],
+              "weight": 1
+            },
+            {
+              "label": "节奏释放",
+              "count": 1,
+              "record_ids": [
+                "forza-horizon-5-vs-gran-turismo-7-driving-design"
+              ],
+              "weight": 1
+            },
+            {
+              "label": "长期归属",
+              "count": 1,
+              "record_ids": [
+                "forza-horizon-5-vs-gran-turismo-7-driving-design"
+              ],
+              "weight": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "label": "社交游戏",
+      "tracks": [
         {
           "id": "social-deduction",
           "label": "社交推理",
