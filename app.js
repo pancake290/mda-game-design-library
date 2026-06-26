@@ -126,6 +126,7 @@ function renderIndexPage() {
     cloudSampleHint: document.querySelector("#cloudSampleHint"),
     cloudMethod: document.querySelector("#cloudMethod"),
     clearCloudFilter: document.querySelector("#clearCloudFilter"),
+    featured: document.querySelector("#featuredAnalysis"),
   };
 
   nodes.search.addEventListener("input", () => {
@@ -135,8 +136,38 @@ function renderIndexPage() {
   });
   nodes.clearCloudFilter.addEventListener("click", () => clearCloudFilter(nodes));
   nodes.refresh.addEventListener("click", loadRecords);
+  renderFeaturedAnalysis(nodes.featured);
   renderAestheticCloud(nodes);
   applyFilter(nodes);
+}
+
+function renderFeaturedAnalysis(target) {
+  if (!target || !state.records.length) return;
+  const record = state.records.find((item) => item.cover_image) || state.records[0];
+  const firstChain = record.chains?.[0] || {};
+  const systems = (record.comparison_systems || []).slice(0, 4).map((item) => item.system).filter(Boolean);
+  target.innerHTML = `
+    <div class="featured-copy">
+      <p class="eyebrow">Featured Analysis</p>
+      <h2>${escapeHtml(record.title || "精选分析")}</h2>
+      <p>${escapeHtml(compactText(record.summary || "", 150))}</p>
+      <div class="featured-actions">
+        <a class="primary-link" href="./detail.html?id=${encodeURIComponent(record.id)}">阅读核心分析</a>
+        <a class="secondary-link" href="#analysisIndex">浏览全部</a>
+      </div>
+    </div>
+    <div class="featured-map">
+      ${renderMiniMdaRoute(firstChain)}
+      <div class="featured-meta">
+        <span>${(record.chains || []).length} 条 MDA 链</span>
+        <span>${(record.comparison_systems || []).length} 个共同系统</span>
+        <span>${(record.judgments || []).length} 个判断</span>
+      </div>
+      <div class="system-chip-row">
+        ${systems.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
+      </div>
+    </div>
+  `;
 }
 
 function renderAestheticCloud(nodes) {
@@ -291,6 +322,8 @@ function renderIndexCard(record) {
   const systems = record.comparison_systems || [];
   const gaps = record.system_gaps || [];
   const cover = record.cover_image || "";
+  const firstChain = record.chains?.[0] || {};
+  const topSystems = systems.slice(0, 3).map((item) => item.system).filter(Boolean);
   return `
     <article class="record-card">
       <div class="record-cover">
@@ -303,7 +336,15 @@ function renderIndexCard(record) {
           <span>${systems.length} 个共同系统</span>
         </div>
         <h3>${escapeHtml(record.title || "未命名分析")}</h3>
-        <p>${escapeHtml(record.summary || "暂无摘要。")}</p>
+        <p>${escapeHtml(compactText(record.summary || "暂无摘要。", 132))}</p>
+        <div class="card-route">
+          <span>A</span><strong>${escapeHtml(compactText(firstChain.aesthetic || "体验目标待读", 18))}</strong>
+          <span>D</span><strong>${escapeHtml(compactText(firstChain.dynamic || "玩家动态待读", 18))}</strong>
+          <span>M</span><strong>${escapeHtml(compactText(firstChain.mechanic || "机制条件待读", 18))}</strong>
+        </div>
+        <div class="system-chip-row small">
+          ${topSystems.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
+        </div>
         <div class="tag-row small">
           ${getGenres(record).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}
         </div>
@@ -375,6 +416,8 @@ function renderRecordDetail(record) {
       </header>
 
       ${renderVisualRoutes(record.visual_routes || [], record)}
+      ${renderDetailDashboard(record)}
+      ${renderDetailNav()}
 
       <section class="summary-band">
         <span>MDA 对比结论</span>
@@ -384,6 +427,7 @@ function renderRecordDetail(record) {
       ${renderReadingGuide(record.reading_guide || [])}
       ${renderArgumentMap(record)}
       ${renderQuantification(record.quantification, record)}
+      ${renderSystemMatrix(record.comparison_systems || [])}
 
       <section class="record-grid">
         ${renderComparisonSystems(record.comparison_systems || [], record)}
@@ -397,10 +441,58 @@ function renderRecordDetail(record) {
   `;
 }
 
+function renderDetailDashboard(record) {
+  const chains = record.chains || [];
+  const systems = record.comparison_systems || [];
+  const judgments = record.judgments || [];
+  return `
+    <section class="detail-dashboard" aria-label="阅读仪表盘">
+      <div class="dashboard-summary">
+        <p class="eyebrow">Reader Dashboard</p>
+        <h2>先用 30 秒抓住这篇的设计问题</h2>
+        <p>${escapeHtml(compactText(record.summary || "", 190))}</p>
+      </div>
+      <div class="dashboard-metrics">
+        <div><span>${chains.length}</span><small>MDA 链</small></div>
+        <div><span>${systems.length}</span><small>共同系统</small></div>
+        <div><span>${judgments.length}</span><small>关键判断</small></div>
+      </div>
+      <div class="dashboard-route">
+        ${renderMiniMdaRoute(chains[0] || {})}
+      </div>
+    </section>
+  `;
+}
+
+function renderDetailNav() {
+  return `
+    <nav class="detail-nav" aria-label="详情页快速导航">
+      <a href="#read-first">阅读导引</a>
+      <a href="#argument-map">论证脑图</a>
+      <a href="#quantified-read">量化速读</a>
+      <a href="#system-matrix">系统矩阵</a>
+      <a href="#comparison-systems">共同系统</a>
+      <a href="#mda-chains">MDA 链</a>
+      <a href="#design-read">判断</a>
+      <a href="#next-move">建议</a>
+    </nav>
+  `;
+}
+
+function renderMiniMdaRoute(chain) {
+  return `
+    <div class="mini-mda-route">
+      <div><span>A</span><strong>${escapeHtml(compactText(chain.aesthetic || "体验承诺", 34))}</strong></div>
+      <div><span>D</span><strong>${escapeHtml(compactText(chain.dynamic || "玩家动态", 42))}</strong></div>
+      <div><span>M</span><strong>${escapeHtml(compactText(chain.mechanic || "机制选择", 46))}</strong></div>
+    </div>
+  `;
+}
+
 function renderReadingGuide(items) {
   if (!items.length) return "";
   return `
-    <section class="reading-guide" aria-label="阅读导引">
+    <section class="reading-guide" id="read-first" aria-label="阅读导引">
       <div class="section-title">
         <div>
           <p class="eyebrow">Read First</p>
@@ -459,7 +551,7 @@ function renderQuantification(quantification, record) {
   const dimensions = quantification?.dimensions || [];
   if (!dimensions.length) return "";
   return `
-    <section class="quant-panel" aria-label="MDA 量化速读">
+    <section class="quant-panel" id="quantified-read" aria-label="MDA 量化速读">
       <div class="section-title">
         <div>
           <p class="eyebrow">Quantified Read</p>
@@ -529,7 +621,7 @@ function renderArgumentMap(record) {
   const gapSystems = (record.system_gaps || []).map((item) => item.system).filter(Boolean);
 
   return `
-    <section class="argument-map" aria-label="MDA 论证脑图">
+    <section class="argument-map" id="argument-map" aria-label="MDA 论证脑图">
       <div class="section-title">
         <div>
           <p class="eyebrow">Argument Map</p>
@@ -553,6 +645,45 @@ function renderArgumentMap(record) {
           ${renderMapChipGroup("共同系统", "两边都有，但 MDA 权重不同", sharedSystems, "shared")}
           ${renderMapChipGroup("覆盖差异", "一方更强调，另一方弱化或没有", gapSystems, "gap")}
         </div>
+      </div>
+    </section>
+  `;
+}
+
+function renderSystemMatrix(items) {
+  if (!items.length) return "";
+  return `
+    <section class="system-matrix-section" id="system-matrix" aria-label="系统矩阵速览">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">System Matrix</p>
+          <h2>系统矩阵：先看差异落在哪</h2>
+        </div>
+        <span>${items.length}</span>
+      </div>
+      <div class="matrix-table-wrap">
+        <table class="overview-table">
+          <thead>
+            <tr>
+              <th scope="col">系统</th>
+              <th scope="col">美学目标</th>
+              <th scope="col">玩家动态</th>
+              <th scope="col">机制条件</th>
+              <th scope="col">设计影响</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${items.map((item) => `
+              <tr>
+                <th scope="row">${escapeHtml(item.system || "")}</th>
+                <td>${escapeHtml(compactText(item.mda?.aesthetic || "", 34))}</td>
+                <td>${escapeHtml(compactText(item.mda?.dynamic || "", 54))}</td>
+                <td>${escapeHtml(compactText(item.mda?.mechanic || "", 54))}</td>
+                <td>${escapeHtml(compactText(item.impact || "", 54))}</td>
+              </tr>
+            `).join("")}
+          </tbody>
+        </table>
       </div>
     </section>
   `;
@@ -601,7 +732,7 @@ function findChain(chains, keywords, fallbackIndex) {
 function renderComparisonSystems(items, record) {
   if (!items.length) return "";
   return `
-    <div class="record-block wide">
+    <div class="record-block wide" id="comparison-systems">
       <div class="section-title">
         <div>
           <p class="eyebrow">Shared Systems With MDA</p>
@@ -619,7 +750,7 @@ function renderComparisonSystems(items, record) {
 function renderComparisonRow(item, record) {
   const games = getGameEntries(item, record);
   return `
-    <details class="comparison-card">
+    <details class="comparison-card" open>
       <summary>
         <span>${escapeHtml(item.system || "")}</span>
         <strong>${escapeHtml(item.impact || "")}</strong>
@@ -693,7 +824,7 @@ function renderSystemGaps(items, record) {
 function renderMdaChains(chains) {
   if (!chains.length) return "";
   return `
-    <div class="record-block wide">
+    <div class="record-block wide" id="mda-chains">
       <div class="section-title">
         <div>
           <p class="eyebrow">MDA Chain</p>
@@ -733,7 +864,7 @@ function renderChain(chain) {
 function renderJudgments(items) {
   if (!items.length) return "";
   return `
-    <div class="record-block">
+    <div class="record-block" id="design-read">
       <div class="section-title"><div><p class="eyebrow">Design Read</p><h2>关键判断</h2></div></div>
       <div class="stack-list">${items.map((item) => renderCard(item.issue, item.why, item.impact && `玩家影响：${item.impact}`)).join("")}</div>
     </div>
@@ -743,7 +874,7 @@ function renderJudgments(items) {
 function renderRecommendations(items) {
   if (!items.length) return "";
   return `
-    <div class="record-block">
+    <div class="record-block" id="next-move">
       <div class="section-title"><div><p class="eyebrow">Next Move</p><h2>设计建议</h2></div></div>
       <div class="stack-list">${items.map((item) => renderCard(item.goal, item.change, item.impact && `玩家影响：${item.impact}`, item.risk && `风险：${item.risk}`)).join("")}</div>
     </div>
@@ -772,6 +903,12 @@ function renderCard(title, ...lines) {
 function renderSource(source) {
   const label = source.label || source.url || "资料来源";
   return `<a href="${escapeAttribute(source.url || "#")}" target="_blank" rel="noreferrer">${escapeHtml(label)}</a>`;
+}
+
+function compactText(value, max = 90) {
+  const text = String(value || "").replace(/\s+/g, " ").trim();
+  if (text.length <= max) return text;
+  return `${text.slice(0, Math.max(max - 1, 0))}…`;
 }
 
 function collectGenres() {

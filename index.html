@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>游戏 MDA 策划分析库</title>
-    <link rel="stylesheet" href="./styles.css?v=20260623-5" />
+    <link rel="stylesheet" href="./styles.css?v=20260626-redesign-1" />
   </head>
   <body data-page="index">
     <main class="page-shell">
@@ -21,11 +21,15 @@
 
       <section class="home-hero">
         <div>
-          <p class="eyebrow">Game Design Method</p>
+          <p class="eyebrow">MDA Game Design Library</p>
           <h1>MDA策划分析库</h1>
           <p>
-            从游戏希望塑造的玩家感受出发，观察行为与决策如何形成，再回溯支撑这些体验的系统机制。这里汇集方法框架与分析索引，完整论证请进入各专栏阅读。
+            把游戏设计分析压缩成可检索、可比较、可复盘的结构：先读体验承诺，再看玩家动态，最后追到机制选择。
           </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#analysisIndex">开始浏览</a>
+            <a class="secondary-link" href="./methodology.html">查看方法论</a>
+          </div>
         </div>
         <div class="method-strip" aria-label="MDA 方法论">
           <article>
@@ -46,6 +50,8 @@
         </div>
       </section>
 
+      <section class="featured-analysis" id="featuredAnalysis" aria-label="精选分析"></section>
+
       <section class="genre-cloud-section" aria-labelledby="genreCloudTitle">
         <div class="genre-cloud-intro">
           <p class="eyebrow">Genre Aesthetics Atlas</p>
@@ -64,6 +70,10 @@
       </section>
 
       <section class="library-toolbar" aria-label="分析库工具">
+        <div class="toolbar-copy">
+          <p class="eyebrow">Explore</p>
+          <h2>按题材、体验词和系统问题筛选</h2>
+        </div>
         <div class="stats-strip">
           <div><span id="totalCount">0</span><small>分析记录</small></div>
           <div><span id="chainCount">0</span><small>MDA 链条</small></div>
@@ -97,6 +107,6 @@
       </article>
     </template>
 
-    <script src="./app.js?v=20260624-1"></script>
+    <script src="./app.js?v=20260626-redesign-1"></script>
   </body>
 </html>
